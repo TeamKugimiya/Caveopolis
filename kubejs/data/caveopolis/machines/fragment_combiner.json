@@ -1,0 +1,338 @@
+{
+  "name": "碎片合成器",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "caveopolis:machine/fragment_combiner",
+	"hardness": 1,
+    "tool_type": ["minecraft:mineable/pickaxe", "forge:mineable/paxel"],
+	"mining_level": "minecraft:needs_stone_tool"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{  	      
+      "mode": "input",
+      "id": "upgrade",
+	  "capacity": 3,
+      "variant": "custommachinery:upgrade",
+      "type": "custommachinery:item",
+      "config": {
+        "default": "none"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input1",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input2",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input3",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 	
+	{
+      "mode": "input",
+      "id": "input4",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input5",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input6",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 	
+	{
+      "mode": "input",
+      "id": "input7",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input8",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input9",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 
+	{
+      "mode": "output",
+      "id": "output1",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output2",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output3",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output4",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output5",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output6",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output7",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+      "mode": "output",
+      "id": "output8",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+    {
+      "mode": "output",
+      "id": "output9",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    },
+	{
+	  "id": "upgrade",
+      "x": 119,
+      "y": 56,
+      "type": "custommachinery:slot"
+    },
+    {
+      "x": 47,
+      "y": 20,
+      "type": "custommachinery:slot",
+      "id": "input1"
+    },  	 
+	{
+      "x": 65,
+      "y": 20,
+      "type": "custommachinery:slot",
+      "id": "input2"
+    },  	
+	{
+      "x": 83,
+      "y": 20,
+      "type": "custommachinery:slot",
+      "id": "input3"
+    }, 
+	{
+      "x": 47,
+      "y": 38,
+      "type": "custommachinery:slot",
+      "id": "input4"
+    },  	
+	{
+      "x": 65,
+      "y": 38,
+      "type": "custommachinery:slot",
+      "id": "input5"
+    }, 
+	{
+      "x": 83,
+      "y": 38,
+      "type": "custommachinery:slot",
+      "id": "input6"
+    }, 
+	{
+      "x": 47,
+      "y": 56,
+      "type": "custommachinery:slot",
+      "id": "input7"
+    }, 
+	{
+      "x": 65,
+      "y": 56,
+      "type": "custommachinery:slot",
+      "id": "input8"
+    }, 
+	{
+      "x": 83,
+      "y": 56,
+      "type": "custommachinery:slot",
+      "id": "input9"
+    },      
+	{
+	  "id": "output1",
+      "x": 155,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },      
+    {
+      "id": "output2",
+      "x": 173,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },   	
+    {
+      "id": "output3",
+      "x": 191,
+      "y": 20,
+      "type": "custommachinery:slot"
+    }, 
+	{
+	  "id": "output4",
+      "x": 155,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },      
+    {
+      "id": "output5",
+      "x": 173,
+      "y": 38,
+      "type": "custommachinery:slot"
+    }, 	
+    {
+      "id": "output6",
+      "x": 191,
+      "y": 38,
+      "type": "custommachinery:slot"
+    }, 
+	{
+	  "id": "output7",
+      "x": 155,
+      "y": 56,
+      "type": "custommachinery:slot"
+    },      
+    {
+      "id": "output8",
+      "x": 173,
+      "y": 56,
+      "type": "custommachinery:slot"
+    }, 
+	{
+      "id": "output9",
+      "x": 191,
+      "y": 56,
+      "type": "custommachinery:slot"
+    },	
+    {
+      "x": 117,
+      "y": 37,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "碎片合成器",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

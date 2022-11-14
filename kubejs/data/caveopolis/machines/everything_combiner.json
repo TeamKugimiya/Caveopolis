@@ -1,0 +1,386 @@
+{
+  "name": "全物質合成器",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "caveopolis:machine/everything_combiner",
+	"hardness": 1,
+    "tool_type": ["minecraft:mineable/pickaxe", "forge:mineable/paxel"],
+	"mining_level": "minecraft:needs_stone_tool"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+	  "capacity": 1000000,
+      "type": "custommachinery:energy",
+      "id": "energy",
+	  "maxOutput": 0
+    },	
+	{
+      "mode": "input",
+      "id": "input1",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:white_colored_stone", "minecraft:dragon_head", "morevanillalib:obsidian_shard", "mekanism:ingot_refined_glowstone"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input2",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:orange_colored_stone", "minecraft:dragon_head", "minecraft:amethyst_shard", "mekanism:ingot_uranium"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input3",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:magenta_colored_stone", "minecraft:dragon_head", "caveopolis:bedrock_fragment", "caveopolis:soulsteel_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 	
+	{
+      "mode": "input",
+      "id": "input4",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:light_blue_colored_stone", "minecraft:dragon_head", "thermal:basalz_rod", "minecraft:netherite_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input5",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["minecraft:prismarine_crystals", "minecraft:dragon_breath", "rftoolsbase:dimensionalshard", "thermal:enderium_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input6",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:lime_colored_stone", "minecraft:dragon_head", "minecraft:prismarine_shard", "thermal:steel_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 	
+	{
+      "mode": "input",
+      "id": "input7",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:pink_colored_stone", "minecraft:dragon_head", "caveopolis:bedrock_fragment", "thermal:rose_gold_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input8",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:gray_colored_stone", "minecraft:dragon_head", "minecraft:amethyst_shard", "thermal:lead_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 		
+	{
+      "mode": "input",
+      "id": "input9",
+      "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:light_gray_colored_stone", "minecraft:dragon_head", "morevanillalib:obsidian_shard", "mekanism:ingot_osmium"],
+      "whitelist": true, 
+      "config": {
+        "default": "input"
+      }
+    }, 
+	{
+      "mode": "input",
+      "id": "input10",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:cyan_colored_stone", "minecraft:dragon_head", "caveopolis:bedrock_fragment", "mekanism:ingot_refined_obsidian"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input11",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:purple_colored_stone", "minecraft:dragon_head", "minecraft:amethyst_shard", "thermal:nickel_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input12",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:blue_colored_stone", "minecraft:dragon_head", "morevanillalib:obsidian_shard", "thermal:bronze_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input13",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:brown_colored_stone", "minecraft:dragon_head", "minecraft:prismarine_shard", "thermal:electrum_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input14",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["minecraft:diamond", "minecraft:dragon_breath", "rftoolsbase:dimensionalshard", "caveopolis:mixed_stone_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input15",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:red_colored_stone", "minecraft:dragon_head", "thermal:basalz_rod", "thermal:invar_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input16",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:black_colored_stone", "minecraft:dragon_head", "morevanillalib:obsidian_shard", "thermal:constantan_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+	{
+      "mode": "input",
+      "id": "input17",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:green_colored_stone", "minecraft:dragon_head", "minecraft:amethyst_shard", "thermal:signalum_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },
+    {
+      "mode": "input",
+      "id": "input18",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+	  "filter": ["caveopolis:yellow_colored_stone", "minecraft:dragon_head", "caveopolis:bedrock_fragment", "thermal:lumium_ingot"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },	    
+	{
+      "mode": "output",
+      "id": "output",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    },
+	{
+      "x": 109,
+      "y": 25,
+      "type": "custommachinery:energy",
+      "id": "energy"
+    },	
+    {
+      "x": 47,
+      "y": 20,
+      "type": "custommachinery:slot",
+      "id": "input1"
+    },  	 
+	{
+      "x": 65,
+      "y": 20,
+      "type": "custommachinery:slot",
+      "id": "input2"
+    },  	
+	{
+      "x": 83,
+      "y": 20,
+      "type": "custommachinery:slot",
+      "id": "input3"
+    }, 
+	{
+      "x": 47,
+      "y": 38,
+      "type": "custommachinery:slot",
+      "id": "input4"
+    },  	
+	{
+      "x": 65,
+      "y": 38,
+      "type": "custommachinery:slot",
+      "id": "input5"
+    }, 
+	{
+      "x": 83,
+      "y": 38,
+      "type": "custommachinery:slot",
+      "id": "input6"
+    }, 
+	{
+      "x": 47,
+      "y": 56,
+      "type": "custommachinery:slot",
+      "id": "input7"
+    }, 
+	{
+      "x": 65,
+      "y": 56,
+      "type": "custommachinery:slot",
+      "id": "input8"
+    }, 
+	{
+      "x": 83,
+      "y": 56,
+      "type": "custommachinery:slot",
+      "id": "input9"
+    },      
+	{
+	  "id": "input10",
+      "x": 155,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },      
+    {
+      "id": "input11",
+      "x": 173,
+      "y": 20,
+      "type": "custommachinery:slot"
+    },   	
+    {
+      "id": "input12",
+      "x": 191,
+      "y": 20,
+      "type": "custommachinery:slot"
+    }, 
+	{
+	  "id": "input13",
+      "x": 155,
+      "y": 38,
+      "type": "custommachinery:slot"
+    },      
+    {
+      "id": "input14",
+      "x": 173,
+      "y": 38,
+      "type": "custommachinery:slot"
+    }, 	
+    {
+      "id": "input15",
+      "x": 191,
+      "y": 38,
+      "type": "custommachinery:slot"
+    }, 
+	{
+	  "id": "input16",
+      "x": 155,
+      "y": 56,
+      "type": "custommachinery:slot"
+    },      
+    {
+      "id": "input17",
+      "x": 173,
+      "y": 56,
+      "type": "custommachinery:slot"
+    }, 
+	{
+      "id": "input18",
+      "x": 191,
+      "y": 56,
+      "type": "custommachinery:slot"
+    },		
+	{
+      "id": "output",
+      "x": 129,
+      "y": 51,
+      "type": "custommachinery:slot"
+    },	
+    {
+      "x": 129,
+      "y": 24,
+	  "direction": "bottom",
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "全物質合成器",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

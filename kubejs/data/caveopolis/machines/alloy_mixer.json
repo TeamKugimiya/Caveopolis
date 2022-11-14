@@ -1,0 +1,133 @@
+{
+  "name": "合金混合器",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "caveopolis:machine/alloy_mixer",
+	"hardness": 1,
+    "tool_type": ["minecraft:mineable/pickaxe", "forge:mineable/paxel"],
+	"mining_level": "minecraft:needs_stone_tool"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+      "mode": "input",
+      "id": "input1",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    }, 	
+	{  	      
+      "mode": "input",
+      "id": "upgrade",
+	  "capacity": 3,
+      "variant": "custommachinery:upgrade",
+      "type": "custommachinery:item",
+      "config": {
+        "default": "none"
+      }
+    },  
+	{
+      "mode": "input",
+      "id": "fluid1",
+      "capacity": 8000,
+      "type": "custommachinery:fluid",
+	  "filter": ["minecraft:water"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    }, 	
+	{
+      "mode": "input",
+      "id": "fluid2",
+      "capacity": 8000,
+      "type": "custommachinery:fluid",
+	  "filter": ["minecraft:lava","thermal:tree_oil"],
+      "whitelist": true,
+      "config": {
+        "default": "input"
+      }
+    },    
+    {
+      "mode": "output",
+      "id": "output1",
+	  "capacity": 16000,
+      "type": "custommachinery:fluid",
+      "config": {
+        "default": "output"
+      }
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+	
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    },
+    {
+      "x": 93,
+      "y": 26,
+      "type": "custommachinery:slot",
+      "id": "input1"
+    },  	    
+	{
+	  "id": "upgrade",
+      "x": 93,
+      "y": 49,
+      "type": "custommachinery:slot"
+    },
+	{
+      "x": 65,
+      "y": 25,
+      "type": "custommachinery:fluid",
+      "id": "fluid1"
+    },  	    
+	{
+      "x": 119,
+      "y": 25,
+      "type": "custommachinery:fluid",
+      "id": "fluid2"
+    },  	
+    {
+      "id": "output1",
+      "x": 173,
+      "y": 25,
+      "type": "custommachinery:fluid"
+    }, 
+    {
+      "x": 143,
+      "y": 37,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "合金混合器",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

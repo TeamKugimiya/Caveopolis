@@ -1,0 +1,95 @@
+{
+  "name": "龍灌注機",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "caveopolis:machine/dragon_infuser",
+	"hardness": 1,
+    "tool_type": ["minecraft:mineable/pickaxe", "forge:mineable/paxel"],
+	"mining_level": "minecraft:needs_stone_tool"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+      "mode": "input",
+      "id": "input1",
+      "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "input"
+      }
+    },    
+    {
+      "mode": "output",
+      "id": "output1",
+	  "capacity": 64,
+      "type": "custommachinery:item",
+      "config": {
+        "default": "output"
+      }
+    },
+	{
+	  "capacity": 3000000,
+      "type": "custommachinery:energy",
+      "id": "energy",
+	  "maxOutput": 0
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+	
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    },
+    {
+      "x": 83,
+      "y": 37,
+      "type": "custommachinery:slot",
+      "id": "input1"
+    },  	
+    {
+      "id": "output1",
+      "x": 155,
+      "y": 37,
+      "type": "custommachinery:slot"
+    }, 
+	{
+      "x": 47,
+      "y": 25,
+      "type": "custommachinery:energy",
+      "id": "energy"
+    },
+    {
+      "x": 117,
+      "y": 37,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "龍灌注機",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}

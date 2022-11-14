@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "machine": {
+      "conditions": {
+        "items": [
+       {
+            "items": [
+              "custommachinery:custom_machine_item"
+            ],
+            "nbt": "{\"machine\":\"caveopolis:everything_combiner\"}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.story.mine_diamond.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "custommachinery:custom_machine_item"
+    },
+    "show_toast": true,
+    "title": "全物質合成器"
+  },
+  "requirements": [
+    [
+      "machine"
+    ]
+  ]
+}

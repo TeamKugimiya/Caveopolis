@@ -1,0 +1,23 @@
+{
+	"type": "thermal:blizz",
+	"name": "暴雪使者",
+	"name_color": "0x9FB1B4",
+	"gui_scale": 1,
+	"gui_x_offset": 0,
+	"gui_y_offset": 0,
+	"gui_z_offset": 0,
+	"sim_cost": 256,
+	"input": {
+		"item": "hostilenetworks:empty_prediction"
+	},
+	"base_drop": {
+		"item": "hostilenetworks:overworld_prediction"
+	},
+	"trivia": "惹人厭的生物",
+	"fabricator_drops": [
+		{
+			"item": "thermal:blizz_rod",
+			"count": 10
+		}
+	]
+}

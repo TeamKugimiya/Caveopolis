@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "machine": {
+      "conditions": {
+        "items": [
+       {
+            "items": [
+              "custommachinery:custom_machine_item"
+            ],
+            "nbt": "{\"machine\":\"caveopolis:alloy_mixer\"}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.story.mine_diamond.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "custommachinery:custom_machine_item"
+    },
+    "show_toast": true,
+    "title": "合金混合器"
+  },
+  "requirements": [
+    [
+      "machine"
+    ]
+  ]
+}

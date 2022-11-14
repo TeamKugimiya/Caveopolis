@@ -1,0 +1,83 @@
+{
+  "name": "水發電機",
+  "appearance": {
+    "lightmode": "running",
+    "lightlevel": 0,
+    "block": "caveopolis:machine/water_generator",
+	"hardness": 1,
+    "tool_type": ["minecraft:mineable/pickaxe", "forge:mineable/paxel"],
+	"mining_level": "minecraft:needs_stone_tool"
+  },
+  "components": [
+  	{
+	  "type": "custommachinery:redstone",
+	  "power": 1
+	},
+	{
+      "mode": "input",
+      "id": "fluid",
+      "capacity": 16000,
+      "type": "custommachinery:fluid",
+      "config": {
+        "default": "input"
+      }
+    }, 	
+    {
+      "mode": "output",
+      "id": "energy",
+	  "capacity": 640000,
+      "type": "custommachinery:energy",
+	  "config": {
+        "default": "output"
+      }
+    }	
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 38,
+      "y": 0,
+	  "width": 180,
+      "type": "custommachinery:texture"
+    },
+	
+    {
+      "x": 47,
+      "y": 85,
+      "type": "custommachinery:player_inventory"
+    },
+	{
+	  "type": "custommachinery:reset",
+      "x": 166,
+      "y": 7
+    }, 	
+	{
+      "x": 65,
+      "y": 25,
+      "type": "custommachinery:fluid",
+      "id": "fluid"
+    },
+    {
+      "id": "energy",
+      "x": 173,
+      "y": 25,
+      "type": "custommachinery:energy"
+    }, 
+    {
+      "x": 117,
+      "y": 37,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 200,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+	{
+      "text": "水發電機",
+      "x": 43,
+      "y": 7,
+      "type": "custommachinery:text"
+    }
+  ]
+}
