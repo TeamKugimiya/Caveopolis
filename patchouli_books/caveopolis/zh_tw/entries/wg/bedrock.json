@@ -1,0 +1,25 @@
+{
+    "name": "基岩",
+    "icon": "minecraft:bedrock",
+    "category": "patchouli:wg_category",
+    "sortnum": 26,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:bedrock",
+            "text": "$(bold)世界最底層"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:bedrock"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

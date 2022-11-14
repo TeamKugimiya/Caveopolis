@@ -1,0 +1,26 @@
+{
+    "name": "全物質合成器",
+    "icon": "caveopolis:ultimate_shard",
+    "category": "patchouli:cm_category",
+    "sortnum": 11,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "caveopolis:color_crystal",
+            "title": "全物質合成器",
+            "text": "全物質合成器用來將大量的物品合而為一，需要大量的電！(br2)"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "custommachinery:custom_machine_block"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

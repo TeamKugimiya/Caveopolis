@@ -1,0 +1,26 @@
+{
+    "name": "合金混合器",
+    "icon": "kubejs:db_alloy_mixer",
+    "category": "patchouli:cm_category",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_alloy_mixer",
+            "title": "合金混合器",
+            "text": "合金混合器用來混合兩種流體和一個物品來製作新的流體。$(br)可用不同的方塊來升級，從最差到最好的為青銅方塊，康銅方塊，機器框架和獄髓方塊。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "kubejs:db_alloy_mixer"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

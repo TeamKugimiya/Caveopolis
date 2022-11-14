@@ -1,0 +1,6 @@
+{
+    "name": "世界生成",
+    "description": "自訂世界的生成$(br2)$(bold)*方塊由 Y 值排序（從高至低排序）",
+    "icon": "minecraft:stone",
+    "sortnum": 1
+}

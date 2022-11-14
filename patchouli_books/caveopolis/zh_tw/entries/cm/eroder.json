@@ -1,0 +1,27 @@
+{
+    "name": "侵蝕器",
+    "icon": "kubejs:db_eroder",
+    "category": "patchouli:cm_category",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_eroder",
+            "title": "侵蝕器",
+            "text": "侵蝕器是用來將錠製成粉同時還有多種其他的用途。$(br)必須放在 3x3 的水源方塊正中央，就像多方塊結構所顯示的那樣。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["www","w0w","www"]
+                ],
+                "mapping": {
+                    "0": "#kubejs:eroder",
+                    "w": "minecraft:water"
+                }
+            },
+            "enable_visualize": true
+        }
+    ]
+}

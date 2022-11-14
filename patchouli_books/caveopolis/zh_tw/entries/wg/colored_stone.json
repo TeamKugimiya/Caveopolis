@@ -1,0 +1,26 @@
+{
+    "name": "著色石頭",
+    "icon": "caveopolis:white_colored_stone",
+    "category": "patchouli:wg_category",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "caveopolis:white_colored_stone",
+            "text": "$(bold)各種不同顏色的石頭$(br2)生成高度： $(li) Y: 115 -> 162"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "caveopolis:white_colored_stone"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+        
+}

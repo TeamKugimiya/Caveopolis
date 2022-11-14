@@ -1,0 +1,23 @@
+{
+	"name": "鑲框抽屜",
+	"icon": "framedcompactdrawers:framed_compact_drawer",
+	"category": "patchouli:misc_category",
+	"sortnum": 3,
+	"pages": [
+		{
+			"type": "patchouli:spotlight",
+			"item": "framedcompactdrawers:framed_compact_drawer",
+			"title": "鑲框抽屜",
+			"text": "鑲框抽屜可製作你所能想像的到的任何材質組合的抽屜。"
+		},
+		{
+			"type": "patchouli:image",
+			"images": [
+			"kubejs:textures/book/framed_drawers.png"
+			],
+			"title": "Framed Drawers",
+			"border": false,
+			"text": ""
+		}
+    ]
+}

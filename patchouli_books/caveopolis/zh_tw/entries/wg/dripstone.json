@@ -1,0 +1,25 @@
+{
+    "name": "鐘乳石",
+    "icon": "minecraft:dripstone_block",
+    "category": "patchouli:wg_category",
+    "sortnum": 11,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:dripstone_block",
+            "text": "$(bold)生成高度： $(li)Y: 55 -> 59"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:dripstone_block"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

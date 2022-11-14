@@ -1,0 +1,25 @@
+{
+    "name": "砂岩",
+    "icon": "minecraft:sandstone",
+    "category": "patchouli:wg_category",
+    "sortnum": 14,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:sandstone",
+            "text": "$(bold)生成高度： $(li)Y: 25 -> 29"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:sandstone"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

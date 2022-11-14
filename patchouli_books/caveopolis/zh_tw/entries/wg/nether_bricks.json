@@ -1,0 +1,25 @@
+{
+    "name": "地獄磚",
+    "icon": "minecraft:nether_bricks",
+    "category": "patchouli:wg_category",
+    "sortnum": 22,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:nether_bricks",
+            "text": "$(bold)生成高度： $(li)Y: -30 -> -26"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:nether_bricks"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

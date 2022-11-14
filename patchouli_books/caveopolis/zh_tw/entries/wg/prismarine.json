@@ -1,0 +1,25 @@
+{
+    "name": "海磷石",
+    "icon": "minecraft:prismarine",
+    "category": "patchouli:wg_category",
+    "sortnum": 10,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:prismarine",
+            "text": "$(bold)生成高度： $(li)Y: 60 -> 64"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:prismarine"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

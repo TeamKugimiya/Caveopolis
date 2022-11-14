@@ -1,0 +1,25 @@
+{
+    "name": "玄武岩",
+    "icon": "minecraft:basalt",
+    "category": "patchouli:wg_category",
+    "sortnum": 18,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:basalt",
+            "text": "$(bold)生成高度： $(li)Y: 5 -> 9"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:basalt"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

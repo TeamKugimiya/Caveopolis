@@ -1,0 +1,25 @@
+{
+    "name": "紅砂岩",
+    "icon": "minecraft:red_sandstone",
+    "category": "patchouli:wg_category",
+    "sortnum": 17,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:red_sandstone",
+            "text": "$(bold)生成高度： $(li)Y: 10 -> 14"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:red_sandstone"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

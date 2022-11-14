@@ -1,0 +1,10 @@
+{
+	"name": "§7§lCaveopolis§r 指南書",
+	"show_progress": false,
+	"landing_text": "歡迎遊玩 Caveopolis ！ $(br2)這本書紀載著關於 Caveopolis 以及當中的一些機器的資訊",
+	"version": "1",
+	"filler_texture": "caveopolis:textures/item/stone_pebble.png",
+	"model": "patchouli:book_gray",
+	"book_texture": "patchouli:textures/gui/book_gray.png",
+	"index_icon": "caveopolis:stone_pebble"
+}

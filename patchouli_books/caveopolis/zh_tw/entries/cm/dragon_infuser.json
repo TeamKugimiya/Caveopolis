@@ -1,0 +1,30 @@
+{
+    "name": "龍灌注機",
+    "icon": "kubejs:db_dragon_infuser",
+    "category": "patchouli:cm_category",
+    "sortnum": 11,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_dragon_infuser",
+            "title": "龍灌注機",
+            "text": "龍灌注機用來製作一些物品像是$(bold)龍首$() 和 $(bold)龍息$()$(br2)在 5 格半徑內要有 4 個終界水晶。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["O   O","     ","  D  ","     ","O   O"],
+                    ["O   O","     ","  0  ","     ","O   O"]
+                    
+                ],
+                "mapping": {
+                    "O": "minecraft:obsidian",
+                    "0": "#kubejs:dragon_infuser",
+                    "D": "minecraft:dragon_head"
+                }
+            },
+            "enable_visualize": true
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "食物！",
+    "icon": "caveopolis:moss_ball",
+    "category": "patchouli:misc_category",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "caveopolis:moss_ball",
+            "title": "食物！",
+            "text": "你餓了嗎？... 別擔心交給我！$(li)為你介紹：苔癬球 $(br)... 沒錯。$(br2)使用烹飪台你可以製作自己的三明治或燉湯！然後你還可以隨心所欲為它命名。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "culinaryconstruct:culinary_station"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

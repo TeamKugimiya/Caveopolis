@@ -1,0 +1,25 @@
+{
+    "name": "石頭",
+    "icon": "minecraft:stone",
+    "category": "patchouli:wg_category",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:stone",
+            "text": "$(bold)生成高度： $(li)Y: 90 -> 109"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:stone"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

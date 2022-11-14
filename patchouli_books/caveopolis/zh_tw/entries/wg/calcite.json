@@ -1,0 +1,25 @@
+{
+    "name": "方解石",
+    "icon": "minecraft:calcite",
+    "category": "patchouli:wg_category",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:calcite",
+            "text": "$(bold)生成高度： $(li) Y: 110 -> 114"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:calcite"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

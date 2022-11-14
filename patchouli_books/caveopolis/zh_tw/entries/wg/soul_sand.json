@@ -1,0 +1,25 @@
+{
+    "name": "靈魂砂",
+    "icon": "minecraft:soul_sand",
+    "category": "patchouli:wg_category",
+    "sortnum": 23,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:soul_sand",
+            "text": "$(bold)生成高度： $(li)Y: -35 -> -31"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:soul_sand"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

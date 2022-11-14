@@ -1,0 +1,34 @@
+{
+    "name": "靈魂熔爐",
+    "icon": "kubejs:db_soul_forge",
+    "category": "patchouli:cm_category",
+    "sortnum": 9,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_soul_forge",
+            "title": "靈魂熔爐",
+            "text": "靈魂熔爐用於將物品注入靈魂"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["W W"," F ","W W"],
+                    ["SGS","GBG","SGS"],
+                    ["SSS","S0S","SSS"]
+                    
+                ],
+                "mapping": {
+                    "F": "#kubejs:soul_forge",
+                    "W": "minecraft:wither_skeleton_skull",
+                    "S": "minecraft:soul_soil",
+                    "B": "minecraft:soul_fire",
+                    "G": "thermal:obsidian_glass",
+                    "0": "minecraft:soul_soil"
+                }
+            },
+            "enable_visualize": true
+        }
+    ]
+}

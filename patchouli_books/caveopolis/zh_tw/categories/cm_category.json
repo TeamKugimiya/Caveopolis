@@ -1,0 +1,6 @@
+{
+    "name": "自訂機器",
+    "description": "關於自訂機器的介紹以及它們所需的多方塊結構。有些機器可以用不同的方塊或物品升級，在 JEI 搜尋介面輸入 #custom 來查看可用的升級。",
+    "icon": "kubejs:db_advanced_barrel",
+    "sortnum": 2
+}

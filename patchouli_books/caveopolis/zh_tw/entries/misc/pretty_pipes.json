@@ -1,0 +1,26 @@
+{
+    "name": "漂亮管道",
+    "icon": "prettypipes:pipe",
+    "category": "patchouli:misc_category",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "prettypipes:pipe",
+            "title": "漂亮管道",
+            "text": "漂亮管道必須有 2 格的距離才能提取物品，即使安裝了提取升級，只有 1 格管道的話是無法運作的！"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "prettypipes:pipe"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

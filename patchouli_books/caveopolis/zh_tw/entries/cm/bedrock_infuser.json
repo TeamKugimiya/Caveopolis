@@ -1,0 +1,29 @@
+{
+    "name": "基岩灌注機",
+    "icon": "kubejs:db_bedrock_infuser",
+    "category": "patchouli:cm_category",
+    "sortnum": 10,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_bedrock_infuser",
+            "title": "基岩灌注機",
+            "text": "基岩灌注機用來製作基岩碎片。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"],
+                    ["B"]
+                    
+                ],
+                "mapping": {
+                    "B": "minecraft:bedrock",
+                    "0": "kubejs:db_bedrock_infuser"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

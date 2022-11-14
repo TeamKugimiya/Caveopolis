@@ -1,0 +1,25 @@
+{
+    "name": "瀝青紅沙",
+    "icon": "thermal:oil_red_sand",
+    "category": "patchouli:wg_category",
+    "sortnum": 16,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "thermal:oil_red_sand",
+            "text": "$(bold)生成高度： $(li)Y: 15 -> 19"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "thermal:oil_red_sand"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

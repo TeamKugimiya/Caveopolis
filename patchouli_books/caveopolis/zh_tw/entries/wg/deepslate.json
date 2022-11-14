@@ -1,0 +1,25 @@
+{
+    "name": "深板岩",
+    "icon": "minecraft:deepslate",
+    "category": "patchouli:wg_category",
+    "sortnum": 25,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:deepslate",
+            "text": "$(bold)生成高度： $(li)Y: -60 -> -41"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:deepslate"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

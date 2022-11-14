@@ -1,0 +1,25 @@
+{
+    "name": "安山岩",
+    "icon": "minecraft:andesite",
+    "category": "patchouli:wg_category",
+    "sortnum": 9,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:andesite",
+            "text": "$(bold)生成高度： $(li)Y: 65 -> 69"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:andesite"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

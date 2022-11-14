@@ -1,0 +1,26 @@
+{
+    "name": "水發電機",
+    "icon": "kubejs:db_water_generator",
+    "category": "patchouli:cm_category",
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_water_generator",
+            "title": "水發電機",
+            "text": "水發電機將水轉換成電。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "kubejs:db_water_generator"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

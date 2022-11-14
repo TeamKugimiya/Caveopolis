@@ -1,0 +1,26 @@
+{
+    "name": "水",
+    "icon": "minecraft:water_bucket",
+    "category": "patchouli:wg_category",
+    "sortnum": 12,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "Water",
+            "item": "minecraft:water_bucket",
+            "text": "$(bold)生成高度： $(li)Y: 35 -> 54"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:water"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

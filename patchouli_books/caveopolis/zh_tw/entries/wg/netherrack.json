@@ -1,0 +1,25 @@
+{
+    "name": "地獄石",
+    "icon": "minecraft:netherrack",
+    "category": "patchouli:wg_category",
+    "sortnum": 21,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:netherrack",
+            "text": "$(bold)生成高度： $(li)Y: -25 -> -21"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:netherrack"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

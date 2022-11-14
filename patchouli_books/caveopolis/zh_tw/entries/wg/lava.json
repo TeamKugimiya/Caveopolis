@@ -1,0 +1,26 @@
+{
+    "name": "岩漿",
+    "icon": "minecraft:lava_bucket",
+    "category": "patchouli:wg_category",
+    "sortnum": 20,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "title": "lava",
+            "item": "minecraft:lava_bucket",
+            "text": "$(bold)生成高度： $(li)Y: -20 -> -1"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:lava"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "碎片合成器",
+    "icon": "kubejs:db_fragment_combiner",
+    "category": "patchouli:cm_category",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_fragment_combiner",
+            "title": "碎片合成器",
+            "text": "碎片合成器用來將碎片和成為更有用的物品。$(br)可用不同的方塊來升級，從最差到最好的為青銅方塊，康銅方塊，機器框架和獄髓方塊。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "kubejs:db_fragment_combiner"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "基礎木桶",
+    "icon": "kubejs:db_basic_barrel",
+    "category": "patchouli:cm_category",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_basic_barrel",
+            "title": "基礎木桶",
+            "text": "基礎木桶用樹苗和樹葉製作水。拿著木桶對它右鍵可將水取出。$(br)可放入至多 3 個流體漏斗來升級。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "kubejs:db_basic_barrel"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

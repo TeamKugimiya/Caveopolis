@@ -1,0 +1,25 @@
+{
+    "name": "靈魂土",
+    "icon": "minecraft:soul_soil",
+    "category": "patchouli:wg_category",
+    "sortnum": 24,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:soul_soil",
+            "text": "$(bold)生成高度： $(li)Y: -40 -> -36"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:soul_soil"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

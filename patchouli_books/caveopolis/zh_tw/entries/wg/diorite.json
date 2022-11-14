@@ -1,0 +1,25 @@
+{
+    "name": "閃長岩",
+    "icon": "minecraft:diorite",
+    "category": "patchouli:wg_category",
+    "sortnum": 7,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:diorite",
+            "text": "$(bold)生成高度： $(li)Y: 75 -> 79"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:diorite"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

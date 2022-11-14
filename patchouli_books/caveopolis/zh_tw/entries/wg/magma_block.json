@@ -1,0 +1,25 @@
+{
+    "name": "岩漿塊",
+    "icon": "minecraft:magma_block",
+    "category": "patchouli:wg_category",
+    "sortnum": 19,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:magma_block",
+            "text": "$(bold)生成高度： $(li)Y: 0 -> 4"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:magma_block"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

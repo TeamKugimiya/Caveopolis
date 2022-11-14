@@ -1,0 +1,25 @@
+{
+    "name": "苔蘚石",
+    "icon": "caveopolis:mossy_stone",
+    "category": "patchouli:wg_category",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "caveopolis:mossy_stone",
+            "text": "$(bold)生成高度： $(li)Y: 80 -> 84"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "caveopolis:mossy_stone"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

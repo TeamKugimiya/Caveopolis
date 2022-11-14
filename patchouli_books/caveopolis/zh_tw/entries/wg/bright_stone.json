@@ -1,0 +1,25 @@
+{
+    "name": "發光石",
+    "icon": "caveopolis:bright_stone",
+    "category": "patchouli:wg_category",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "caveopolis:bright_stone",
+            "text": "$(bold)生成高度： $(li) Y: 85 -> 89"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "caveopolis:bright_stone"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "有機物生產器",
+    "icon": "kubejs:db_organic_producer",
+    "category": "patchouli:cm_category",
+    "sortnum": 7,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "kubejs:db_organic_producer",
+            "title": "有機物生產器",
+            "text": "有機物生產器用來製作農作物、樹苗和種子。"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "kubejs:db_organic_producer"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}

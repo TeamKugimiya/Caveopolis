@@ -1,0 +1,25 @@
+{
+    "name": "沙",
+    "icon": "minecraft:sand",
+    "category": "patchouli:wg_category",
+    "sortnum": 13,
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:sand",
+            "text": "$(bold)生成高度： $(li)Y: 30 -> 34"
+        },
+        {
+            "type": "patchouli:multiblock",
+            "multiblock": {
+                "pattern": [
+                    ["0"]
+                ],
+                "mapping": {
+                    "0": "minecraft:sand"
+                }
+            },
+            "enable_visualize": false
+        }
+    ]
+}
