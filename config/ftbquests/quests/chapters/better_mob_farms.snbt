@@ -1,0 +1,122 @@
+{
+	id: "5689E152150615EE"
+	group: "7C35440C13613243"
+	order_index: 0
+	filename: "better_mob_farms"
+	title: "更好的怪物農場"
+	icon: "hostilenetworks:deep_learner"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 1.0d
+			y: 0.5d
+			description: ["這可以儲存至多4個資料摸型。資料模型必須放在這個設備中，才會計算怪物擊殺！"]
+			dependencies: ["4C83EC0C3EC4F48F"]
+			id: "721D63ED57A6320D"
+			tasks: [{
+				id: "2C2242C94E26E8A9"
+				type: "item"
+				item: "hostilenetworks:deep_learner"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			description: ["手持對敵對怪物右鍵製作該怪物的資料模型。必須擊殺至少6次該種怪物，才能用在戰鬥模擬室中。必須放在深度學習機中才會計算擊殺數！"]
+			dependencies: ["721D63ED57A6320D"]
+			id: "4627DE7D1D4D73C1"
+			tasks: [{
+				id: "204DD912899F5BA3"
+				type: "item"
+				item: "hostilenetworks:blank_data_model"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			description: ["在這台機器中，放入基礎等級的資料模型和預測矩陣並供電，開始製作特定的預測產物"]
+			dependencies: ["5EAA84B647AF01B6"]
+			id: "2A5B2081CDFB3641"
+			tasks: [{
+				id: "6CEA3998614C162C"
+				type: "item"
+				item: "hostilenetworks:sim_chamber"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.5d
+			dependencies: [
+				"4627DE7D1D4D73C1"
+				"1895E3EC57787B9C"
+			]
+			id: "5EAA84B647AF01B6"
+			tasks: [{
+				id: "4F08F8CD821D5948"
+				type: "item"
+				item: "hostilenetworks:empty_prediction"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			description: ["大部分的基礎怪物可以模擬後製作成這個"]
+			dependencies: ["2A5B2081CDFB3641"]
+			id: "7A932A9D04944B52"
+			tasks: [{
+				id: "324FD94582656417"
+				type: "item"
+				item: "hostilenetworks:overworld_prediction"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.5d
+			description: ["大部分的地獄怪物可以模擬後製作成這個，也可以用合成的"]
+			dependencies: ["7A932A9D04944B52"]
+			id: "371277E660FDD250"
+			tasks: [{
+				id: "1D878FB48F873661"
+				type: "item"
+				item: "hostilenetworks:nether_prediction"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			description: ["大部分的終界怪物可以模擬後製作成這個，也可以用合成的"]
+			dependencies: ["371277E660FDD250"]
+			id: "3D1B359E21DB70CC"
+			tasks: [{
+				id: "37ED3A8CC29E2EEF"
+				type: "item"
+				item: "hostilenetworks:end_prediction"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			description: ["讓你從特定怪物的預測產物製作他的戰利品，需要大量的電"]
+			dependencies: ["3D1B359E21DB70CC"]
+			id: "64E699F0BAA79CB1"
+			tasks: [{
+				id: "38943440EADF8A66"
+				type: "item"
+				item: "hostilenetworks:loot_fabricator"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.5d
+			description: ["可以用發光石碎片和紫色染料合成，也可以在靈魂熔爐中放入發光石碎片製成"]
+			dependencies: ["49F941EA4E3BED07"]
+			id: "1895E3EC57787B9C"
+			tasks: [{
+				id: "0D710CCB1AE21D77"
+				type: "item"
+				item: "minecraft:amethyst_shard"
+			}]
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	id: "0C801F2B42157FBF"
+	group: "2F71F900738EFA83"
+	order_index: 1
+	filename: "below_the_waters"
+	title: "海平面下"
+	icon: "thermal:oil_red_sand"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -3.5d
+			description: ["在沙和水之下是砂岩"]
+			dependencies: ["0A96420F3E7EF9B8"]
+			id: "454D8AC884D5967A"
+			tasks: [{
+				id: "6EB424687CE76BC7"
+				type: "item"
+				item: "minecraft:sandstone"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			description: ["是沙但卻是紅色的？"]
+			dependencies: ["454D8AC884D5967A"]
+			id: "297875FF1A0A31AA"
+			tasks: [{
+				id: "7B15AE8FEC95DBE0"
+				type: "item"
+				item: "minecraft:red_sand"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			description: ["砂岩但卻是紅色的？"]
+			dependencies: ["5F9E98E6F47745D8"]
+			id: "4E4B58CABE31954B"
+			tasks: [{
+				id: "32CB544EBEE61950"
+				type: "item"
+				item: "minecraft:red_sandstone"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -0.5d
+			description: ["內含油"]
+			dependencies: ["297875FF1A0A31AA"]
+			id: "5F9E98E6F47745D8"
+			tasks: [{
+				id: "4A781A49DF108A41"
+				type: "item"
+				item: "thermal:oil_red_sand"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["在侵蝕器中放入瀝青沙製作而成"]
+			dependencies: ["5F9E98E6F47745D8"]
+			id: "37699815B10CB9C6"
+			tasks: [{
+				id: "09FC05536375C6D3"
+				type: "item"
+				item: "thermal:bitumen"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			description: ["放在礦物提取器的升級欄位中，製作更多材料"]
+			dependencies: [
+				"37699815B10CB9C6"
+				"2ED57D368FC5025B"
+			]
+			id: "56E7C3B3ABE96E4C"
+			tasks: [{
+				id: "2C41A1BCC054D5ED"
+				type: "item"
+				item: "caveopolis:ore_extractor_upgrade_tier_1"
+			}]
+		}
+	]
+}

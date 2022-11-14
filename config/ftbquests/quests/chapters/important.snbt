@@ -1,0 +1,160 @@
+{
+	id: "0B68BE373180415D"
+	group: "2EA299BA4737866D"
+	order_index: 0
+	filename: "important"
+	title: "重要訊息"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["任務線分為多個層級"]
+			dependencies: ["3235AF9664887416"]
+			id: "37662021D11762D4"
+			tasks: [{
+				id: "2812A654534CCAA1"
+				type: "checkmark"
+				title: "層級"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			shape: "gear"
+			description: ["解鎖第 1 層任務線"]
+			dependencies: ["0EF876CD3A03F7C5"]
+			id: "1A2A0D6F454E8512"
+			tasks: [{
+				id: "0B8186AD1F984C67"
+				type: "checkmark"
+				title: "第 1 層"
+			}]
+			rewards: [
+				{
+					id: "4AE0EF5CF6515EFC"
+					type: "command"
+					auto: "invisible"
+					command: "/tag @p add level_1_blocks"
+					player_command: false
+				}
+				{
+					id: "2935C96473724F94"
+					type: "command"
+					auto: "enabled"
+					command: "/say @p can now break stone!"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -5.5d
+			description: ["感謝下載並歡迎來到 caveopolis 繁體中文任務翻譯 by 旺財"]
+			id: "6F4B14A1DDCF4EF4"
+			tasks: [{
+				id: "734B0A9CE4EB7907"
+				type: "checkmark"
+				title: "歡迎來到 Caveopolis"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["在每個層級中，都會有一個外觀是齒輪的任務。完成這個任務讓你能繼續向前推進。"]
+			dependencies: ["37662021D11762D4"]
+			id: "0EF876CD3A03F7C5"
+			tasks: [{
+				id: "77423D95CC69BF11"
+				type: "checkmark"
+				title: "齒輪外觀的任務"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			description: ["本模組包使用天空方塊生成器創建世界。 右鍵使用此物品會創造並選擇你的起始基地"]
+			dependencies: ["6F4B14A1DDCF4EF4"]
+			id: "3235AF9664887416"
+			tasks: [{
+				id: "49B81B79859E3659"
+				type: "checkmark"
+				title: "天空方塊生成器"
+			}]
+			rewards: [{
+				id: "69806493A1403EDB"
+				type: "item"
+				item: "caveopolis:menu"
+			}]
+		}
+		{
+			title: "世界觀"
+			x: 2.0d
+			y: -3.5d
+			description: ["世界觀的章節會告訴你關於方塊生成的資訊"]
+			dependencies: ["3235AF9664887416"]
+			id: "3D91D5801ED33DB8"
+			tasks: [{
+				id: "4E11220A674AC2FF"
+				type: "checkmark"
+				title: "Information"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			description: ["時間控制器用於傳送到先前已儲存的不同的位置"]
+			dependencies: ["3235AF9664887416"]
+			id: "2645C1314F8933CB"
+			tasks: [{
+				id: "227145FCF54D9550"
+				type: "checkmark"
+				title: "時間控制器"
+			}]
+			rewards: [{
+				id: "3FD73DBE30E4FFAE"
+				type: "item"
+				item: "tempad:tempad"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			description: ["指南書提供了大量關於本模組包特定的改動"]
+			dependencies: ["3235AF9664887416"]
+			id: "0953108DCE2DD99E"
+			tasks: [{
+				id: "09F4931A0F77C83F"
+				type: "checkmark"
+				title: "指南書"
+			}]
+			rewards: [{
+				id: "701FDA8397B1BE2B"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "patchouli:caveopolis"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			description: [
+				"加入DC群獲得更多的幫助，提示以及更多："
+				"https://discord.gg/UpJknJ8"
+			]
+			dependencies: ["3235AF9664887416"]
+			id: "60EED7A8EE6A87D3"
+			tasks: [{
+				id: "0574960BFC1E7438"
+				type: "checkmark"
+				title: "Discord"
+			}]
+		}
+	]
+}

@@ -1,0 +1,274 @@
+{
+	id: "756D54B09DE7A649"
+	group: "2F71F900738EFA83"
+	order_index: 4
+	filename: "first_power"
+	title: "初見電力"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "caveopolis:water_generator"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:water_generator"
+				}
+			}
+			x: -1.0d
+			y: -1.0d
+			description: ["將水轉換成電。也可以將礦物成型水轉換成電"]
+			dependencies: [
+				"42B08B0F9AD6371C"
+				"1B6EF8A5A065F8B4"
+			]
+			id: "717EA9EC3EB74DFC"
+			tasks: [
+				{
+					id: "53F0B9F897099BAA"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:water_generator"
+						}
+					}
+				}
+				{
+					id: "2F277E07EDFCC726"
+					type: "advancement"
+					advancement: "caveopolis:machines/water_generator"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			description: ["將金屬錠轉換成板和齒輪"]
+			dependencies: [
+				"1B6EF8A5A065F8B4"
+				"628BE4B5224E249E"
+			]
+			id: "03908A0AD809A824"
+			tasks: [{
+				id: "201CE0C1631EA5D4"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			description: ["小型的攜帶式儲電裝置"]
+			dependencies: ["147575FBE1C01354"]
+			id: "43949C1086FE6EC6"
+			tasks: [{
+				id: "45AFEF4BBCA2B2C8"
+				type: "item"
+				item: {
+					id: "thermal:flux_capacitor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			description: ["空的紅石通量單元"]
+			dependencies: ["43949C1086FE6EC6"]
+			id: "1B6EF8A5A065F8B4"
+			tasks: [{
+				id: "7205963E82AB9E03"
+				type: "item"
+				item: "thermal:energy_cell_frame"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			description: ["移動流體"]
+			dependencies: ["543722ED42ED477D"]
+			id: "383A9A1841FC4F90"
+			tasks: [{
+				id: "7EBE38883F86B48F"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			description: ["空的流體單元"]
+			dependencies: ["383A9A1841FC4F90"]
+			id: "42B08B0F9AD6371C"
+			tasks: [{
+				id: "33533DACC968A262"
+				type: "item"
+				item: "thermal:fluid_cell_frame"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			dependencies: ["2D405C235A672B81"]
+			id: "40459476E0523498"
+			tasks: [{
+				id: "671226B36C90F513"
+				type: "item"
+				item: "thermal:invar_dust"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["40459476E0523498"]
+			id: "628BE4B5224E249E"
+			tasks: [{
+				id: "5835A230A9D000FC"
+				type: "item"
+				item: "thermal:invar_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			description: ["放入多驅衝壓機中使機器製作齒輪"]
+			dependencies: ["28D2BDA6FE5A996F"]
+			id: "2EB74122DAE852AA"
+			tasks: [{
+				id: "204F147628BB7312"
+				type: "item"
+				item: "thermal:press_gear_die"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			shape: "gear"
+			description: ["眾多齒輪中的第一個"]
+			dependencies: ["2EB74122DAE852AA"]
+			id: "413D35E3F7208C25"
+			tasks: [{
+				id: "2E9E48E5BB8E844D"
+				type: "item"
+				item: "thermal:iron_gear"
+			}]
+			rewards: [
+				{
+					id: "779D32BC682A6A7E"
+					type: "command"
+					auto: "invisible"
+					command: "/tag @p add level_4_blocks"
+					player_command: false
+				}
+				{
+					id: "1876999384DA4523"
+					type: "command"
+					auto: "enabled"
+					command: "/say @p can now break basalt!"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			description: ["用多驅衝壓機製作"]
+			dependencies: [
+				"03908A0AD809A824"
+				"717EA9EC3EB74DFC"
+			]
+			id: "28D2BDA6FE5A996F"
+			tasks: [{
+				id: "3EAAA8D082D190D3"
+				type: "item"
+				item: "thermal:invar_plate"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: [
+				"03908A0AD809A824"
+				"717EA9EC3EB74DFC"
+			]
+			id: "7EFDA9600980AB10"
+			tasks: [{
+				id: "68C00FCD416DC753"
+				type: "item"
+				item: "thermal:constantan_plate"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			description: ["基礎的能量傳輸管道"]
+			dependencies: ["7EFDA9600980AB10"]
+			id: "72D7D98B74C2B8C8"
+			tasks: [{
+				id: "044211FB25398529"
+				type: "item"
+				item: "mekanism:basic_universal_cable"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			description: ["Pretty pipes模組的替代品"]
+			dependencies: ["7EFDA9600980AB10"]
+			id: "083ACEE8173DF39D"
+			tasks: [{
+				id: "6D30B42813CF8289"
+				type: "item"
+				item: "mekanism:basic_logistical_transporter"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			description: ["Pretty pipes模組的替代品"]
+			dependencies: ["7EFDA9600980AB10"]
+			id: "3AF890BE3291D898"
+			tasks: [{
+				id: "251E35C63334BAA7"
+				type: "item"
+				item: "mekanism:basic_mechanical_pipe"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			description: ["讓你調整Mekanism模組的管道"]
+			dependencies: ["43949C1086FE6EC6"]
+			id: "2F914F347BD88CFF"
+			tasks: [{
+				id: "09D2890DA5FB5636"
+				type: "item"
+				item: "mekanism:configurator"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			description: ["當連上Pretty pipes模組的管道網路時，   這個方塊會加速管道內物品的傳輸速度"]
+			dependencies: ["7EFDA9600980AB10"]
+			id: "465991F6C7B5ABD4"
+			tasks: [{
+				id: "2E8B0AA2C0E6C254"
+				type: "item"
+				item: "prettypipes:pressurizer"
+			}]
+		}
+	]
+}

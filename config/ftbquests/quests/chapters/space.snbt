@@ -1,0 +1,136 @@
+{
+	id: "693DFDFFB2C0C489"
+	group: "48DA25AB0FED8FD6"
+	order_index: 1
+	filename: "space"
+	title: "外太空?"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -3.0d
+			description: ["用來製作太空套裝"]
+			dependencies: [
+				"625C7BE3382E290D"
+				"354C727F46F1FBF3"
+				"46F474C77AAE1124"
+				"59AAA30C2D0F4BD4"
+			]
+			id: "796CFBFAC6757153"
+			tasks: [{
+				id: "11C5E2C722FA5BF2"
+				type: "item"
+				item: "cosmopolis:space_suit_upgrade"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["太空套裝的一部份"]
+			dependencies: ["796CFBFAC6757153"]
+			id: "2EEB73A78F3DAFEA"
+			tasks: [{
+				id: "0AB3217E8A0582E4"
+				type: "item"
+				item: {
+					id: "cosmopolis:space_suit_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			description: ["太空套裝的一部份"]
+			dependencies: ["796CFBFAC6757153"]
+			id: "09BBF36C94473B1A"
+			tasks: [{
+				id: "6DC3C9D34C420072"
+				type: "item"
+				item: {
+					id: "cosmopolis:space_suit_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["太空套裝的一部份"]
+			dependencies: ["796CFBFAC6757153"]
+			id: "2B26101BFF4A2FA4"
+			tasks: [{
+				id: "34C8EC495099474A"
+				type: "item"
+				item: {
+					id: "cosmopolis:space_suit_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.5d
+			description: ["太空套裝的一部份"]
+			dependencies: ["796CFBFAC6757153"]
+			id: "131282C4035A9FCA"
+			tasks: [{
+				id: "355BF84FF4D942EC"
+				type: "item"
+				item: {
+					id: "cosmopolis:space_suit_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["10 個框架可以製作成傳送門"]
+			dependencies: ["796CFBFAC6757153"]
+			id: "76B893D4378AEC8E"
+			tasks: [{
+				id: "0278517D4AD54DE1"
+				type: "item"
+				item: "cosmopolis:space_portal_frame"
+			}]
+		}
+		{
+			x: -4.5d
+			y: -3.0d
+			description: ["用來打開通往太空的傳送門"]
+			dependencies: ["76B893D4378AEC8E"]
+			id: "18A3C9E5D999453E"
+			tasks: [{
+				id: "5F855FEC2C8ADF52"
+				type: "item"
+				item: "cosmopolis:space_core"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			description: ["感謝遊玩！繁體中文任務翻譯 by 旺財"]
+			dependencies: ["18A3C9E5D999453E"]
+			id: "7C72C9B566503B49"
+			tasks: [{
+				id: "609E769F211DC0AC"
+				type: "checkmark"
+				title: "GG"
+			}]
+		}
+	]
+}

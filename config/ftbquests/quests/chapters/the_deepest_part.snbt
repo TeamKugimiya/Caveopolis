@@ -1,0 +1,196 @@
+{
+	id: "194E7BAD974D7798"
+	group: "7C35440C13613243"
+	order_index: 1
+	filename: "the_deepest_part"
+	title: "世界最深處"
+	icon: "caveopolis:bedrock_fragment"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: 0.0d
+			description: ["穿過深板岩的底部你會發現基岩"]
+			dependencies: ["4C83EC0C3EC4F48F"]
+			id: "5D9CEB7551C68AA1"
+			tasks: [{
+				id: "0BDD0E16A9489041"
+				type: "item"
+				item: "minecraft:deepslate"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			description: ["基岩碎片和紅石粉的混合物"]
+			dependencies: ["47B5DFB744AACA7B"]
+			id: "1CA7DA35061EA04C"
+			tasks: [{
+				id: "7A388482A1D9AB34"
+				type: "item"
+				item: "fluxnetworks:flux_dust"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:bedrock_infuser"
+				}
+			}
+			x: 1.0d
+			y: 0.0d
+			description: ["必須放在基岩上"]
+			dependencies: ["5D9CEB7551C68AA1"]
+			id: "4988F7B6F49325A6"
+			tasks: [
+				{
+					id: "0BCBAAD10E5BB3D7"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:bedrock_infuser"
+						}
+					}
+				}
+				{
+					id: "3BF9A616E51D54F1"
+					type: "advancement"
+					advancement: "caveopolis:machines/bedrock_infuser"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			description: ["在基岩灌注機中製作而成"]
+			dependencies: ["4988F7B6F49325A6"]
+			id: "47B5DFB744AACA7B"
+			tasks: [{
+				id: "087E0D782D767852"
+				type: "item"
+				item: "caveopolis:bedrock_fragment"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			description: ["在感應爐中製作而成"]
+			dependencies: ["4C83EC0C3EC4F48F"]
+			id: "4BBFDB72AE6110C6"
+			tasks: [{
+				id: "4FEC2EE3D042408F"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			description: ["通量核心"]
+			dependencies: [
+				"1CA7DA35061EA04C"
+				"4BBFDB72AE6110C6"
+			]
+			id: "1161E8A0FE97C225"
+			tasks: [{
+				id: "4F4DC106C299B2F6"
+				type: "item"
+				item: "fluxnetworks:flux_core"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			description: ["通量方塊"]
+			dependencies: ["1161E8A0FE97C225"]
+			id: "36B3A61398CD9F48"
+			tasks: [{
+				id: "42CCDAF814378A03"
+				type: "item"
+				item: "fluxnetworks:flux_block"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.5d
+			description: ["把電移出你的網路"]
+			dependencies: ["26A53648005C2C3A"]
+			id: "3F6A2A38D1F040CE"
+			tasks: [{
+				id: "5B42012E657D4C99"
+				type: "item"
+				item: "fluxnetworks:flux_point"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.5d
+			description: ["把電加入你的網路"]
+			dependencies: ["26A53648005C2C3A"]
+			id: "2BB3029A8A39F8D7"
+			tasks: [{
+				id: "64B9219E5AE680F4"
+				type: "item"
+				item: "fluxnetworks:flux_plug"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			description: ["通量網路的心臟。能無線傳電，讚啦！"]
+			dependencies: ["36B3A61398CD9F48"]
+			id: "26A53648005C2C3A"
+			tasks: [{
+				id: "7188202470E58B19"
+				type: "item"
+				item: "fluxnetworks:flux_controller"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 6.0d
+			description: ["通量網路的儲電器"]
+			dependencies: ["26A53648005C2C3A"]
+			id: "66BD6F5CE82D04E8"
+			tasks: [{
+				id: "0271BCC451B9BD49"
+				type: "item"
+				item: "fluxnetworks:basic_flux_storage"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			description: ["用來設定你的通量網路"]
+			dependencies: [
+				"4BBFDB72AE6110C6"
+				"1CA7DA35061EA04C"
+			]
+			id: "766F2DA4A1B0734C"
+			tasks: [{
+				id: "4B68FBC1B6584043"
+				type: "item"
+				item: "fluxnetworks:flux_configurator"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			description: ["放在礦物提取器的升級欄位中，製作更多材料"]
+			dependencies: ["36B3A61398CD9F48"]
+			id: "550E76D5CC30871E"
+			tasks: [{
+				id: "3B0F646A2B59751D"
+				type: "item"
+				item: "caveopolis:ore_extractor_upgrade_tier_3"
+			}]
+		}
+	]
+}

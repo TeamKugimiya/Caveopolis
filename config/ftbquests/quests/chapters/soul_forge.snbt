@@ -1,0 +1,222 @@
+{
+	id: "0DB96E51308588E1"
+	group: "42F827634C5AF128"
+	order_index: 4
+	filename: "soul_forge"
+	title: "靈魂熔爐"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "caveopolis:soul_forge"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["沉下去"]
+			dependencies: ["0835F15917A8BC36"]
+			id: "11239846BA51CAB8"
+			tasks: [{
+				id: "53E6E07CFB64CC32"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			description: ["不會沉下去"]
+			dependencies: ["11239846BA51CAB8"]
+			id: "2E6EBC66CC7CFC5A"
+			tasks: [{
+				id: "7B50908CDC82E6A9"
+				type: "item"
+				item: "minecraft:soul_soil"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: [
+				"06FC99274642FE15"
+				"076210D3407B05D0"
+			]
+			id: "3F6768345A434435"
+			tasks: [{
+				id: "77042F52C1F03901"
+				type: "item"
+				item: "thermal:obsidian_glass"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:soul_forge"
+				}
+			}
+			x: -3.0d
+			y: 3.0d
+			description: ["靈魂熔爐用於將物品注入靈魂"]
+			dependencies: ["2E6EBC66CC7CFC5A"]
+			id: "7176DA4B1CFCAE96"
+			tasks: [
+				{
+					id: "43611EBCB3DA75EE"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:soul_forge"
+						}
+					}
+				}
+				{
+					id: "2FE614FDF92E9ACE"
+					type: "advancement"
+					advancement: "caveopolis:machines/soul_forge"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Creating The Forge"
+			x: -3.0d
+			y: 4.5d
+			description: ["需要多方塊結構才能運作"]
+			dependencies: [
+				"7176DA4B1CFCAE96"
+				"3F6768345A434435"
+				"3B37142EDB299273"
+			]
+			id: "7C196414941C09CC"
+			tasks: [
+				{
+					id: "2FC018DFF2F4F78B"
+					type: "item"
+					item: "minecraft:soul_soil"
+					count: 13L
+				}
+				{
+					id: "3180FCAFB7B956B2"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 4L
+				}
+				{
+					id: "38A9F28A0600B05A"
+					type: "item"
+					item: "thermal:obsidian_glass"
+					count: 4L
+				}
+				{
+					id: "775C4E096F4D1169"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 4.5d
+			description: ["由凋零粉塵和骷髏頭顱製作而成"]
+			dependencies: ["548ECFC204057AF2"]
+			id: "3B37142EDB299273"
+			tasks: [{
+				id: "68FACE0539FB3BD9"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			description: ["骨塊和骨頭可製作骷髏頭顱"]
+			dependencies: ["41FF3CD1FFDE9DCB"]
+			id: "548ECFC204057AF2"
+			tasks: [{
+				id: "637FE8C4AD05C618"
+				type: "item"
+				item: "minecraft:skeleton_skull"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			shape: "gear"
+			description: ["在靈魂熔爐中製成"]
+			dependencies: ["7C196414941C09CC"]
+			id: "4C83EC0C3EC4F48F"
+			tasks: [{
+				id: "0178FC9BE523CDC0"
+				type: "item"
+				item: "caveopolis:soulsteel_ingot"
+			}]
+			rewards: [
+				{
+					id: "3D1F4797AD5C96B1"
+					type: "command"
+					auto: "invisible"
+					command: "/tag @p add level_5_blocks"
+					player_command: false
+				}
+				{
+					id: "551731939BD3A10D"
+					type: "command"
+					auto: "enabled"
+					command: "/say @p can now break deepslate!"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			description: ["由骨粉製成"]
+			dependencies: ["455222C94DB8F95E"]
+			id: "4E3ED3BE4CFBD70A"
+			tasks: [{
+				id: "22EFD6FEF551D8CF"
+				type: "item"
+				item: "minecraft:bone_block"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.5d
+			description: ["骷髏的掉落物，骨塊也可以放入侵蝕器中製作骨頭"]
+			dependencies: ["4E3ED3BE4CFBD70A"]
+			id: "41FF3CD1FFDE9DCB"
+			tasks: [{
+				id: "66A28D253893F9D5"
+				type: "item"
+				item: "minecraft:bone"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 4.5d
+			description: ["召喚並擊殺凋零會掉落地獄之星"]
+			dependencies: ["3B37142EDB299273"]
+			id: "0BF4B7D2F1D0B9BC"
+			tasks: [{
+				id: "1C32198035569A2A"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+	]
+}

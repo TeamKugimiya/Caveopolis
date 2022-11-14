@@ -1,0 +1,246 @@
+{
+	id: "3689B79B78602AA0"
+	group: "4EB69D90B1D1A989"
+	order_index: 1
+	filename: "moss_block"
+	title: "苔蘚方塊"
+	icon: "minecraft:moss_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Azalea"
+			x: -1.0d
+			y: -1.5d
+			description: ["在苔蘚方塊上撒骨粉生成"]
+			dependencies: ["7A72EF98DC69A1CF"]
+			id: "154E0B8171A0751E"
+			tasks: [{
+				id: "1576BD3D95983881"
+				type: "observation"
+				icon: "minecraft:azalea"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:azalea"
+			}]
+		}
+		{
+			title: "開花的杜鵑叢"
+			x: 2.0d
+			y: -1.5d
+			description: ["在苔蘚方塊上撒骨粉生成"]
+			dependencies: ["7A72EF98DC69A1CF"]
+			id: "378869F13DFEF5AB"
+			tasks: [{
+				id: "59B9C1FF0486A236"
+				type: "observation"
+				icon: "minecraft:flowering_azalea"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:flowering_azalea"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.5d
+			description: ["杜鵑叢樹苗可撒骨粉催生成杜鵑叢樹。 推薦的空間大小為 5x5x7"]
+			dependencies: [
+				"154E0B8171A0751E"
+				"378869F13DFEF5AB"
+			]
+			dependency_requirement: "one_completed"
+			id: "02FD17C4AAE8501D"
+			tasks: [{
+				id: "1AC9979BCB781972"
+				type: "item"
+				item: "quark:azalea_log"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			description: ["當杜鵑叢樹在苔蘚方塊上長大時，正下方的方塊會轉換成扎根土"]
+			dependencies: ["02FD17C4AAE8501D"]
+			id: "1CE877D8884AF1B7"
+			tasks: [{
+				id: "4948AC00707D82D8"
+				type: "item"
+				item: "minecraft:rooted_dirt"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			description: ["對扎根土使用鋤後的副產物"]
+			dependencies: ["3794CB501970561C"]
+			id: "08E94C8B410923A5"
+			tasks: [{
+				id: "6B909CA417B45204"
+				type: "item"
+				item: "minecraft:hanging_roots"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			description: ["用來將扎根土轉換成普通的泥土"]
+			dependencies: ["1CE877D8884AF1B7"]
+			id: "3794CB501970561C"
+			tasks: [{
+				id: "607E7182A628A13B"
+				type: "item"
+				item: {
+					id: "minecraft:wooden_hoe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: ["對扎根土使用鋤轉換成泥土"]
+			dependencies: ["3794CB501970561C"]
+			id: "712CC87419B3858D"
+			tasks: [{
+				id: "0E13241B2B5EE504"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			description: ["用原木製作木材"]
+			dependencies: ["02FD17C4AAE8501D"]
+			id: "02705D1199085BF2"
+			tasks: [{
+				id: "6B5F419CEFDD346A"
+				type: "item"
+				item: "quark:azalea_planks"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["破壞苔蘚方塊上的草掉落"]
+			dependencies: ["02FD17C4AAE8501D"]
+			id: "0D6A39E689E7E4CC"
+			tasks: [{
+				id: "12F5A752A44925AE"
+				type: "item"
+				item: "minecraft:wheat_seeds"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			description: ["柔軟的苔蘚地毯"]
+			dependencies: ["7A72EF98DC69A1CF"]
+			id: "3CDCC57F14FCD6B0"
+			tasks: [{
+				id: "2BD00BDEAFF597CA"
+				type: "item"
+				item: "minecraft:moss_carpet"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			description: ["由覆地苔蘚製作而成"]
+			dependencies: ["3CDCC57F14FCD6B0"]
+			id: "14381CA78BF39D20"
+			tasks: [{
+				id: "43FEC1667DB3E649"
+				type: "item"
+				item: "caveopolis:mossy_string"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			description: ["由苔蘚線製作而成"]
+			dependencies: ["14381CA78BF39D20"]
+			id: "62C1BA358F37D427"
+			tasks: [{
+				id: "33C590960A2F1F70"
+				type: "item"
+				item: "minecraft:green_wool"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			description: ["睡覺時間"]
+			dependencies: ["62C1BA358F37D427"]
+			id: "05C67F44AC6666EC"
+			tasks: [{
+				id: "4316B59C6FA60F70"
+				type: "item"
+				item: "minecraft:green_bed"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -4.5d
+			description: ["可以製作各種不同的錘子來破壞 3x3 的範圍"]
+			dependencies: ["02705D1199085BF2"]
+			id: "47566637525AD611"
+			tasks: [{
+				id: "54E02FC4B691970B"
+				type: "item"
+				item: {
+					id: "vanillahammers:wooden_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			description: ["讓你收集樹葉"]
+			dependencies: ["02705D1199085BF2"]
+			id: "5270D58B46DD8C32"
+			tasks: [{
+				id: "21C3A6010D680190"
+				type: "item"
+				item: {
+					id: "caveopolis:wooden_shears"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.5d
+			description: ["可在烹飪站製作食物"]
+			dependencies: ["02705D1199085BF2"]
+			id: "7556C65BA755614A"
+			tasks: [{
+				id: "7D0C017058A51232"
+				type: "item"
+				item: "minecraft:bowl"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.5d
+			description: ["用來將不同的食物組合成單一個食物"]
+			dependencies: ["7556C65BA755614A"]
+			id: "3A2C22805D440DF1"
+			tasks: [{
+				id: "7744C533EF46D44B"
+				type: "item"
+				item: "culinaryconstruct:culinary_station"
+			}]
+		}
+	]
+}

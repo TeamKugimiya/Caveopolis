@@ -1,0 +1,276 @@
+{
+	id: "1074E8D18AF2D3D1"
+	group: "42F827634C5AF128"
+	order_index: 2
+	filename: "boiler"
+	title: "鋼"
+	icon: "thermal:steel_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["用來製作燃料"]
+			dependencies: ["4DB9CFCA052D0D75"]
+			id: "3029E32BC94F41A1"
+			tasks: [{
+				id: "105A3FD4F6C18C0B"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["用來製作鋼"]
+			dependencies: ["3029E32BC94F41A1"]
+			id: "481FA34B899F759A"
+			tasks: [{
+				id: "057404241FEF695E"
+				type: "item"
+				item: "thermal:coal_coke"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["可用在斯特林能源爐中發電"]
+			dependencies: ["3029E32BC94F41A1"]
+			id: "15F4FE452E107362"
+			tasks: [{
+				id: "5BEBE7D59C895A29"
+				type: "item"
+				item: "thermal:tar"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			description: ["在熱解機中放入原木，製作木炭和雜酚油。油能用在壓縮能源爐中額外發電"]
+			dependencies: ["3029E32BC94F41A1"]
+			id: "19C7C784D3F51BFF"
+			tasks: [{
+				id: "0EDB9B82F7F0D056"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: ["能發更多的電"]
+			dependencies: ["4DB9CFCA052D0D75"]
+			id: "1EA95B93BC59F5CF"
+			tasks: [{
+				id: "62CF02766E031065"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["用來製作機器"]
+			dependencies: ["7EAE1E0442580431"]
+			id: "4DB9CFCA052D0D75"
+			tasks: [{
+				id: "199BD825BF8A58B8"
+				type: "item"
+				item: "thermal:rf_coil"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.5d
+			description: ["將物品融合在一起"]
+			dependencies: ["481FA34B899F759A"]
+			id: "591AB79B437AE716"
+			tasks: [{
+				id: "31635FFE87BEDC47"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["在感應爐中放入焦炭和鐵錠製作成鋼"]
+			dependencies: ["591AB79B437AE716"]
+			id: "2FDA6A2808DEF1A7"
+			tasks: [{
+				id: "4D9D2CF637A6E349"
+				type: "item"
+				item: "thermal:steel_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.5d
+			description: ["冷凝機可用來將岩漿轉換成黑曜石"]
+			dependencies: ["4CD875E6A85B11AA"]
+			id: "06FC99274642FE15"
+			tasks: [{
+				id: "3C70429D88536156"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			description: ["快速冷卻液體"]
+			dependencies: ["4DB9CFCA052D0D75"]
+			id: "4CD875E6A85B11AA"
+			tasks: [{
+				id: "424BE3B9CE5E46B9"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.0d
+			description: ["冷冰冰"]
+			dependencies: ["4CD875E6A85B11AA"]
+			id: "08E2D0C071CCC026"
+			tasks: [{
+				id: "538198165B4749CD"
+				type: "item"
+				item: "minecraft:ice"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			description: ["放在礦物提取器的升級欄位中，製作更多材料"]
+			dependencies: [
+				"2FDA6A2808DEF1A7"
+				"08E2D0C071CCC026"
+			]
+			id: "455222C94DB8F95E"
+			tasks: [{
+				id: "322BE12E1EBA174E"
+				type: "item"
+				item: "caveopolis:ore_extractor_upgrade_tier_2"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -9.0d
+			description: ["黑曜石的碎片"]
+			dependencies: ["06FC99274642FE15"]
+			id: "49AEF80E5A2325EF"
+			tasks: [{
+				id: "6AB0DF98A52AEF6B"
+				type: "item"
+				item: "morevanillalib:obsidian_shard"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["能放在橡木、黑橡木、樺木或杉木樹旁取得樹脂"]
+			dependencies: ["4DB9CFCA052D0D75"]
+			id: "7D08E55D32948232"
+			tasks: [{
+				id: "6D7E25A6F90B197C"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			description: ["能將樹脂轉換成松香和樹油"]
+			dependencies: ["7D08E55D32948232"]
+			id: "1DE402E3347D2776"
+			tasks: [{
+				id: "1E717026C1162107"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			description: ["在斯特林能源爐中燃燒發電"]
+			dependencies: ["1DE402E3347D2776"]
+			id: "55817FCC95E265E7"
+			tasks: [{
+				id: "556472766BD0736C"
+				type: "item"
+				item: "thermal:rosin"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			description: [
+				"原油可在合金混合器中把樹油、水和生物燃料混合製成。"
+				"隨後將石油放入流體精煉機中製作重油和輕油，以及更多的瀝青"
+			]
+			dependencies: ["1DE402E3347D2776"]
+			id: "349701A1A30B03E8"
+			tasks: [{
+				id: "2B8C54E9CD117EB2"
+				type: "item"
+				item: "thermal:crude_oil_bucket"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["在流體精煉機中由輕油製成"]
+			dependencies: ["349701A1A30B03E8"]
+			id: "6157DE78AA8129AE"
+			tasks: [{
+				id: "5E03DF588D46C0B8"
+				type: "item"
+				item: "thermal:sulfur_dust"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: ["在精煉機中將重油或輕油轉換而成"]
+			dependencies: ["349701A1A30B03E8"]
+			id: "6F1F7D1B3FFE0EB7"
+			tasks: [{
+				id: "16D516599D13CE0D"
+				type: "item"
+				item: "thermal:refined_fuel_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -7.5d
+			description: ["相同顏色綁定的蓄水槽能共享儲存空間，用鑽石可以將其設為私人使用"]
+			dependencies: [
+				"7EAE1E0442580431"
+				"06FC99274642FE15"
+			]
+			id: "468258F1D66ED373"
+			tasks: [{
+				id: "4A444443C6E1BFD2"
+				type: "item"
+				item: "enderstorage:ender_tank"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			description: ["相同顏色綁定的箱子能共享儲存空間，用鑽石可以將其設為私人使用"]
+			dependencies: [
+				"7EAE1E0442580431"
+				"06FC99274642FE15"
+			]
+			id: "4E25E57CD7C64225"
+			tasks: [{
+				id: "552B19B7AB80A3C9"
+				type: "item"
+				item: "enderstorage:ender_chest"
+			}]
+		}
+	]
+}

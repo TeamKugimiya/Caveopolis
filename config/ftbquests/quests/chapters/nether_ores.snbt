@@ -1,0 +1,159 @@
+{
+	id: "5BAEE023E77136C0"
+	group: "42F827634C5AF128"
+	order_index: 3
+	filename: "nether_ores"
+	title: "地獄礦物"
+	icon: "minecraft:quartz"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: -0.5d
+			description: ["碎片可製作成石英"]
+			dependencies: ["2EED71CE46D4C5C5"]
+			id: "076210D3407B05D0"
+			tasks: [{
+				id: "5068517C5DF4060C"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			description: ["碎片可做成螢石粉"]
+			dependencies: ["02AA25C588C54666"]
+			id: "6364DA1171119A03"
+			tasks: [{
+				id: "43AE2788717694AA"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.0d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["455222C94DB8F95E"]
+			id: "2A550DEFD760494D"
+			tasks: [{
+				id: "610F911F18C951A3"
+				type: "item"
+				item: "caveopolis:gold_fragment"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			description: ["碎片可做成原礦"]
+			dependencies: ["2A550DEFD760494D"]
+			id: "48DEDEEEB5B744A9"
+			tasks: [{
+				id: "209C88D46062CF4C"
+				type: "item"
+				item: "minecraft:raw_gold"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["燒原礦"]
+			dependencies: ["48DEDEEEB5B744A9"]
+			id: "191826F9642F59D5"
+			tasks: [{
+				id: "480DBD29A7CC46EE"
+				type: "item"
+				item: "minecraft:gold_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["455222C94DB8F95E"]
+			id: "2EED71CE46D4C5C5"
+			tasks: [{
+				id: "6818638188739D24"
+				type: "item"
+				item: "caveopolis:quartz_fragment"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["455222C94DB8F95E"]
+			id: "02AA25C588C54666"
+			tasks: [{
+				id: "203638AD7E2BB644"
+				type: "item"
+				item: "caveopolis:glowstone_fragment"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["455222C94DB8F95E"]
+			id: "7B583F362ACCC39E"
+			tasks: [{
+				id: "7A554FE528D995D8"
+				type: "item"
+				item: "caveopolis:debris_fragment"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			description: ["碎片可做成遠古遺骸"]
+			dependencies: ["7B583F362ACCC39E"]
+			id: "436B258A112C19D4"
+			tasks: [{
+				id: "01EDAD448B3714A9"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			description: ["燒遠古遺骸"]
+			dependencies: ["436B258A112C19D4"]
+			id: "02D7041FA0880972"
+			tasks: [{
+				id: "7251EC62C7734527"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 2.5d
+			description: ["一個由金和獄髓碎片製成的合金"]
+			dependencies: [
+				"02D7041FA0880972"
+				"191826F9642F59D5"
+			]
+			id: "5DD910CF8B691C48"
+			tasks: [{
+				id: "7A4D24C8C177C7BB"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.0d
+			description: ["非常強大的自動化控制器"]
+			dependencies: ["076210D3407B05D0"]
+			id: "26180138F67CE6E6"
+			tasks: [{
+				id: "2BADAD049FDF005D"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+	]
+}

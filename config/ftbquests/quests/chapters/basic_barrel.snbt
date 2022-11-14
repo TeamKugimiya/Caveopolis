@@ -1,0 +1,259 @@
+{
+	id: "3115932836032665"
+	group: "4EB69D90B1D1A989"
+	order_index: 2
+	filename: "basic_barrel"
+	title: "木質科技"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "caveopolis:block_eroder"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:basic_barrel"
+				}
+			}
+			x: 0.0d
+			y: -1.5d
+			description: ["基礎木桶用來將樹苗和樹葉轉換成水。可用木製水桶對它右鍵將水取出"]
+			dependencies: [
+				"2907C6BFAE0ADE75"
+				"2A46523AFE248F29"
+			]
+			id: "2F58DEEBA0A7C1DC"
+			tasks: [
+				{
+					id: "3D0792F3F93B126E"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:basic_barrel"
+						}
+					}
+				}
+				{
+					id: "180A6E36A124B358"
+					type: "advancement"
+					advancement: "caveopolis:machines/basic_barrel"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["用來移動流體"]
+			dependencies: ["02FD17C4AAE8501D"]
+			id: "2907C6BFAE0ADE75"
+			tasks: [{
+				id: "7D8DA72C876412FA"
+				type: "item"
+				item: "woodenbucket:wooden_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["基礎的物品自動化"]
+			dependencies: ["0E99960E65DCA6E9"]
+			id: "2A46523AFE248F29"
+			tasks: [{
+				id: "5FBE68769D79EA56"
+				type: "item"
+				item: "woodenhopper:wooden_hopper"
+			}]
+		}
+		{
+			title: "木製儲物箱"
+			x: 3.0d
+			y: -1.5d
+			description: ["木製儲物箱"]
+			dependencies: ["02705D1199085BF2"]
+			id: "0E99960E65DCA6E9"
+			tasks: [{
+				id: "387825CCB2D4F0EE"
+				type: "item"
+				title: "Any #forge:chests/wooden"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "woodenbucket:wooden_bucket"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "minecraft:water"
+						Amount: 1000
+					}
+				}
+			}
+			x: 0.0d
+			y: -3.0d
+			description: ["用來將流體放在世界上或某些機器中"]
+			dependencies: ["2F58DEEBA0A7C1DC"]
+			id: "2DAF26FD8CCF58A4"
+			tasks: [
+				{
+					id: "5E14CE3DDE7C20FB"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "woodenbucket:wooden_bucket"
+						Count: 1b
+						tag: {
+							Fluid: {
+								FluidName: "minecraft:water"
+								Amount: 1000
+							}
+						}
+					}
+				}
+				{
+					id: "454A610F4484339B"
+					type: "advancement"
+					advancement: "caveopolis:machines/water_bucket"
+					criterion: ""
+				}
+			]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:block_eroder"
+				}
+			}
+			x: 0.0d
+			y: -4.5d
+			description: ["侵蝕器需要放置在 3x3 的水源中間"]
+			dependencies: ["2DAF26FD8CCF58A4"]
+			id: "1DB9BF48105BB29A"
+			tasks: [
+				{
+					id: "57013E234CB03EBA"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:block_eroder"
+						}
+					}
+				}
+				{
+					id: "3C5E9F1692BFC4A7"
+					type: "advancement"
+					advancement: "caveopolis:machines/eroder"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: ["在侵蝕器中放入石頭製作而成"]
+			dependencies: ["1DB9BF48105BB29A"]
+			id: "53CF8D92C491C363"
+			tasks: [{
+				id: "083AD7E2AB932CA0"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -4.5d
+			shape: "gear"
+			description: ["一種石製的鎬子, 解鎖第 2 層任務線"]
+			dependencies: ["53CF8D92C491C363"]
+			id: "0C9706C3BE202931"
+			tasks: [{
+				id: "3CDB293ACD884853"
+				type: "item"
+				item: {
+					id: "vanillahammers:stone_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "460D832716535B1E"
+					type: "command"
+					auto: "invisible"
+					command: "/tag @p add level_2_blocks"
+					player_command: false
+				}
+				{
+					id: "26B0664F2FF2CF92"
+					type: "command"
+					auto: "enabled"
+					command: "/say @p can now break granite, andesite and diorite!"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			description: ["可由蜘蛛掉落物收集或將羊毛放入侵蝕器"]
+			dependencies: ["1DB9BF48105BB29A"]
+			id: "4171FCDD168DFF13"
+			tasks: [{
+				id: "42B8BF4AE4DD8842"
+				type: "item"
+				item: "minecraft:string"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			description: ["橡木材可將杜鵑叢原木放入侵蝕器中製作而成"]
+			dependencies: [
+				"02FD17C4AAE8501D"
+				"1DB9BF48105BB29A"
+			]
+			id: "0ABEB520B8B5F964"
+			tasks: [{
+				id: "62672DE812387DA5"
+				type: "item"
+				item: "minecraft:oak_planks"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.5d
+			description: ["可製作各種不同的抽屜。有些能存1種物品，有些是2種物品，甚至是4種物品"]
+			dependencies: ["0ABEB520B8B5F964"]
+			id: "5644A3FBDF440335"
+			tasks: [{
+				id: "0A38B4DB6562AB75"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_1"
+			}]
+		}
+	]
+}

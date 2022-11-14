@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "2EA299BA4737866D", title: "模組包資訊" }
+		{ id: "4EB69D90B1D1A989", title: "第 1 層" }
+		{ id: "3F596C38DE615D16", title: "第 2 層" }
+		{ id: "2F71F900738EFA83", title: "第 3 層" }
+		{ id: "42F827634C5AF128", title: "第 4 層" }
+		{ id: "7C35440C13613243", title: "第 5 層" }
+		{ id: "64C5B9E37C4A7196", title: "第 6 層" }
+		{ id: "48DA25AB0FED8FD6", title: "脫離洞穴" }
+	]
+}

@@ -1,0 +1,89 @@
+{
+	id: "739AE63423A65AD6"
+	group: "2F71F900738EFA83"
+	order_index: 3
+	filename: "pipez"
+	title: "管線"
+	icon: "pipez:wrench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: 0.0d
+			description: ["用來調整Pipez模組的管道，對管道shift右鍵切換提取或輸入。可製作管道升級來改善管道傳輸效率"]
+			dependencies: ["53EACDC82A3FFBB7"]
+			id: "442DBD6F1C0873CB"
+			tasks: [{
+				id: "4D382DB818DCF223"
+				type: "item"
+				item: "pipez:wrench"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			description: ["就像Mekanism模組的加壓管道一樣，能傳輸氣體"]
+			dependencies: ["442DBD6F1C0873CB"]
+			id: "423DC14C3CC0F93B"
+			tasks: [{
+				id: "54E03D2AF679E50C"
+				type: "item"
+				item: "pipez:gas_pipe"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			description: ["就像Mekanism模組的物流管道一樣，能傳輸物品"]
+			dependencies: ["442DBD6F1C0873CB"]
+			id: "472445FC63892B09"
+			tasks: [{
+				id: "08DC729DB271E6AF"
+				type: "item"
+				item: "pipez:item_pipe"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			description: ["就像Mekanism模組的機械管道一樣，能傳輸流體"]
+			dependencies: ["442DBD6F1C0873CB"]
+			id: "27D31721D2B43AA7"
+			tasks: [{
+				id: "3A6C12D15B25F633"
+				type: "item"
+				item: "pipez:fluid_pipe"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["就像Mekanism模組的通用線纜一樣，能傳輸能量"]
+			dependencies: ["442DBD6F1C0873CB"]
+			id: "2BF5F7957E77322E"
+			tasks: [{
+				id: "08CF2387D63A8F2C"
+				type: "item"
+				item: "pipez:energy_pipe"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			description: ["所有管道合而為一"]
+			dependencies: [
+				"423DC14C3CC0F93B"
+				"472445FC63892B09"
+				"27D31721D2B43AA7"
+				"2BF5F7957E77322E"
+			]
+			id: "6A3BA266C0155437"
+			tasks: [{
+				id: "3253BADB0F8D7F10"
+				type: "item"
+				item: "pipez:universal_pipe"
+			}]
+		}
+	]
+}

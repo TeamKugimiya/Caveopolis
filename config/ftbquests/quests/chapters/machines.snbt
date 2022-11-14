@@ -1,0 +1,253 @@
+{
+	id: "0DB97A6F6D448ADE"
+	group: "3F596C38DE615D16"
+	order_index: 1
+	filename: "machines"
+	title: "自訂機器"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "caveopolis:ore_extractor"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:alloy_mixer"
+				}
+			}
+			x: -6.0d
+			y: -6.0d
+			description: ["合金混合器用來混合2種流體和1個物品來製作新的流體。使用各種不同的方塊可使這個機器運作得更快"]
+			dependencies: ["39F7D925876F6A06"]
+			id: "3CE9D4340229DD39"
+			tasks: [
+				{
+					id: "1B5F429CBC75B953"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:alloy_mixer"
+						}
+					}
+				}
+				{
+					id: "68A8F342F8426886"
+					type: "advancement"
+					advancement: "caveopolis:machines/alloy_mixer"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -4.5d
+			description: ["用來傳輸物品，需要2個管道將物品移動到另一處。一個取出一個存入"]
+			dependencies: ["39F7D925876F6A06"]
+			id: "25F865D4DEBE0F22"
+			tasks: [{
+				id: "06B283B8E921A60B"
+				type: "item"
+				item: "prettypipes:pipe"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["從容器中抽出物品，對管道右鍵打開介面"]
+			dependencies: ["1CD610372792FFBB"]
+			id: "34B854A71E6301AF"
+			tasks: [{
+				id: "72CFA8A581CD0DC0"
+				type: "item"
+				item: "prettypipes:low_extraction_module"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			description: ["用來傳輸流體"]
+			dependencies: ["39F7D925876F6A06"]
+			id: "5F055D37457CE0DC"
+			tasks: [{
+				id: "2AEE34901B3B9EB4"
+				type: "item"
+				item: "ppfluids:fluid_pipe"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			description: ["從容器中抽出流體，對管道右鍵打開介面"]
+			dependencies: ["1CD610372792FFBB"]
+			id: "13CE28500D2E205D"
+			tasks: [{
+				id: "6E703B1246044A56"
+				type: "item"
+				item: "ppfluids:low_fluid_extraction_module"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["用來製作管道的升級"]
+			dependencies: ["1DB9BF48105BB29A"]
+			id: "1CD610372792FFBB"
+			tasks: [{
+				id: "1A6F8D46A7FE3F50"
+				type: "item"
+				item: "prettypipes:blank_module"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:ore_extractor"
+				}
+			}
+			x: -6.0d
+			y: -4.5d
+			description: ["礦物成型水可用管道導入這台機器。使用各種不同的方塊可使這個機器運作得更快"]
+			dependencies: ["3CE9D4340229DD39"]
+			id: "2ED57D368FC5025B"
+			tasks: [
+				{
+					id: "3703B780CE98BB8D"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:ore_extractor"
+						}
+					}
+				}
+				{
+					id: "00DB0FC96CB053FE"
+					type: "advancement"
+					advancement: "caveopolis:machines/ore_extractor"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			description: ["將特定的物品從其他連接上的容器中移動到這裡"]
+			dependencies: ["34B854A71E6301AF"]
+			id: "223C23EE3E7C5A4F"
+			tasks: [{
+				id: "266A53103D2A81EF"
+				type: "item"
+				item: "prettypipes:low_retrieval_module"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["將特定的流體從其他連接上的容器中移動到這裡"]
+			dependencies: ["13CE28500D2E205D"]
+			id: "3595ED6D7151F1D0"
+			tasks: [{
+				id: "1A62172484B9141F"
+				type: "item"
+				item: "ppfluids:low_fluid_retrieval_module"
+			}]
+		}
+		{
+			icon: "caveopolis:ore_forming_water_bucket"
+			x: -7.5d
+			y: -4.5d
+			description: ["在合金混合器中將岩漿、水和碎石混合製作礦物成型水"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "7A440F16961FFD95"
+			tasks: [{
+				id: "1C02910AA281E610"
+				type: "checkmark"
+				title: "Ore Forming Water"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			description: ["放在礦物提取器的下方物品欄位中，以生產基礎物品"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "1DFB17631EDE7550"
+			tasks: [{
+				id: "07B03A953BA6CA5A"
+				type: "item"
+				item: "caveopolis:ore_extractor_upgrade_base"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.0d
+			description: ["讓拆除管道更容易，shift右鍵破壞管道"]
+			dependencies: ["25F865D4DEBE0F22"]
+			id: "4A68114B80439DCF"
+			tasks: [{
+				id: "5F71AAD0A869E436"
+				type: "item"
+				item: "prettypipes:wrench"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["防止管道過度輸出物品"]
+			dependencies: ["1CD610372792FFBB"]
+			id: "26F4F51A4FFE5A02"
+			tasks: [{
+				id: "64F32A6679625F7F"
+				type: "item"
+				item: "prettypipes:stack_size_module"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:fragment_combiner"
+				}
+			}
+			x: -4.5d
+			y: -4.5d
+			description: ["可自動將碎片組合成更有用的物品"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "419EDC9A55D498B9"
+			tasks: [
+				{
+					id: "7A2AF4F3B2FEF8CD"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:fragment_combiner"
+						}
+					}
+				}
+				{
+					id: "1CC41DD8FE766707"
+					type: "advancement"
+					advancement: "caveopolis:machines/fragment_combiner"
+					criterion: ""
+				}
+			]
+		}
+	]
+}

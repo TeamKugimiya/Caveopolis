@@ -1,0 +1,361 @@
+{
+	id: "03A5376C2EA2B5C5"
+	group: "3F596C38DE615D16"
+	order_index: 3
+	filename: "organic_producer"
+	title: "有機物生產器"
+	icon: {
+		id: "custommachinery:custom_machine_item"
+		Count: 1b
+		tag: {
+			machine: "caveopolis:organic_producer"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:organic_producer"
+				}
+			}
+			x: 0.0d
+			y: 0.0d
+			description: ["用來製作農作物、樹苗和種子"]
+			dependencies: ["45118B3972D8A423"]
+			optional: true
+			id: "0E8B98AEDF09EE37"
+			tasks: [
+				{
+					id: "41F46BD8AE8A893C"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:organic_producer"
+						}
+					}
+				}
+				{
+					id: "06F143CCCD101337"
+					type: "advancement"
+					advancement: "caveopolis:machines/organic_producer"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "樹苗"
+			x: 1.5d
+			y: 0.0d
+			description: ["各種其他的樹苗可以用有機物生產器製作"]
+			dependencies: ["0E8B98AEDF09EE37"]
+			optional: true
+			id: "28918B3652C41D7B"
+			tasks: [{
+				id: "1DE44F9E6A0F8EC3"
+				type: "checkmark"
+				title: "樹苗"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			dependencies: ["28918B3652C41D7B"]
+			optional: true
+			id: "20D8084BA299250E"
+			tasks: [{
+				id: "22037526B5D25D2E"
+				type: "item"
+				item: "minecraft:oak_sapling"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["28918B3652C41D7B"]
+			optional: true
+			id: "68F93B32BCACC760"
+			tasks: [{
+				id: "5FDED93DFFB18720"
+				type: "item"
+				item: "minecraft:birch_sapling"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["20D8084BA299250E"]
+			optional: true
+			id: "4A4443881BA5004D"
+			tasks: [{
+				id: "31AC9808547B3D34"
+				type: "item"
+				item: "minecraft:dark_oak_sapling"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["68F93B32BCACC760"]
+			optional: true
+			id: "60E095D1B001F5B4"
+			tasks: [{
+				id: "2BDE399E4871F352"
+				type: "item"
+				item: "minecraft:jungle_sapling"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -0.5d
+			dependencies: ["4A4443881BA5004D"]
+			optional: true
+			id: "2097E049F98A374F"
+			tasks: [{
+				id: "26455DCEE7B2D073"
+				type: "item"
+				item: "minecraft:spruce_sapling"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.5d
+			dependencies: ["60E095D1B001F5B4"]
+			optional: true
+			id: "2F3D909D074D50FF"
+			tasks: [{
+				id: "20B3A5E351887AFB"
+				type: "item"
+				item: "minecraft:acacia_sapling"
+			}]
+		}
+		{
+			title: "種子和食物"
+			x: -1.5d
+			y: 0.0d
+			description: ["各種其他的種子和食物可以用有機物生產器製作"]
+			dependencies: ["0E8B98AEDF09EE37"]
+			optional: true
+			id: "72C85F7B3368E2E3"
+			tasks: [{
+				id: "05FD44EE4B297DFC"
+				type: "checkmark"
+				title: "種子"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["72C85F7B3368E2E3"]
+			optional: true
+			id: "51701196238ED228"
+			tasks: [{
+				id: "73F8982DCECB83C9"
+				type: "item"
+				item: "minecraft:beetroot_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			dependencies: ["51701196238ED228"]
+			optional: true
+			id: "5751F8261D515AD2"
+			tasks: [{
+				id: "3722C7D052605731"
+				type: "item"
+				item: "minecraft:melon_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			dependencies: ["51701196238ED228"]
+			optional: true
+			id: "363AEAE665A181EA"
+			tasks: [{
+				id: "032011BF8D13CF42"
+				type: "item"
+				item: "minecraft:pumpkin_seeds"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.5d
+			dependencies: ["363AEAE665A181EA"]
+			optional: true
+			id: "79B6A28F2B625BFE"
+			tasks: [{
+				id: "1740655A6AB32FF9"
+				type: "item"
+				item: "minecraft:carrot"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			dependencies: ["5751F8261D515AD2"]
+			optional: true
+			id: "7F262AAE97F19B57"
+			tasks: [{
+				id: "725F252CDB1C8364"
+				type: "item"
+				item: "minecraft:potato"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["對草地撒骨粉能讓你取得一些花。其他種類的花可在有機物生產器中製作"]
+			dependencies: ["03ED1B28E10893E8"]
+			optional: true
+			id: "57F1CFE9A05C2616"
+			tasks: [{
+				id: "4DDDD0212A32F5E4"
+				type: "checkmark"
+				title: "花"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["0E8B98AEDF09EE37"]
+			optional: true
+			id: "6D3AF50AFD2F1B29"
+			tasks: [{
+				id: "02F562E50904543E"
+				type: "item"
+				item: "minecraft:cactus"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["0E8B98AEDF09EE37"]
+			optional: true
+			id: "0DEDA99554EAF790"
+			tasks: [{
+				id: "054D967EDB3B1063"
+				type: "item"
+				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			dependencies: ["0DEDA99554EAF790"]
+			optional: true
+			id: "0BE243A6B22877C8"
+			tasks: [{
+				id: "72F2960A49C49B47"
+				type: "item"
+				item: "minecraft:bamboo"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.5d
+			dependencies: ["57F1CFE9A05C2616"]
+			optional: true
+			id: "5154952072703D31"
+			tasks: [{
+				id: "73AAF06FBAC940FD"
+				type: "item"
+				item: "minecraft:brown_mushroom"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			dependencies: ["57F1CFE9A05C2616"]
+			optional: true
+			id: "2209E7135E5AD80D"
+			tasks: [{
+				id: "7D5EB26C0809FD9A"
+				type: "item"
+				item: "minecraft:red_mushroom"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["可在有機物生產器中製作"]
+			dependencies: ["1B73D859BA46D500"]
+			optional: true
+			id: "03ED1B28E10893E8"
+			tasks: [{
+				id: "0B940DAEB684D761"
+				type: "item"
+				item: "minecraft:grass_block"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["有機物生產器也可以用來製作更多的泥土"]
+			dependencies: ["0E8B98AEDF09EE37"]
+			optional: true
+			id: "1B73D859BA46D500"
+			tasks: [{
+				id: "0FE6A6FF568E7C44"
+				type: "checkmark"
+				title: "更多泥土"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			description: ["海草可在水中對泥土撒骨粉產生。用剪刀採收"]
+			dependencies: ["0E8B98AEDF09EE37"]
+			optional: true
+			id: "462FB06CBD81098E"
+			tasks: [{
+				id: "306C737994B4A831"
+				type: "item"
+				item: "minecraft:seagrass"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: ["462FB06CBD81098E"]
+			optional: true
+			id: "54AEFB7411CB7488"
+			tasks: [{
+				id: "0A4FAE491F495DE7"
+				type: "item"
+				item: "minecraft:kelp"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			dependencies: ["79B6A28F2B625BFE"]
+			optional: true
+			id: "4654EB1976D7590A"
+			tasks: [{
+				id: "3C3F3B12FB5B0B98"
+				type: "item"
+				item: "minecraft:sweet_berries"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			dependencies: ["7F262AAE97F19B57"]
+			optional: true
+			id: "29A5A7BE6B415A6B"
+			tasks: [{
+				id: "467F2389FB69B4B4"
+				type: "item"
+				item: "minecraft:glow_berries"
+			}]
+		}
+	]
+}

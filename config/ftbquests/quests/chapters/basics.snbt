@@ -1,0 +1,212 @@
+{
+	id: "1888A5D29CF77C97"
+	group: "4EB69D90B1D1A989"
+	order_index: 0
+	filename: "basics"
+	title: "基礎發展"
+	icon: "caveopolis:bright_shard"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["破壞石頭時會掉落1至4個碎石"]
+			dependencies: ["1A2A0D6F454E8512"]
+			id: "2EB8273B2BF783AD"
+			tasks: [{
+				id: "21A691C0BFCF6270"
+				type: "item"
+				item: "caveopolis:stone_pebble"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["碎石可用來製作石頭"]
+			dependencies: ["2EB8273B2BF783AD"]
+			id: "577E1A777FFDF07E"
+			tasks: [{
+				id: "608CA2B6FC93F51B"
+				type: "item"
+				item: "minecraft:stone"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["石頭可用來製作石棍"]
+			dependencies: ["577E1A777FFDF07E"]
+			id: "68F73FFFB833B2AF"
+			tasks: [{
+				id: "564810947949482A"
+				type: "item"
+				item: "caveopolis:stone_stick"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["石頭可用來合成石磚"]
+			dependencies: ["577E1A777FFDF07E"]
+			id: "1C22316E515CA5BD"
+			tasks: [{
+				id: "395BFE54C2BB70DA"
+				type: "item"
+				item: "minecraft:stone_bricks"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["石磚可用來合成石製工作台"]
+			dependencies: ["1C22316E515CA5BD"]
+			id: "0093057A66726389"
+			tasks: [{
+				id: "0B3DFAA6A0F1323F"
+				type: "item"
+				item: "caveopolis:stone_crafting_table"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.0d
+			dependencies: ["2EA5A307BBB8EACF"]
+			id: "1B5494BD582C7858"
+			tasks: [{
+				id: "204C3CF1A18118D1"
+				type: "item"
+				item: "stonechest:chest_stone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			dependencies: ["0093057A66726389"]
+			id: "2EA5A307BBB8EACF"
+			tasks: [{
+				id: "0913BC146883C361"
+				type: "item"
+				item: "stonechest:part_stone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["用石頭和骨粉製作而成"]
+			dependencies: [
+				"1EDF8B02E8A9491E"
+				"0093057A66726389"
+			]
+			id: "68258354B4907563"
+			tasks: [{
+				id: "031A6830A42A96F9"
+				type: "item"
+				item: "minecraft:calcite"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["破壞方解石時掉落骨粉"]
+			dependencies: ["1A2A0D6F454E8512"]
+			id: "1EDF8B02E8A9491E"
+			tasks: [{
+				id: "1B12C8F834E11D82"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			description: ["苔蘚和石頭可用來製作苔蘚石"]
+			dependencies: ["62BBAAE4882838D1"]
+			id: "0FD0C06B0985CE85"
+			tasks: [{
+				id: "70EFDF09FC220285"
+				type: "item"
+				item: "caveopolis:mossy_stone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["破壞苔蘚石時會掉落1至2個苔蘚球。苔蘚球可以食用。好吃"]
+			dependencies: ["1A2A0D6F454E8512"]
+			id: "7FC2390421A219A6"
+			tasks: [{
+				id: "011A9A3CADF74289"
+				type: "item"
+				item: "caveopolis:moss_ball"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			description: ["由苔蘚球合成。苔蘚方塊可用來召喚被動生物，盡可能用更多苔蘚方塊打造一個空間並點亮它！"]
+			dependencies: ["7FC2390421A219A6"]
+			id: "62BBAAE4882838D1"
+			tasks: [{
+				id: "00D6728D5BC8D2A7"
+				type: "item"
+				item: "minecraft:moss_block"
+			}]
+		}
+		{
+			title: "苔蘚方塊上撒骨粉"
+			x: -1.5d
+			y: -1.5d
+			description: ["在苔蘚方塊上撒骨粉會將附近的石頭轉換成苔蘚方塊"]
+			dependencies: [
+				"62BBAAE4882838D1"
+				"1EDF8B02E8A9491E"
+			]
+			id: "7A72EF98DC69A1CF"
+			tasks: [{
+				id: "4AD4BE9DE95CCA3F"
+				type: "checkmark"
+				title: "苔蘚方塊上撒骨粉"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: ["破壞發光石時會掉落1至2個發光碎片"]
+			dependencies: ["1A2A0D6F454E8512"]
+			id: "49F941EA4E3BED07"
+			tasks: [{
+				id: "622CE84D02831E22"
+				type: "item"
+				item: "caveopolis:bright_shard"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["可照亮一定的範圍"]
+			dependencies: [
+				"49F941EA4E3BED07"
+				"68F73FFFB833B2AF"
+			]
+			id: "6935F8D2A8688193"
+			tasks: [{
+				id: "664F84F216495580"
+				type: "item"
+				item: "caveopolis:stone_torch"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			description: ["發光碎片和石頭可用來合成發光石"]
+			dependencies: ["49F941EA4E3BED07"]
+			id: "5419F2DDCB48BF0B"
+			tasks: [{
+				id: "53BBE4B4333EA0E1"
+				type: "item"
+				item: "caveopolis:bright_stone"
+			}]
+		}
+	]
+}

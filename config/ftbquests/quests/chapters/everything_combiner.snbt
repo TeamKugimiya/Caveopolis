@@ -1,0 +1,93 @@
+{
+	id: "236DCFD391A4E87D"
+	group: "48DA25AB0FED8FD6"
+	order_index: 0
+	filename: "everything_combiner"
+	title: "全物質合成器"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:everything_combiner"
+				}
+			}
+			x: 0.0d
+			y: -3.0d
+			description: ["用來將大量的物品合而為一，需要大量的電！"]
+			dependencies: ["4988F7B6F49325A6"]
+			id: "3BFFEACFAB619411"
+			tasks: [
+				{
+					id: "7E2684CD9FD14F8F"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:everything_combiner"
+						}
+					}
+				}
+				{
+					id: "146A750924734632"
+					type: "advancement"
+					advancement: "caveopolis:machines/everything_combiner"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["全部顏色組合在一起"]
+			dependencies: ["3BFFEACFAB619411"]
+			id: "59AAA30C2D0F4BD4"
+			tasks: [{
+				id: "76D4C09816124D37"
+				type: "item"
+				item: "caveopolis:color_crystal"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["終界龍的最愛"]
+			dependencies: ["3BFFEACFAB619411"]
+			id: "354C727F46F1FBF3"
+			tasks: [{
+				id: "25CEE33348749CEE"
+				type: "item"
+				item: "caveopolis:dragon_core"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["碎碎的好東西"]
+			dependencies: ["3BFFEACFAB619411"]
+			id: "625C7BE3382E290D"
+			tasks: [{
+				id: "47D023654F03ABDA"
+				type: "item"
+				item: "caveopolis:ultimate_shard"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			description: ["所有的錠，一錠搞定"]
+			dependencies: ["3BFFEACFAB619411"]
+			id: "46F474C77AAE1124"
+			tasks: [{
+				id: "3573E9888549BBD8"
+				type: "item"
+				item: "caveopolis:ingot_of_ingots"
+			}]
+		}
+	]
+}

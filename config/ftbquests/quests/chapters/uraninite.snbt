@@ -1,0 +1,322 @@
+{
+	id: "6DFF9DAD108FC5A2"
+	group: "7C35440C13613243"
+	order_index: 3
+	filename: "uraninite"
+	title: "晶質鈾燃料"
+	icon: "powah:uraninite"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.0d
+			y: 0.0d
+			description: ["絕緣膏"]
+			dependencies: [
+				"47E89FD34D0C10AA"
+				"13944373DB9B94C1"
+			]
+			id: "3078FAFA66BFAE51"
+			tasks: [{
+				id: "58CF34597EB368DE"
+				type: "item"
+				item: "powah:dielectric_paste"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			description: ["絕緣桿"]
+			dependencies: ["3078FAFA66BFAE51"]
+			id: "5628096D8EC41653"
+			tasks: [{
+				id: "6020874084FBB9FE"
+				type: "item"
+				item: "powah:dielectric_rod"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			description: ["絕緣桿"]
+			dependencies: ["5628096D8EC41653"]
+			id: "259C248931F4A3DB"
+			tasks: [{
+				id: "35307DA49DC80188"
+				type: "item"
+				item: "powah:dielectric_rod_horizontal"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			description: ["絕緣外殼"]
+			dependencies: ["259C248931F4A3DB"]
+			id: "1D5D89CA6C1CFE30"
+			tasks: [{
+				id: "6E8ACCEFC40CD9B3"
+				type: "item"
+				item: "powah:dielectric_casing"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			description: ["為充能室提供電力"]
+			dependencies: ["1D5D89CA6C1CFE30"]
+			id: "3407A29717C8083E"
+			tasks: [{
+				id: "33FF94A6112D5559"
+				type: "item"
+				item: "powah:energizing_rod_starter"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			description: ["用電充能物品"]
+			dependencies: ["1D5D89CA6C1CFE30"]
+			id: "112E11A01FC298F8"
+			tasks: [{
+				id: "2566D99FF741BD1E"
+				type: "item"
+				item: "powah:energizing_orb"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			description: ["放入Powah模組的反應堆中發大量的電"]
+			dependencies: [
+				"112E11A01FC298F8"
+				"3407A29717C8083E"
+			]
+			id: "084EAB30A3C8443C"
+			tasks: [{
+				id: "47DAAB6B81049406"
+				type: "item"
+				item: "powah:uraninite"
+			}]
+			rewards: [{
+				id: "3545D153FB36A1CB"
+				type: "item"
+				item: "powah:book"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			description: ["反應堆可用來發大量的電"]
+			dependencies: ["084EAB30A3C8443C"]
+			id: "6FFF58572DB3BC7F"
+			tasks: [{
+				id: "4C0AA17CD69C3A94"
+				type: "item"
+				item: "powah:reactor_starter"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			description: ["就是反應堆"]
+			dependencies: ["6FFF58572DB3BC7F"]
+			id: "4FD37AA4CD814861"
+			tasks: [{
+				id: "33E08B6125C6715A"
+				type: "item"
+				item: "powah:reactor_basic"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			description: ["就是反應堆"]
+			dependencies: [
+				"550B71172C500328"
+				"4FD37AA4CD814861"
+			]
+			id: "7F58DE98D4FC8081"
+			tasks: [{
+				id: "59164556B0AE3DA7"
+				type: "item"
+				item: "powah:reactor_hardened"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			description: ["由鋼和琥珀金製作而成"]
+			dependencies: ["112E11A01FC298F8"]
+			id: "550B71172C500328"
+			tasks: [{
+				id: "2CE61F0B1AAD650B"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.5d
+			description: ["就是反應堆"]
+			dependencies: [
+				"7F58DE98D4FC8081"
+				"6983F918A42B60F4"
+			]
+			id: "004763A8561D93B1"
+			tasks: [{
+				id: "478DB35F3350ED91"
+				type: "item"
+				item: "powah:reactor_blazing"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			description: ["在充能室中製作而成"]
+			dependencies: ["7EAE1E0442580431"]
+			id: "6983F918A42B60F4"
+			tasks: [{
+				id: "4CB4584BFFB684C7"
+				type: "item"
+				item: "powah:crystal_blazing"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.0d
+			description: ["就是反應堆"]
+			dependencies: [
+				"004763A8561D93B1"
+				"702BEA08CD778BAE"
+			]
+			id: "6907002DAD68398A"
+			tasks: [{
+				id: "2B6788ECB1FC2DAB"
+				type: "item"
+				item: "powah:reactor_niotic"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.0d
+			description: ["在充能室中製作而成"]
+			dependencies: ["0C27FD0581B1440A"]
+			id: "702BEA08CD778BAE"
+			tasks: [{
+				id: "5316763B6F3CE008"
+				type: "item"
+				item: "powah:crystal_niotic"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.5d
+			description: ["就是反應堆"]
+			dependencies: [
+				"6907002DAD68398A"
+				"7D694B66A9C710C4"
+			]
+			id: "10276CC06FD3561B"
+			tasks: [{
+				id: "135458979BDFCA74"
+				type: "item"
+				item: "powah:reactor_spirited"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.5d
+			description: ["在充能室中製作而成"]
+			dependencies: ["47E89FD34D0C10AA"]
+			id: "7D694B66A9C710C4"
+			tasks: [{
+				id: "7C793B839A1EA516"
+				type: "item"
+				item: "powah:crystal_spirited"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 9.0d
+			description: ["就是反應堆"]
+			dependencies: [
+				"10276CC06FD3561B"
+				"35743CFE1F60DB66"
+			]
+			id: "0E146578657D793F"
+			tasks: [{
+				id: "7ADF7E24F9A7340D"
+				type: "item"
+				item: "powah:reactor_nitro"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.0d
+			description: ["在充能室中製作而成"]
+			dependencies: ["0BF4B7D2F1D0B9BC"]
+			id: "35743CFE1F60DB66"
+			tasks: [{
+				id: "2A6AA734515413E3"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			shape: "gear"
+			description: ["機殼用來製作Mekanism模組的機器"]
+			dependencies: [
+				"550B71172C500328"
+				"33E40A0F61864C71"
+			]
+			id: "6A76CB2352F24C92"
+			tasks: [{
+				id: "352ADBC01C772186"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+			rewards: [
+				{
+					id: "5F5A02D81E0CD923"
+					type: "command"
+					auto: "invisible"
+					command: "/tag @p add level_6_blocks"
+					player_command: false
+				}
+				{
+					id: "1E7EF0C787685395"
+					type: "command"
+					auto: "enabled"
+					command: "/say @p can now break toprock!"
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "鑽石 / 綠寶石齒輪"
+			x: 2.0d
+			y: 1.5d
+			description: ["用來製作鋼質機殼"]
+			dependencies: [
+				"0C27FD0581B1440A"
+				"47E89FD34D0C10AA"
+			]
+			dependency_requirement: "one_completed"
+			id: "33E40A0F61864C71"
+			tasks: [{
+				id: "7C35CF0E096584A4"
+				type: "item"
+				title: "Any #caveopolis:gears"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "caveopolis:gears"
+					}
+				}
+			}]
+		}
+	]
+}

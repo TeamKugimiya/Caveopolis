@@ -1,0 +1,228 @@
+{
+	id: "76DA63E448244267"
+	group: "3F596C38DE615D16"
+	order_index: 0
+	filename: "more_stone"
+	title: "更多石頭"
+	icon: "caveopolis:mixed_stone_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: -1.0d
+			description: ["花崗岩碎石可用來合成花崗岩"]
+			dependencies: ["5DF0C61D074072AF"]
+			id: "114F20BCFB7894BB"
+			tasks: [{
+				id: "4110428259C6EF06"
+				type: "item"
+				item: "minecraft:granite"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			description: ["閃長岩碎石可用來合成閃長岩"]
+			dependencies: ["20775A82DBAAC9D2"]
+			id: "1D0E3AA1DE7E1A6A"
+			tasks: [{
+				id: "14052C4EAA6E53D7"
+				type: "item"
+				item: "minecraft:diorite"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			description: ["安山岩碎石可用來合成安山岩"]
+			dependencies: ["48ECC9AFEB50A61A"]
+			id: "0A005CD4144D3571"
+			tasks: [{
+				id: "77183303C6A20B9D"
+				type: "item"
+				item: "minecraft:andesite"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			description: ["破壞花崗岩時會掉落1至4個花崗岩碎石"]
+			dependencies: ["0C9706C3BE202931"]
+			id: "5DF0C61D074072AF"
+			tasks: [{
+				id: "5674537E38B2C6B6"
+				type: "item"
+				item: "caveopolis:granite_pebble"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			description: ["破壞閃長岩時會掉落1至4個閃長岩碎石"]
+			dependencies: ["0C9706C3BE202931"]
+			id: "20775A82DBAAC9D2"
+			tasks: [{
+				id: "70F462464BF91AFF"
+				type: "item"
+				item: "caveopolis:diorite_pebble"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.0d
+			description: ["破壞安山岩時會掉落1至4個安山岩碎石"]
+			dependencies: ["0C9706C3BE202931"]
+			id: "48ECC9AFEB50A61A"
+			tasks: [{
+				id: "5D9A37CF0ED531C5"
+				type: "item"
+				item: "caveopolis:andesite_pebble"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.0d
+			description: ["一種由石頭、閃長岩、花崗岩和安山岩碎石的混合物"]
+			dependencies: [
+				"48ECC9AFEB50A61A"
+				"20775A82DBAAC9D2"
+				"5DF0C61D074072AF"
+			]
+			id: "2072BB2B65107DC0"
+			tasks: [{
+				id: "00A5B5F3D27ABE5F"
+				type: "item"
+				item: "caveopolis:raw_mixed_stone"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:advanced_barrel"
+				}
+			}
+			x: 0.5d
+			y: -7.0d
+			description: [
+				"可從石頭製作岩漿。需要在正下方放置特定的熱源方塊："
+				"營火"
+				"火焰"
+				"岩漿"
+			]
+			dependencies: ["39F7D925876F6A06"]
+			id: "65999C3D24CB5DAC"
+			tasks: [
+				{
+					id: "38DF5558D8E3117F"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:advanced_barrel"
+						}
+					}
+				}
+				{
+					id: "54CAAF6271C28740"
+					type: "advancement"
+					advancement: "caveopolis:machines/advanced_barrel"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -8.5d
+			description: ["可放在高級木桶的正下方提供熱原來融化石頭"]
+			dependencies: ["65999C3D24CB5DAC"]
+			id: "080C80B361EBB921"
+			tasks: [{
+				id: "07B0C91B22708EA4"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+		}
+		{
+			icon: {
+				id: "woodenbucket:wooden_bucket"
+				Count: 1b
+				tag: {
+					Fluid: {
+						FluidName: "minecraft:lava"
+						Amount: 1000
+					}
+				}
+			}
+			x: 0.5d
+			y: -10.0d
+			description: ["注意這會讓你著火！岩漿也可以放在高級木桶的正下方，讓岩漿生產的快一些"]
+			dependencies: ["080C80B361EBB921"]
+			id: "133BBBF0EFA23554"
+			tasks: [
+				{
+					id: "116EF2FF0442D2E0"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "woodenbucket:wooden_bucket"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Fluid: {
+								FluidName: "minecraft:lava"
+								Amount: 1000
+							}
+						}
+					}
+				}
+				{
+					id: "6824D82EEFDC9D4E"
+					type: "advancement"
+					advancement: "caveopolis:machines/lava_bucket"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			description: ["在熔爐中燒混合石原礦而成"]
+			dependencies: ["2072BB2B65107DC0"]
+			id: "39F7D925876F6A06"
+			tasks: [{
+				id: "0D21FBDB7C296B09"
+				type: "item"
+				item: "caveopolis:mixed_stone_ingot"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			description: ["在盆中自動種樹"]
+			dependencies: ["39F7D925876F6A06"]
+			id: "1FB89787FE0D1ACC"
+			tasks: [{
+				id: "0F55B307D5A061FE"
+				type: "item"
+				item: "bonsaitrees3:bonsaipot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			description: ["用來管理所有抽屜"]
+			dependencies: ["39F7D925876F6A06"]
+			id: "00B49AAF905A4493"
+			tasks: [{
+				id: "3CF13F2B3E1B5B6A"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+		}
+	]
+}

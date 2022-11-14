@@ -1,0 +1,323 @@
+{
+	id: "2F6137D693D4299B"
+	group: "3F596C38DE615D16"
+	order_index: 2
+	filename: "first_ores"
+	title: "初見礦物"
+	icon: "thermal:device_rock_gen"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -1.5d
+			y: 1.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "36A2751EF8F83ACF"
+			tasks: [{
+				id: "724A55E54E7F2F16"
+				type: "item"
+				item: "caveopolis:copper_fragment"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "47AE12425A03049B"
+			tasks: [{
+				id: "4976358725022A38"
+				type: "item"
+				item: "caveopolis:tin_fragment"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.0d
+			description: ["碎片可以做成原礦"]
+			dependencies: ["36A2751EF8F83ACF"]
+			id: "6C3EF0FAEADD301C"
+			tasks: [{
+				id: "5A68B1CFB4146E54"
+				type: "item"
+				item: "minecraft:raw_copper"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			description: ["碎片可以做成原礦"]
+			dependencies: ["47AE12425A03049B"]
+			id: "517287400F7309C6"
+			tasks: [{
+				id: "1367B035E1A6A331"
+				type: "item"
+				item: "thermal:raw_tin"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			description: ["冶煉礦物"]
+			dependencies: ["6C3EF0FAEADD301C"]
+			id: "191811C6DEA47515"
+			tasks: [{
+				id: "205EF3694153B78B"
+				type: "item"
+				item: "minecraft:copper_ingot"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.5d
+			description: ["冶煉礦物"]
+			dependencies: ["517287400F7309C6"]
+			id: "73C2CBA4DBF005CA"
+			tasks: [{
+				id: "6C4DBFAAC11DB084"
+				type: "item"
+				item: "thermal:tin_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			description: ["侵蝕器可用來將錠轉換成粉"]
+			dependencies: ["191811C6DEA47515"]
+			id: "3A71B246010B8BAB"
+			tasks: [{
+				id: "7E7C456CCDCBA24D"
+				type: "item"
+				item: "thermal:copper_dust"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["侵蝕器可用來將錠轉換成粉"]
+			dependencies: ["73C2CBA4DBF005CA"]
+			id: "1C0CCB47291A9D27"
+			tasks: [{
+				id: "38EAE480C875F85E"
+				type: "item"
+				item: "thermal:tin_dust"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			description: ["將銅和錫混合製作成青銅"]
+			dependencies: [
+				"3A71B246010B8BAB"
+				"1C0CCB47291A9D27"
+			]
+			id: "6772324EC70FDDED"
+			tasks: [{
+				id: "0C1D4DD7E6AFB92D"
+				type: "item"
+				item: "thermal:bronze_dust"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			shape: "gear"
+			description: ["燒青銅粉, 解鎖第 3 層任務線"]
+			dependencies: ["6772324EC70FDDED"]
+			id: "45118B3972D8A423"
+			tasks: [{
+				id: "5DC2A28C2B9BD806"
+				type: "item"
+				item: "thermal:bronze_ingot"
+			}]
+			rewards: [
+				{
+					id: "6E2B04AF2AC360D1"
+					type: "command"
+					auto: "invisible"
+					command: "/tag @p add level_3_blocks"
+					player_command: false
+				}
+				{
+					id: "0A511A7FC3600C93"
+					type: "command"
+					auto: "enabled"
+					command: "/say @p can now break prismarine!"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: ["很多錠。是礦物提取器的升級，可減少10 tick的時間。最多放入3個方塊"]
+			dependencies: ["45118B3972D8A423"]
+			id: "3CEC29669630C9DB"
+			tasks: [{
+				id: "00E9C40B9066952C"
+				type: "item"
+				item: "thermal:bronze_block"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["擠出機可用於製造不同種類的石頭。 一側必須有熔岩且另一側必須有水，底部方塊用於選擇產出的石頭種類"]
+			dependencies: ["3CEC29669630C9DB"]
+			id: "6968C4C26EF54625"
+			tasks: [{
+				id: "3C1F3D0B40D0A4A8"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: ["用礦物成型水在礦物提取器製作而成。 也可以在熔爐中燒一個物品"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "459E095A88DDC755"
+			tasks: [{
+				id: "42C0AAEED9675E28"
+				type: "item"
+				item: "caveopolis:coal_fragment"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["2ED57D368FC5025B"]
+			id: "344A5959E9BC41E0"
+			tasks: [{
+				id: "4C7CA0DE29156A35"
+				type: "item"
+				item: "caveopolis:lapis_lazuli_fragment"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			description: ["碎片可以做成煤炭"]
+			dependencies: ["459E095A88DDC755"]
+			id: "1FB341419C5A62A6"
+			tasks: [{
+				id: "3848AE4D7D84A674"
+				type: "item"
+				item: "minecraft:coal"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			description: ["碎片可以做成青金石"]
+			dependencies: ["344A5959E9BC41E0"]
+			id: "62771E08BE7B29AF"
+			tasks: [{
+				id: "3DBA23EB283426A4"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["放在2個水源之間產生水"]
+			dependencies: [
+				"1FB341419C5A62A6"
+				"62771E08BE7B29AF"
+			]
+			id: "32668D1019805A1E"
+			tasks: [{
+				id: "1F882CAA9AEA2A76"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			description: ["銅可以做成工具和裝備"]
+			dependencies: ["191811C6DEA47515"]
+			id: "1D9F64A1C5737174"
+			tasks: [{
+				id: "4E47BC17CD408E05"
+				type: "item"
+				item: {
+					id: "exlinecopperequipment:copper_pick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			description: ["青金石可以做成工具和裝備"]
+			dependencies: ["62771E08BE7B29AF"]
+			id: "0869EA4612EA61BF"
+			tasks: [{
+				id: "1B943C5545B386FD"
+				type: "item"
+				item: {
+					id: "mekanismtools:lapis_lazuli_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["1DFB17631EDE7550"]
+			id: "1954AADAE996DC33"
+			tasks: [{
+				id: "44E7D2BB2890E8A8"
+				type: "item"
+				item: "caveopolis:mixed_stone_fragment"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			description: ["碎片可以做成原礦"]
+			dependencies: ["1954AADAE996DC33"]
+			id: "57A4A9264C451AD7"
+			tasks: [{
+				id: "7C574DD1E74D096A"
+				type: "item"
+				item: "caveopolis:raw_mixed_stone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			description: ["可在侵蝕器中由混合石碎片製作而成"]
+			dependencies: ["1954AADAE996DC33"]
+			id: "6ABB31200DF74785"
+			tasks: [{
+				id: "15B9684C285D65A1"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["用來計算配方所需要的總物品數量。拿著shift右鍵改變模式"]
+			dependencies: ["45118B3972D8A423"]
+			id: "07E3A386F893603A"
+			tasks: [{
+				id: "6BABD5CD24BE6B64"
+				type: "item"
+				item: "jecalculation:item_calculator_craft"
+			}]
+		}
+	]
+}

@@ -1,0 +1,195 @@
+{
+	id: "6CFFFD806215D375"
+	group: "2F71F900738EFA83"
+	order_index: 0
+	filename: "dripstone"
+	title: "海磷石"
+	icon: "minecraft:prismarine_shard"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["濕濕的方塊"]
+			dependencies: ["0A96420F3E7EF9B8"]
+			id: "6BE6CAF9324CD16F"
+			tasks: [{
+				id: "1B1BF4E62AAAAC22"
+				type: "item"
+				item: "minecraft:dripstone_block"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["在侵蝕器中放入鐘乳石方塊製作而成"]
+			dependencies: ["6BE6CAF9324CD16F"]
+			id: "19219046117DF01D"
+			tasks: [{
+				id: "5C50BFE389358AFA"
+				type: "item"
+				item: "minecraft:pointed_dripstone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["位於安山岩層之下"]
+			dependencies: ["45118B3972D8A423"]
+			id: "0A96420F3E7EF9B8"
+			tasks: [{
+				id: "1ADD1821143E14EA"
+				type: "item"
+				item: "minecraft:prismarine"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["在侵蝕器中放入海磷石製作而成"]
+			dependencies: ["0A96420F3E7EF9B8"]
+			id: "792D0749918AFC53"
+			tasks: [{
+				id: "3967D4EBD3B979CA"
+				type: "item"
+				item: "minecraft:prismarine_shard"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["發光碎片可將海磷石碎片轉換成海磷晶體"]
+			dependencies: ["792D0749918AFC53"]
+			id: "428A7DC6926A557B"
+			tasks: [{
+				id: "77A41B6AB4DD23D3"
+				type: "item"
+				item: "minecraft:prismarine_crystals"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			description: ["用來製作潛水套裝"]
+			dependencies: [
+				"428A7DC6926A557B"
+				"4171FCDD168DFF13"
+			]
+			id: "6A63C88E2CFEC6E9"
+			tasks: [{
+				id: "2C04C49F9FD1C0B8"
+				type: "item"
+				item: "thermal:diving_fabric"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			description: ["潛水套裝讓你更容易的在水面下探索。需要全套裝備才能以正常速度破壞方塊。還可以讓你在水中待更久"]
+			dependencies: ["6A63C88E2CFEC6E9"]
+			id: "6BC4F569788E0294"
+			tasks: [{
+				id: "0A5E3BD84C06B20A"
+				type: "item"
+				item: {
+					id: "thermal:diving_helmet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			description: ["潛水套裝讓你更容易的在水面下探索。需要全套裝備才能以正常速度破壞方塊。還可以讓你在水中待更久"]
+			dependencies: ["6A63C88E2CFEC6E9"]
+			id: "1CD3342B0EFFB749"
+			tasks: [{
+				id: "184D98570C6A8A0C"
+				type: "item"
+				item: {
+					id: "thermal:diving_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.5d
+			description: ["潛水套裝讓你更容易的在水面下探索。需要全套裝備才能以正常速度破壞方塊。還可以讓你在水中待更久"]
+			dependencies: ["6A63C88E2CFEC6E9"]
+			id: "5662701E22E22EC6"
+			tasks: [{
+				id: "2456ECB000D0EE76"
+				type: "item"
+				item: {
+					id: "thermal:diving_leggings"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: ["潛水套裝讓你更容易的在水面下探索。需要全套裝備才能以正常速度破壞方塊。還可以讓你在水中待更久"]
+			dependencies: ["6A63C88E2CFEC6E9"]
+			id: "173B57347260DE8B"
+			tasks: [{
+				id: "40429358B52A2398"
+				type: "item"
+				item: {
+					id: "thermal:diving_boots"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			description: ["在水中照亮道路很有用"]
+			dependencies: ["428A7DC6926A557B"]
+			id: "7F95D274A9829700"
+			tasks: [{
+				id: "06180460F6BB4DB2"
+				type: "item"
+				item: "minecraft:sea_lantern"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["當連接上管道時，能讓你把物品取出或放入箱子裡"]
+			dependencies: ["428A7DC6926A557B"]
+			id: "39E89BDA517865FB"
+			tasks: [{
+				id: "5481471B102E527B"
+				type: "item"
+				item: "prettypipes:item_terminal"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -3.0d
+			description: ["讓你用管道網路中的物品合成物品"]
+			dependencies: ["39E89BDA517865FB"]
+			id: "42437CC6AFE45C0E"
+			tasks: [{
+				id: "51DF37531F762E42"
+				type: "item"
+				item: "prettypipes:crafting_terminal"
+			}]
+		}
+	]
+}

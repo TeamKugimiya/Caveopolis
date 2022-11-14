@@ -1,0 +1,156 @@
+{
+	id: "5E5C4B1963DF0D2D"
+	group: "7C35440C13613243"
+	order_index: 2
+	filename: "even_more_ores"
+	title: "更多更多的礦物"
+	icon: "thermal:enderium_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -2.5d
+			y: 0.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["550E76D5CC30871E"]
+			id: "28EB70CBA87AC4EA"
+			tasks: [{
+				id: "43DCB7E735D62D47"
+				type: "item"
+				item: "caveopolis:silver_fragment"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["550E76D5CC30871E"]
+			id: "2A6BA93FB76DC05F"
+			tasks: [{
+				id: "32B270412B91EC6D"
+				type: "item"
+				item: "caveopolis:emerald_fragment"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["550E76D5CC30871E"]
+			id: "00882BE01C1C52AF"
+			tasks: [{
+				id: "77905BE67691B887"
+				type: "item"
+				item: "caveopolis:diamond_fragment"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["550E76D5CC30871E"]
+			id: "6CCFB3723CE5BD74"
+			tasks: [{
+				id: "1F60CE7763F70DCD"
+				type: "item"
+				item: "caveopolis:uranium_fragment"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.0d
+			description: ["碎片可製成原礦"]
+			dependencies: ["28EB70CBA87AC4EA"]
+			id: "756EC235E9440CF0"
+			tasks: [{
+				id: "3B160533F8E170F6"
+				type: "item"
+				item: "thermal:raw_silver"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			description: ["碎片可製成原礦"]
+			dependencies: ["6CCFB3723CE5BD74"]
+			id: "311E3D93B8F7069C"
+			tasks: [{
+				id: "20D2E770A728D1FF"
+				type: "item"
+				item: "mekanism:raw_uranium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.0d
+			description: ["碎片可製成鑽石"]
+			dependencies: ["00882BE01C1C52AF"]
+			id: "0C27FD0581B1440A"
+			tasks: [{
+				id: "36B593918D18B919"
+				type: "item"
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			description: ["碎片可製成綠寶石"]
+			dependencies: ["2A6BA93FB76DC05F"]
+			id: "47E89FD34D0C10AA"
+			tasks: [{
+				id: "34EEA84810765D36"
+				type: "item"
+				item: "minecraft:emerald"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			description: ["燒礦"]
+			dependencies: ["756EC235E9440CF0"]
+			id: "6CA9205650337EF7"
+			tasks: [{
+				id: "58359A759FA9E8AD"
+				type: "item"
+				item: "thermal:silver_ingot"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.5d
+			description: ["燒礦"]
+			dependencies: ["311E3D93B8F7069C"]
+			id: "022517F2C0261797"
+			tasks: [{
+				id: "3B269EAA90DEC178"
+				type: "item"
+				item: "mekanism:ingot_uranium"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 5.0d
+			description: ["一個由銀和金製成的合金"]
+			dependencies: ["6CA9205650337EF7"]
+			id: "13944373DB9B94C1"
+			tasks: [{
+				id: "3EBA3B3C3DA5D9E5"
+				type: "item"
+				item: "thermal:electrum_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.5d
+			description: ["一個由終界珍珠、鑽石和鉛製成的合金"]
+			dependencies: ["0C27FD0581B1440A"]
+			id: "2F2C4679EA31AA95"
+			tasks: [{
+				id: "099E4AB58E985875"
+				type: "item"
+				item: "thermal:enderium_ingot"
+			}]
+		}
+	]
+}

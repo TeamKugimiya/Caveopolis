@@ -1,0 +1,121 @@
+{
+	id: "600AA0C3B8468BD5"
+	group: "64C5B9E37C4A7196"
+	order_index: 1
+	filename: "ender_ore"
+	title: "終界礦物"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: -0.5d
+			dependencies: ["38E354113B97A75A"]
+			id: "41830B860840355D"
+			tasks: [{
+				id: "4FEA6404D1983A97"
+				type: "item"
+				item: "caveopolis:osmium_fragment"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["38E354113B97A75A"]
+			id: "792F9A7C2E58D8F5"
+			tasks: [{
+				id: "3F2C5BA63B36174C"
+				type: "item"
+				item: "caveopolis:fluorite_fragment"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["41830B860840355D"]
+			id: "07478DEAC7634B13"
+			tasks: [{
+				id: "12E52D02B9C7C8A2"
+				type: "item"
+				item: "mekanism:raw_osmium"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["792F9A7C2E58D8F5"]
+			id: "537E654413A721C8"
+			tasks: [{
+				id: "5C79FCC86487FDA5"
+				type: "item"
+				item: "mekanism:fluorite_gem"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			dependencies: ["07478DEAC7634B13"]
+			id: "5D7AA3B25CE4325A"
+			tasks: [{
+				id: "4C7E9AA921CB3D08"
+				type: "item"
+				item: "mekanism:ingot_osmium"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			dependencies: ["5D7AA3B25CE4325A"]
+			id: "0DAEC71112663EFF"
+			tasks: [{
+				id: "5F3DEFEE8D53B418"
+				type: "item"
+				item: "mekanism:dust_osmium"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["537E654413A721C8"]
+			id: "277BFB6F90815CF2"
+			tasks: [{
+				id: "3DDA5EBFF8F47110"
+				type: "item"
+				item: "mekanism:dust_fluorite"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			dependencies: ["3405267073CF340A"]
+			id: "217909339C9FB81F"
+			tasks: [{
+				id: "4FEA68196DB12FC3"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			dependencies: ["3405267073CF340A"]
+			id: "2D9F9BC23A69CB0D"
+			tasks: [{
+				id: "6BDE3ECD078C98BB"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			dependencies: ["5D7AA3B25CE4325A"]
+			id: "3405267073CF340A"
+			tasks: [{
+				id: "125E6BE38104C6E6"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+	]
+}

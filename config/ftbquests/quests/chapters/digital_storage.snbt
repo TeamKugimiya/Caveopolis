@@ -1,0 +1,337 @@
+{
+	id: "03FD9161891CC17E"
+	group: "64C5B9E37C4A7196"
+	order_index: 3
+	filename: "digital_storage"
+	title: "數位儲存器"
+	icon: "ae2:crafting_terminal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 1.5d
+			description: ["用來製作印刷電路板"]
+			dependencies: ["1F374EABFD1AF399"]
+			id: "5D8A516AD73D1000"
+			tasks: [{
+				id: "1C49CA32DDBE3123"
+				type: "item"
+				item: "ae2:calculation_processor_press"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: ["用來製作印刷電路板"]
+			dependencies: ["1F374EABFD1AF399"]
+			id: "413FA586C64133D5"
+			tasks: [{
+				id: "4301F72C71312C68"
+				type: "item"
+				item: "ae2:engineering_processor_press"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			description: ["用來製作印刷電路板"]
+			dependencies: ["1F374EABFD1AF399"]
+			id: "3A5597965CDED080"
+			tasks: [{
+				id: "5F5E417DAE9FAAF0"
+				type: "item"
+				item: "ae2:logic_processor_press"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["用來製作印刷電路板"]
+			dependencies: ["1F374EABFD1AF399"]
+			id: "2187EE786F8F5048"
+			tasks: [{
+				id: "7378935C843BFCD2"
+				type: "item"
+				item: "ae2:silicon_press"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			description: ["必須再用紅石粉和矽印刷板組合才能完成"]
+			dependencies: ["5D8A516AD73D1000"]
+			id: "292F70AF68C51EE7"
+			tasks: [{
+				id: "7E3B0A8C0B2A1E09"
+				type: "item"
+				item: "ae2:printed_calculation_processor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: ["必須再用紅石粉和矽印刷板組合才能完成"]
+			dependencies: ["413FA586C64133D5"]
+			id: "6D84D1FF0F52BB7D"
+			tasks: [{
+				id: "408B154A370F16B1"
+				type: "item"
+				item: "ae2:printed_engineering_processor"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			description: ["必須再用紅石粉和矽印刷板組合才能完成"]
+			dependencies: ["3A5597965CDED080"]
+			id: "136AC94A117458A6"
+			tasks: [{
+				id: "287ED1C004AD382D"
+				type: "item"
+				item: "ae2:printed_logic_processor"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			description: ["用來製作處理器"]
+			dependencies: ["2187EE786F8F5048"]
+			id: "08EDB70D24E668AC"
+			tasks: [{
+				id: "4E1ADF1D4F3F9ADB"
+				type: "item"
+				item: "ae2:printed_silicon"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			description: ["一個處理器"]
+			dependencies: ["292F70AF68C51EE7"]
+			id: "191689B5AB0651AB"
+			tasks: [{
+				id: "7B7ACD79F3CE5CC6"
+				type: "item"
+				item: "ae2:calculation_processor"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.5d
+			description: ["一個處理器"]
+			dependencies: ["6D84D1FF0F52BB7D"]
+			id: "36921A086DC249AA"
+			tasks: [{
+				id: "3B93A64491E546AE"
+				type: "item"
+				item: "ae2:engineering_processor"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			description: ["一個處理器"]
+			dependencies: ["136AC94A117458A6"]
+			id: "68D88768C91FA8FF"
+			tasks: [{
+				id: "338895ECA46336F2"
+				type: "item"
+				item: "ae2:logic_processor"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.0d
+			description: ["能放入儲存物品的硬碟"]
+			dependencies: ["6AB91466640391C2"]
+			id: "4F1D47E6785E1109"
+			tasks: [{
+				id: "179E9DE553199783"
+				type: "item"
+				item: "ae2:drive"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.0d
+			description: ["連接你的ME網路"]
+			dependencies: ["6D485486C2B8C817"]
+			id: "446F9CF487114D73"
+			tasks: [{
+				id: "0B20252266099FDE"
+				type: "item"
+				item: "ae2:fluix_glass_cable"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			description: ["基礎的儲存硬碟"]
+			dependencies: ["4F1D47E6785E1109"]
+			id: "7E37F4EA83C633E0"
+			tasks: [{
+				id: "09EB0FCE3EEB2DEC"
+				type: "item"
+				item: {
+					id: "ae2:item_storage_cell_1k"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.0d
+			description: ["讓RF能對你的ME網路供電"]
+			dependencies: ["446F9CF487114D73"]
+			id: "6AB91466640391C2"
+			tasks: [{
+				id: "2E64C94A8EB049E3"
+				type: "item"
+				item: "ae2:energy_acceptor"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 4.5d
+			description: ["讓你能使用超過8個頻道"]
+			dependencies: [
+				"699C1FA21ADF0B11"
+				"6AB91466640391C2"
+			]
+			id: "3CD80D84A578CF8E"
+			tasks: [{
+				id: "704D19B380578986"
+				type: "item"
+				item: "ae2:controller"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 4.5d
+			description: ["要再燒一次的"]
+			dependencies: ["3866CB0EA9966B11"]
+			id: "699C1FA21ADF0B11"
+			tasks: [{
+				id: "467CABA7321405BD"
+				type: "item"
+				item: "ae2:smooth_sky_stone_block"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			description: ["在富集倉中放入福魯伊克斯粉製作而成"]
+			dependencies: ["64DBE76BC67DEB3A"]
+			id: "3866CB0EA9966B11"
+			tasks: [{
+				id: "6BD3CF3A75573B4D"
+				type: "item"
+				item: "ae2:sky_dust"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.0d
+			description: ["用來製作各種元件"]
+			dependencies: ["68D88768C91FA8FF"]
+			id: "0AC35AEF1A72AAB3"
+			tasks: [{
+				id: "0C3C9660C97A1DE6"
+				type: "item"
+				item: "ae2:formation_core"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 6.0d
+			description: ["用來製作各種元件"]
+			dependencies: ["68D88768C91FA8FF"]
+			id: "3F5CB64696548A3C"
+			tasks: [{
+				id: "502D1C16429D5C5B"
+				type: "item"
+				item: "ae2:annihilation_core"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.5d
+			description: ["將物品導入你的ME網路"]
+			dependencies: ["3F5CB64696548A3C"]
+			id: "31B1251033F23528"
+			tasks: [{
+				id: "6C3A891DD03E8957"
+				type: "item"
+				item: "ae2:import_bus"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.5d
+			description: ["將物品導出你的ME網路"]
+			dependencies: ["0AC35AEF1A72AAB3"]
+			id: "7E3220E3C440E4DA"
+			tasks: [{
+				id: "7A4E37CA367F541B"
+				type: "item"
+				item: "ae2:export_bus"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 7.0d
+			description: ["透過這個介面將物品從ME系統中輸入或輸出"]
+			dependencies: [
+				"3F5CB64696548A3C"
+				"0AC35AEF1A72AAB3"
+			]
+			id: "7023F46EB841768D"
+			tasks: [{
+				id: "1FD26163D2996CC9"
+				type: "item"
+				item: "ae2:interface"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 9.0d
+			dependencies: [
+				"31B1251033F23528"
+				"7E3220E3C440E4DA"
+				"72E83DC073BAB789"
+			]
+			id: "26849956F0839B9B"
+			tasks: [{
+				id: "3B04834D63730B46"
+				type: "item"
+				item: "ae2:storage_bus"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 8.0d
+			description: ["體積較小版本的ME介面"]
+			dependencies: ["7023F46EB841768D"]
+			id: "72E83DC073BAB789"
+			tasks: [{
+				id: "19954D68B87E4F57"
+				type: "item"
+				item: "ae2:cable_interface"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			description: ["對你的ME網路的方塊右鍵，會提供些有用的資訊"]
+			dependencies: ["191689B5AB0651AB"]
+			id: "0F82D7866A391AD6"
+			tasks: [{
+				id: "20750D643130135E"
+				type: "item"
+				item: "ae2:network_tool"
+			}]
+		}
+	]
+}

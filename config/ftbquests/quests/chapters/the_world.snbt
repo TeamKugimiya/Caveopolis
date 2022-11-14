@@ -1,0 +1,638 @@
+{
+	id: "6D1AE1F2CA895DB4"
+	group: "2EA299BA4737866D"
+	order_index: 1
+	filename: "the_world"
+	title: "世界觀"
+	icon: "caveopolis:white_colored_stone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "發光石"
+			x: -3.0d
+			y: -0.5d
+			description: ["Y:89-85"]
+			id: "4E80BA18230DCDC0"
+			tasks: [{
+				id: "19071A456E5AA75B"
+				type: "observation"
+				icon: "caveopolis:bright_stone"
+				timer: 0L
+				observe_type: 0
+				to_observe: "caveopolis:bright_stone"
+			}]
+		}
+		{
+			title: "石頭"
+			x: -3.0d
+			y: -1.5d
+			description: ["Y:109-90"]
+			id: "3CB1D1672BCBE392"
+			tasks: [{
+				id: "26ACDBB01F37F11A"
+				type: "observation"
+				icon: "minecraft:stone"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:stone"
+			}]
+		}
+		{
+			title: "苔蘚石"
+			x: -3.0d
+			y: 0.5d
+			description: ["Y:84-80"]
+			id: "1DA701FF11F4894F"
+			tasks: [{
+				id: "1F44BDADB61A6565"
+				type: "observation"
+				icon: "minecraft:mossy_cobblestone"
+				timer: 0L
+				observe_type: 0
+				to_observe: "caveopolis:mossy_stone"
+			}]
+		}
+		{
+			title: "方解石"
+			x: -3.0d
+			y: -2.5d
+			description: ["Y:114-110"]
+			id: "0A1F69FCDED19A8D"
+			tasks: [{
+				id: "0C348A0BD21DEF75"
+				type: "observation"
+				icon: "minecraft:calcite"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:calcite"
+			}]
+		}
+		{
+			title: "閃長岩"
+			icon: "minecraft:diorite"
+			x: -3.0d
+			y: 1.5d
+			description: ["Y:79-75"]
+			id: "390E465DEEDE001F"
+			tasks: [{
+				id: "101511A449E03DD2"
+				type: "observation"
+				icon: "minecraft:diorite"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:diorite"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			description: ["Y:74-70"]
+			id: "4FE64AED0DE5CF9B"
+			tasks: [{
+				id: "0EA56D12F17B3883"
+				type: "observation"
+				title: "花崗岩"
+				icon: "minecraft:granite"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:granite"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.5d
+			description: ["Y:69-65"]
+			id: "2C09C3A2475B0D4C"
+			tasks: [{
+				id: "6827EF9390B7C793"
+				type: "observation"
+				title: "安山岩"
+				icon: "minecraft:andesite"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:andesite"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			description: ["Y:64-60"]
+			id: "365F080CC50ABD46"
+			tasks: [{
+				id: "0EDE873F357FC6AE"
+				type: "observation"
+				title: "海磷石"
+				icon: "minecraft:prismarine"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:prismarine"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			description: ["Y:59-55"]
+			id: "641D9C3CB4C96F11"
+			tasks: [{
+				id: "643909548CFD9689"
+				type: "observation"
+				title: "鐘乳石"
+				icon: "minecraft:dripstone_block"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:dripstone_block"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.5d
+			description: [
+				"Y:162-115"
+				"在這兩個高度間可以找到各種不同顏色的石頭"
+			]
+			id: "1478EEDBBCD235BD"
+			tasks: [{
+				id: "006662E0876652AF"
+				type: "observation"
+				title: "著色石頭"
+				icon: "caveopolis:white_colored_stone"
+				timer: 0L
+				observe_type: 0
+				to_observe: "caveopolis:white_colored_stone"
+			}]
+		}
+		{
+			title: "水"
+			icon: "minecraft:water_bucket"
+			x: -3.0d
+			y: 6.5d
+			description: ["Y:54-35"]
+			id: "64BEF6544949F488"
+			tasks: [{
+				id: "4059F79A8F16A523"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 7.5d
+			description: ["Y:34-30"]
+			id: "40EF1876C69F782A"
+			tasks: [{
+				id: "14F054DAA757B277"
+				type: "observation"
+				title: "沙"
+				icon: "minecraft:sand"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:sand"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 8.5d
+			description: ["Y:29-25"]
+			id: "7C1D702F77B685EF"
+			tasks: [{
+				id: "687E09D1E8306DA4"
+				type: "observation"
+				title: "砂岩"
+				icon: "minecraft:sandstone"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:sandstone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 9.5d
+			description: ["Y:24-20"]
+			id: "6ADA4195B7B839FB"
+			tasks: [{
+				id: "4CC6A1B3F0BCCB7A"
+				type: "observation"
+				title: "紅沙"
+				icon: "minecraft:red_sand"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:red_sand"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 10.5d
+			description: ["Y:19-15"]
+			id: "353437EC28DF26ED"
+			tasks: [{
+				id: "7DA4AC3FF21391E1"
+				type: "observation"
+				title: "瀝青紅沙"
+				icon: "thermal:oil_red_sand"
+				timer: 0L
+				observe_type: 0
+				to_observe: "thermal:oil_red_sand"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 11.5d
+			description: ["Y:14-10"]
+			id: "2ECB775B3F1EE296"
+			tasks: [{
+				id: "545F86EDFD1CD2EE"
+				type: "observation"
+				title: "紅砂岩"
+				icon: "minecraft:red_sandstone"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:red_sandstone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 12.5d
+			description: ["Y:9-5"]
+			id: "2997EE926C4D0B5D"
+			tasks: [{
+				id: "72B625A729EF674F"
+				type: "observation"
+				title: "玄武岩"
+				icon: "minecraft:basalt"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:basalt"
+			}]
+		}
+		{
+			title: "岩漿"
+			icon: "minecraft:lava_bucket"
+			x: -3.0d
+			y: 14.5d
+			description: ["Y: -1 至 -20"]
+			id: "14DA3DC77984185E"
+			tasks: [{
+				id: "4BDBE2D9553ED27B"
+				type: "checkmark"
+				title: "Lava"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 13.5d
+			description: ["Y:4 - 0"]
+			id: "63A762A8B0DDE3E4"
+			tasks: [{
+				id: "2DE261B0E16311A1"
+				type: "observation"
+				title: "岩漿塊"
+				icon: "minecraft:magma_block"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:magma_block"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 15.5d
+			description: ["Y: -21 至 -25"]
+			id: "1B30A2AB215F7046"
+			tasks: [{
+				id: "4B35E4387F9503D3"
+				type: "observation"
+				title: "地獄石"
+				icon: "minecraft:netherrack"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:netherrack"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 16.5d
+			description: ["Y: -26 至 -30"]
+			id: "0F31DFD17B75385D"
+			tasks: [{
+				id: "392CB81DDE7EACF3"
+				type: "observation"
+				title: "地獄磚"
+				icon: "minecraft:nether_bricks"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:nether_bricks"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 17.5d
+			description: ["Y: -31 至 -35"]
+			id: "495859CCCAFFEEDE"
+			tasks: [{
+				id: "33BD57935B23EDD2"
+				type: "observation"
+				title: "靈魂砂"
+				icon: "minecraft:soul_sand"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:soul_sand"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 18.5d
+			description: ["Y: -36 至 -40"]
+			id: "63437AD334D9B1EB"
+			tasks: [{
+				id: "523E40EA95B37B50"
+				type: "observation"
+				title: "靈魂土"
+				icon: "minecraft:soul_soil"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:soul_soil"
+			}]
+		}
+		{
+			title: "敵對生物 1"
+			x: -1.5d
+			y: 3.5d
+			description: [
+				"Y: 162 至 80"
+				"敵對生物："
+				"殭屍"
+				"屍殼"
+				"流髑"
+				"蜘蛛"
+				"骷髏"
+			]
+			id: "6E5678073096B7ED"
+			tasks: [
+				{
+					id: "163FFD3D5D5B4A2D"
+					type: "kill"
+					entity: "minecraft:zombie"
+					value: 1L
+				}
+				{
+					id: "25945DE5908D1836"
+					type: "kill"
+					entity: "minecraft:husk"
+					value: 1L
+				}
+				{
+					id: "5D8D5A420FCD586E"
+					type: "kill"
+					entity: "minecraft:skeleton"
+					value: 1L
+				}
+				{
+					id: "261F7F3F9B712300"
+					type: "kill"
+					entity: "minecraft:stray"
+					value: 1L
+				}
+				{
+					id: "2715E93320D537B3"
+					type: "kill"
+					entity: "minecraft:spider"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			description: [
+				"Y: 162 至 80：在 Moss Block 上生成"
+				"被動生物："
+				"綿羊"
+				"雞"
+				"牛"
+				"豬"
+				"山羊"
+				"青蛙"
+			]
+			id: "727327979996D691"
+			tasks: [{
+				id: "0E304FF4BAB3055C"
+				type: "checkmark"
+				title: "被動生物 1"
+			}]
+		}
+		{
+			title: "敵對生物 2"
+			x: -1.5d
+			y: 4.5d
+			description: [
+				"Y:79 至 65："
+				"終界使者"
+				"史萊姆"
+				"暴雪使者"
+				"岩石使者"
+				"狂風使者"
+				"女巫"
+			]
+			id: "781FFD8AAAA4D112"
+			tasks: [
+				{
+					id: "1EC7C647B7477889"
+					type: "kill"
+					entity: "minecraft:enderman"
+					value: 1L
+				}
+				{
+					id: "4560E7C6A9DC1923"
+					type: "kill"
+					entity: "minecraft:slime"
+					value: 1L
+				}
+				{
+					id: "570157378B137165"
+					type: "kill"
+					icon: "thermal:blizz_spawn_egg"
+					entity: "thermal:blizz"
+					value: 1L
+				}
+				{
+					id: "6851A7BB65062CC9"
+					type: "kill"
+					icon: "thermal:basalz_spawn_egg"
+					entity: "thermal:basalz"
+					value: 1L
+				}
+				{
+					id: "59AA54986C386EDF"
+					type: "kill"
+					icon: "thermal:blitz_spawn_egg"
+					entity: "thermal:blitz"
+					value: 1L
+				}
+				{
+					id: "78777EC8AA08ED35"
+					type: "kill"
+					entity: "minecraft:witch"
+					value: 1L
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			description: [
+				"Y:79 至 65：在 Moss Block 上生成"
+				"狼"
+				"貓"
+				"豹貓"
+				"驢"
+				"馬"
+				"駱馬"
+			]
+			id: "7FEA8FF52EDF5F0D"
+			tasks: [{
+				id: "14936F8EE055EFE6"
+				type: "checkmark"
+				title: "被動生物 2"
+			}]
+		}
+		{
+			title: "敵對生物 3"
+			x: -1.5d
+			y: 5.5d
+			description: [
+				"Y:64 至 1:"
+				"沉屍"
+			]
+			id: "66B19193E754700E"
+			tasks: [{
+				id: "0CEF7A6C4CE27A7A"
+				type: "kill"
+				entity: "minecraft:drowned"
+				value: 1L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.5d
+			description: [
+				"Y:64 至 1：在水中生成"
+				"魷魚"
+				"發光魷魚"
+				"海豚"
+				"鱈魚"
+				"鮭魚"
+				"熱帶魚"
+			]
+			id: "5B14BCB760F4298D"
+			tasks: [{
+				id: "3947129DA517F0F6"
+				type: "checkmark"
+				title: "被動生物 3"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 19.5d
+			description: ["Y: -41 至 -60"]
+			id: "1E015A09F46FE2E0"
+			tasks: [{
+				id: "1F523C6270A48EE5"
+				type: "observation"
+				title: "深板岩"
+				icon: "minecraft:deepslate"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:deepslate"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 20.5d
+			description: ["世界的最底層"]
+			id: "7C69A55881764D0E"
+			tasks: [{
+				id: "4417563DE7CF76CD"
+				type: "observation"
+				title: "基岩"
+				icon: "minecraft:bedrock"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:bedrock"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.5d
+			description: ["Y:163-169"]
+			id: "6A8E7E1C44D75A26"
+			tasks: [{
+				id: "2BD4822F1A5DA913"
+				type: "observation"
+				title: "頂岩"
+				icon: "caveopolis:toprock"
+				timer: 0L
+				observe_type: 0
+				to_observe: "caveopolis:toprock"
+			}]
+		}
+		{
+			title: "敵對生物 5"
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"在終界："
+				"界伏蚌"
+				"終界蟎"
+				"終界使者"
+			]
+			id: "646C7CE373F852CD"
+			tasks: [
+				{
+					id: "1D408A56765ADAEB"
+					type: "kill"
+					entity: "minecraft:shulker"
+					value: 1L
+				}
+				{
+					id: "382DB59A69A1C86A"
+					type: "kill"
+					entity: "minecraft:endermite"
+					value: 1L
+				}
+			]
+		}
+		{
+			title: "敵對生物 4"
+			x: -1.5d
+			y: 6.5d
+			description: [
+				"Y:-21 至 -40："
+				"烈焰使者"
+				"凋零骷髏"
+				"地獄幽靈"
+				"終界使者"
+				"被遺忘的探險家"
+			]
+			id: "1A478BCC565860B4"
+			tasks: [
+				{
+					id: "768D05B97162D224"
+					type: "kill"
+					entity: "minecraft:blaze"
+					value: 1L
+				}
+				{
+					id: "72C5231A397C8E23"
+					type: "kill"
+					entity: "minecraft:wither_skeleton"
+					value: 1L
+				}
+				{
+					id: "30716290717F4C7D"
+					type: "kill"
+					entity: "minecraft:ghast"
+					value: 1L
+				}
+			]
+		}
+	]
+}

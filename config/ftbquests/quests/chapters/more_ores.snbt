@@ -1,0 +1,216 @@
+{
+	id: "377ADB22B90BD25C"
+	group: "2F71F900738EFA83"
+	order_index: 2
+	filename: "more_ores"
+	title: "更多礦物"
+	icon: "thermal:constantan_ingot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -3.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["56E7C3B3ABE96E4C"]
+			id: "192642554F5557C5"
+			tasks: [{
+				id: "6BED3E314D098335"
+				type: "item"
+				item: "caveopolis:nickel_fragment"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["56E7C3B3ABE96E4C"]
+			id: "07348643D6D4BFB2"
+			tasks: [{
+				id: "3A68C2A4FE9ECDAD"
+				type: "item"
+				item: "caveopolis:iron_fragment"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["56E7C3B3ABE96E4C"]
+			id: "47633DF354FE30E6"
+			tasks: [{
+				id: "281665F00EEC8169"
+				type: "item"
+				item: "caveopolis:redstone_fragment"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.5d
+			description: ["用礦物成型水在礦物提取器製作而成"]
+			dependencies: ["56E7C3B3ABE96E4C"]
+			id: "62E186986AD3B553"
+			tasks: [{
+				id: "0ACBB18E0DE5CCD4"
+				type: "item"
+				item: "caveopolis:lead_fragment"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			description: ["碎片可以做成原礦"]
+			dependencies: ["192642554F5557C5"]
+			id: "0D5AA6FCDDDA7BB4"
+			tasks: [{
+				id: "1D26A842F902B753"
+				type: "item"
+				item: "thermal:raw_nickel"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			description: ["碎片可以做成原礦"]
+			dependencies: ["07348643D6D4BFB2"]
+			id: "7C39FBC581607085"
+			tasks: [{
+				id: "69646AD838DA80F0"
+				type: "item"
+				item: "minecraft:raw_iron"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			description: ["碎片可以做成原礦"]
+			dependencies: ["62E186986AD3B553"]
+			id: "44D27773D7058734"
+			tasks: [{
+				id: "33D2FBEB5FBE6468"
+				type: "item"
+				item: "thermal:raw_lead"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			description: ["碎片可以做成紅石粉"]
+			dependencies: ["47633DF354FE30E6"]
+			id: "79C49725A3DC37A2"
+			tasks: [{
+				id: "1016F3A31F65B33D"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			description: ["燒原礦"]
+			dependencies: ["0D5AA6FCDDDA7BB4"]
+			id: "506C886E2271C2F5"
+			tasks: [{
+				id: "692D768AFA14512E"
+				type: "item"
+				item: "thermal:nickel_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			description: ["燒原礦"]
+			dependencies: ["7C39FBC581607085"]
+			id: "543722ED42ED477D"
+			tasks: [{
+				id: "4E1C83FC3506235B"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			description: ["燒原礦"]
+			dependencies: ["44D27773D7058734"]
+			id: "53EACDC82A3FFBB7"
+			tasks: [{
+				id: "5FE841DFFE4B56D3"
+				type: "item"
+				item: "thermal:lead_ingot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			description: ["9 個粉做成方塊"]
+			dependencies: ["79C49725A3DC37A2"]
+			id: "147575FBE1C01354"
+			tasks: [{
+				id: "505ED14DCBFD1707"
+				type: "item"
+				item: "minecraft:redstone_block"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			description: ["侵蝕器可將錠轉換為粉"]
+			dependencies: ["506C886E2271C2F5"]
+			id: "2D405C235A672B81"
+			tasks: [{
+				id: "3459DB2651F01810"
+				type: "item"
+				item: "thermal:nickel_dust"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			description: ["侵蝕器可將錠轉換為粉"]
+			dependencies: ["543722ED42ED477D"]
+			id: "033FB00C6B16000A"
+			tasks: [{
+				id: "4EF0D32BD0EF1726"
+				type: "item"
+				item: "thermal:iron_dust"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			description: ["銅和鎳的混合物"]
+			dependencies: ["2D405C235A672B81"]
+			id: "50DDF07B32ECA2F3"
+			tasks: [{
+				id: "1D9B4D320D860FDC"
+				type: "item"
+				item: "thermal:constantan_dust"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			description: ["燒康銅粉"]
+			dependencies: ["50DDF07B32ECA2F3"]
+			id: "0914CD2278E6D3D2"
+			tasks: [{
+				id: "2252A4EF402289DE"
+				type: "item"
+				item: "thermal:constantan_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			description: ["是礦物提取器的升級，可減少15 tick的時間"]
+			dependencies: ["0914CD2278E6D3D2"]
+			id: "0608DADFEA00BB1F"
+			tasks: [{
+				id: "042DD8C59EF97821"
+				type: "item"
+				item: "thermal:constantan_block"
+			}]
+		}
+	]
+}

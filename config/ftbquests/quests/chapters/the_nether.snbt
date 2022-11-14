@@ -1,0 +1,97 @@
+{
+	id: "59B9046A032EDFCC"
+	group: "42F827634C5AF128"
+	order_index: 1
+	filename: "the_nether"
+	title: "地獄材料"
+	icon: "minecraft:blaze_rod"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 2.0d
+			y: 5.0d
+			description: ["地獄石在岩漿層下方"]
+			dependencies: ["18619452787FEED0"]
+			id: "1D88368064364D55"
+			tasks: [{
+				id: "7427D0CE6771CC8E"
+				type: "item"
+				item: "minecraft:netherrack"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.5d
+			shape: "circle"
+			description: ["熱騰騰的磚"]
+			dependencies: ["1D88368064364D55"]
+			id: "0835F15917A8BC36"
+			tasks: [{
+				id: "28A456D31EF50B06"
+				type: "item"
+				item: "minecraft:nether_bricks"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.5d
+			description: ["侵蝕器可將地獄磚頭轉化成烈焰粉"]
+			dependencies: ["15030BFB3866080F"]
+			id: "78D1C9E230CD7EDF"
+			tasks: [{
+				id: "0CAF91AD54C20D5A"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 6.5d
+			description: ["烈焰粉可以用來製作烈焰桿"]
+			dependencies: ["78D1C9E230CD7EDF"]
+			id: "7EAE1E0442580431"
+			tasks: [{
+				id: "6E0CCAFD4840CFB4"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 6.5d
+			description: ["在多伺沖壓機中放入地獄磚製作而成"]
+			dependencies: ["0835F15917A8BC36"]
+			id: "15030BFB3866080F"
+			tasks: [{
+				id: "44EBB8CDC1E48234"
+				type: "item"
+				item: "minecraft:nether_brick"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.5d
+			description: ["讓礦物提取器能從岩漿製作烈焰粉"]
+			dependencies: ["7EAE1E0442580431"]
+			id: "4C55874647BDF27C"
+			tasks: [{
+				id: "41A5A06CA69AB929"
+				type: "item"
+				item: "caveopolis:ore_extractor_upgrade_blazing"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 8.0d
+			description: ["烈焰桿可用來製作熱力模組的機器框架。是礦物提取器的升級，可減少20 tick的時間"]
+			dependencies: ["7EAE1E0442580431"]
+			id: "32931182B3D4C1FB"
+			tasks: [{
+				id: "3ECC1EF92C766617"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+	]
+}

@@ -1,0 +1,172 @@
+{
+	id: "303350718ABC1104"
+	group: "64C5B9E37C4A7196"
+	order_index: 0
+	filename: "up_we_go"
+	title: "世界最高處"
+	icon: "minecraft:dragon_head"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["世界最高處"]
+			dependencies: ["6A76CB2352F24C92"]
+			id: "235CA6386C9A6A17"
+			tasks: [{
+				id: "3E5B7971EA322527"
+				type: "item"
+				item: "caveopolis:toprock"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["在侵蝕器中放入頂岩製作而成"]
+			dependencies: ["235CA6386C9A6A17"]
+			id: "55EF2C5754CA949F"
+			tasks: [{
+				id: "043541DCFDBAD5E9"
+				type: "item"
+				item: "minecraft:end_stone"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["用來製作終界傳送門，框架可以手持終界錠對它shift右鍵取下。在12個框架中放入終界之眼開啟傳送門進入終界"]
+			dependencies: [
+				"2F2C4679EA31AA95"
+				"55EF2C5754CA949F"
+			]
+			id: "7518E6161D2CF7CE"
+			tasks: [{
+				id: "2DCE7C4202F7EE18"
+				type: "item"
+				item: "minecraft:end_portal_frame"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["擊殺終界龍並拿走他的蛋，手持終界錠shift右鍵能讓龍蛋掉落"]
+			dependencies: ["7518E6161D2CF7CE"]
+			id: "3196A4901DECEAF5"
+			tasks: [{
+				id: "77E3DD890459C3B9"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			description: ["在龍灌注機中製作而成"]
+			dependencies: ["02B9FEDA46CBB141"]
+			id: "38E3568435BCA69F"
+			tasks: [{
+				id: "65F6D3FE25FC738B"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			description: ["在龍灌注機中製作而成"]
+			dependencies: ["163941505FFA6244"]
+			id: "02B9FEDA46CBB141"
+			tasks: [{
+				id: "02CDD7FF10611B58"
+				type: "item"
+				item: "minecraft:dragon_head"
+			}]
+		}
+		{
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "caveopolis:dragon_infuser"
+				}
+			}
+			x: 4.5d
+			y: -3.0d
+			description: ["灌注龍之力"]
+			dependencies: [
+				"363E074A67710AC9"
+				"64FA107F701534D1"
+			]
+			id: "163941505FFA6244"
+			tasks: [
+				{
+					id: "5A0025E38D01AA54"
+					type: "item"
+					disable_toast: true
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "caveopolis:dragon_infuser"
+						}
+					}
+				}
+				{
+					id: "5D0C4BFC96C7C0EF"
+					type: "advancement"
+					advancement: "caveopolis:machines/dragon_infuser"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			description: ["終界水晶是這個多方塊結構的一部分"]
+			dependencies: ["163941505FFA6244"]
+			id: "6E9724B60D3257F0"
+			tasks: [{
+				id: "3F8639FC392C1D79"
+				type: "item"
+				item: "minecraft:end_crystal"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			description: ["能在終界找到，擊殺終界蟎也會掉落"]
+			dependencies: ["3196A4901DECEAF5"]
+			id: "363E074A67710AC9"
+			tasks: [{
+				id: "10EE18D8D8F0A333"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.5d
+			description: ["在終界擊殺界伏蚌掉落"]
+			dependencies: ["3196A4901DECEAF5"]
+			id: "64FA107F701534D1"
+			tasks: [{
+				id: "734525EC1B8DEE05"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			description: ["放在礦物提取器的升級欄位中，製作更多材料"]
+			dependencies: ["38E3568435BCA69F"]
+			id: "38E354113B97A75A"
+			tasks: [{
+				id: "71B1D08FB5E7439A"
+				type: "item"
+				item: "caveopolis:ore_extractor_upgrade_tier_4"
+			}]
+		}
+	]
+}

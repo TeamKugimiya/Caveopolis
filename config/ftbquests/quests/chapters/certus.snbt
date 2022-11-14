@@ -1,0 +1,203 @@
+{
+	id: "3F5CEDAC66DD5922"
+	group: "64C5B9E37C4A7196"
+	order_index: 2
+	filename: "certus"
+	title: "賽特斯石英"
+	icon: "ae2:charged_certus_quartz_crystal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			description: ["種子能放入富集倉更快速的成長"]
+			dependencies: [
+				"217909339C9FB81F"
+				"336133970A5B4985"
+			]
+			id: "132C5DFEA2B21F9F"
+			tasks: [{
+				id: "11F97C33628EE02F"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			description: ["讚啦"]
+			dependencies: ["132C5DFEA2B21F9F"]
+			id: "43A0FE0CCF44BC10"
+			tasks: [{
+				id: "0699779F6240CBFE"
+				type: "item"
+				item: "ae2:certus_quartz_crystal"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			description: ["丟入水中讓它長成賽特斯石英，或使用富集倉"]
+			dependencies: [
+				"0DAEC71112663EFF"
+				"277BFB6F90815CF2"
+			]
+			id: "336133970A5B4985"
+			tasks: [{
+				id: "4969BBD0BB71B4BC"
+				type: "item"
+				item: "ae2:certus_crystal_seed"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["賽特斯石英方塊"]
+			dependencies: ["43A0FE0CCF44BC10"]
+			id: "45875E26F0FFB727"
+			tasks: [{
+				id: "38AD89CE1749AE84"
+				type: "item"
+				item: "ae2:quartz_block"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			description: ["福魯伊克斯方塊"]
+			dependencies: ["6D485486C2B8C817"]
+			id: "2B213624A626917F"
+			tasks: [{
+				id: "2F93078DDCC4DAD3"
+				type: "item"
+				item: "ae2:fluix_block"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			description: ["丟入水中讓它長成福魯伊克斯水晶，或使用富集倉"]
+			dependencies: ["3D4E50A330DF03BF"]
+			id: "0F85562364F5417F"
+			tasks: [{
+				id: "55B9EBC2146D6EA1"
+				type: "item"
+				item: "ae2:fluix_crystal_seed"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: ["用來充能賽特斯石英"]
+			dependencies: ["43A0FE0CCF44BC10"]
+			id: "1E022149A70B1558"
+			tasks: [{
+				id: "59DA66FD071DCF87"
+				type: "item"
+				item: "ae2:charger"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			description: ["充能賽特斯石英水晶"]
+			dependencies: ["1E022149A70B1558"]
+			id: "3D4E50A330DF03BF"
+			tasks: [{
+				id: "7E86456605F4BAAD"
+				type: "item"
+				item: "ae2:charged_certus_quartz_crystal"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			description: ["福魯伊克斯水晶"]
+			dependencies: ["0F85562364F5417F"]
+			id: "6D485486C2B8C817"
+			tasks: [{
+				id: "62BC9CD70FA4825D"
+				type: "item"
+				item: "ae2:fluix_crystal"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			description: ["賽特斯石英粉"]
+			dependencies: ["43A0FE0CCF44BC10"]
+			id: "32C96D31FA7FCDD3"
+			tasks: [{
+				id: "1F6FD898F9F604E8"
+				type: "item"
+				item: "ae2:certus_quartz_dust"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			description: ["福魯伊克斯粉"]
+			dependencies: ["6D485486C2B8C817"]
+			id: "64DBE76BC67DEB3A"
+			tasks: [{
+				id: "166C45BDC8357666"
+				type: "item"
+				item: "ae2:fluix_dust"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			description: ["燒賽特斯石英水晶粉製作矽"]
+			dependencies: ["32C96D31FA7FCDD3"]
+			id: "092DBDB29C589DAF"
+			tasks: [{
+				id: "71D73AB79527AB75"
+				type: "item"
+				item: "ae2:silicon"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			description: ["就是黃金方塊"]
+			dependencies: ["191826F9642F59D5"]
+			id: "34659BF2726A1AA4"
+			tasks: [{
+				id: "0BB2D65B93463043"
+				type: "item"
+				item: "minecraft:gold_block"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			description: ["就是鑽石方塊"]
+			dependencies: ["0C27FD0581B1440A"]
+			id: "53AE68566A4380D7"
+			tasks: [{
+				id: "5C0A6955D8D8664C"
+				type: "item"
+				item: "minecraft:diamond_block"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["電腦零件"]
+			dependencies: [
+				"53AE68566A4380D7"
+				"45875E26F0FFB727"
+				"2B213624A626917F"
+				"34659BF2726A1AA4"
+			]
+			id: "1F374EABFD1AF399"
+			tasks: [{
+				id: "63EE5F5EAFFB376A"
+				type: "item"
+				item: "ae2:inscriber"
+			}]
+		}
+	]
+}

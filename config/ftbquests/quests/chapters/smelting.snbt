@@ -1,0 +1,72 @@
+{
+	id: "34BBCD4A1448334A"
+	group: "4EB69D90B1D1A989"
+	order_index: 3
+	filename: "smelting"
+	title: "冶煉"
+	icon: "minecraft:furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -1.5d
+			description: ["燒些東西"]
+			dependencies: ["53CF8D92C491C363"]
+			id: "353571E263E74485"
+			tasks: [{
+				id: "4EB2DDC1102C908D"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			description: ["燒石頭製成平滑石頭"]
+			dependencies: ["353571E263E74485"]
+			id: "274A935FFFE87DCC"
+			tasks: [{
+				id: "26CD2B4C757BED2B"
+				type: "item"
+				item: "minecraft:smooth_stone"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -4.5d
+			description: ["在侵蝕器中放入平滑石頭製作而成"]
+			dependencies: ["274A935FFFE87DCC"]
+			id: "3D6FA909DDFA4F25"
+			tasks: [{
+				id: "38844BE54DA97EAB"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			description: ["在侵蝕器中放入礫石製作而成"]
+			dependencies: ["3D6FA909DDFA4F25"]
+			id: "6DAC3CDA058AFCFC"
+			tasks: [{
+				id: "3C5CC55CAE99EF5C"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.5d
+			description: ["在熔爐中燒沙而成"]
+			dependencies: ["6DAC3CDA058AFCFC"]
+			id: "3A0EC24DBAED375E"
+			tasks: [{
+				id: "01B1A0FE3D938DC5"
+				type: "item"
+				item: "minecraft:glass"
+			}]
+		}
+	]
+}
