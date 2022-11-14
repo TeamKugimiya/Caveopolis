@@ -35,7 +35,7 @@
 		{
 			x: 3.0d
 			y: 0.0d
-			description: ["石頭可用來製作石棍"]
+			description: ["石頭可用來製作石棒"]
 			dependencies: ["577E1A777FFDF07E"]
 			id: "68F73FFFB833B2AF"
 			tasks: [{

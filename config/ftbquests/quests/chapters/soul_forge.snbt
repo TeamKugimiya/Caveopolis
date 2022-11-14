@@ -132,7 +132,7 @@
 		{
 			x: -4.5d
 			y: 4.5d
-			description: ["由凋零粉塵和骷髏頭顱製作而成"]
+			description: ["由凋零粉和骷髏頭顱製作而成"]
 			dependencies: ["548ECFC204057AF2"]
 			id: "3B37142EDB299273"
 			tasks: [{
