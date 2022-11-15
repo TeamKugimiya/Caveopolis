@@ -13,7 +13,7 @@ env:
 
 jobs:
   ModPack:
-    name: 製作模組包覆蓋設定檔
+    name: 製作模組包補丁
     runs-on: ubuntu-latest
 
     steps:
@@ -80,7 +80,7 @@ jobs:
   ModPack-Release:
     needs: [ ModPack, ModsResourcePack ]
     if: "${{ github.event.inputs.tag != '開發版' }}"
-    name: 發布模組包補丁
+    name: 發布模組包
     runs-on: ubuntu-latest
 
     steps:
