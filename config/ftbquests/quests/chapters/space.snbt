@@ -123,7 +123,7 @@
 		{
 			x: -6.0d
 			y: -3.0d
-			description: ["感謝遊玩！繁體中文任務翻譯由釘宮翻譯組製作"]
+			description: ["感謝遊玩！繁體中文任務翻譯由釘宮翻譯組製作！"]
 			dependencies: ["18A3C9E5D999453E"]
 			id: "7C72C9B566503B49"
 			tasks: [{
