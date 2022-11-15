@@ -231,7 +231,7 @@
 		{
 			x: 0.0d
 			y: -6.0d
-			description: ["橡木材可將杜鵑叢原木放入侵蝕器中製作而成"]
+			description: ["橡木材可將杜鵑木原木放入侵蝕器中製作而成"]
 			dependencies: [
 				"02FD17C4AAE8501D"
 				"1DB9BF48105BB29A"

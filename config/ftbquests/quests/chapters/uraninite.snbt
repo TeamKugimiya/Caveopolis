@@ -86,7 +86,7 @@
 		{
 			x: 5.0d
 			y: 1.5d
-			description: ["放入Powah模組的反應堆中發大量的電"]
+			description: ["放入Powah模組的反應爐中發大量的電"]
 			dependencies: [
 				"112E11A01FC298F8"
 				"3407A29717C8083E"
@@ -106,7 +106,7 @@
 		{
 			x: 6.5d
 			y: 1.5d
-			description: ["反應堆可用來發大量的電"]
+			description: ["反應爐可用來發大量的電"]
 			dependencies: ["084EAB30A3C8443C"]
 			id: "6FFF58572DB3BC7F"
 			tasks: [{
@@ -118,7 +118,7 @@
 		{
 			x: 6.5d
 			y: 3.0d
-			description: ["就是反應堆"]
+			description: ["就是反應爐"]
 			dependencies: ["6FFF58572DB3BC7F"]
 			id: "4FD37AA4CD814861"
 			tasks: [{
@@ -130,7 +130,7 @@
 		{
 			x: 5.0d
 			y: 3.0d
-			description: ["就是反應堆"]
+			description: ["就是反應爐"]
 			dependencies: [
 				"550B71172C500328"
 				"4FD37AA4CD814861"
@@ -157,7 +157,7 @@
 		{
 			x: 5.0d
 			y: 4.5d
-			description: ["就是反應堆"]
+			description: ["就是反應爐"]
 			dependencies: [
 				"7F58DE98D4FC8081"
 				"6983F918A42B60F4"
@@ -184,7 +184,7 @@
 		{
 			x: 5.0d
 			y: 6.0d
-			description: ["就是反應堆"]
+			description: ["就是反應爐"]
 			dependencies: [
 				"004763A8561D93B1"
 				"702BEA08CD778BAE"
@@ -211,7 +211,7 @@
 		{
 			x: 5.0d
 			y: 7.5d
-			description: ["就是反應堆"]
+			description: ["就是反應爐"]
 			dependencies: [
 				"6907002DAD68398A"
 				"7D694B66A9C710C4"
@@ -238,7 +238,7 @@
 		{
 			x: 5.0d
 			y: 9.0d
-			description: ["就是反應堆"]
+			description: ["就是反應爐"]
 			dependencies: [
 				"10276CC06FD3561B"
 				"35743CFE1F60DB66"

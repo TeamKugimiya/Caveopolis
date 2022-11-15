@@ -87,7 +87,7 @@
 			]
 		}
 		{
-			title: "Creating The Forge"
+			title: "搭建熔爐"
 			x: -3.0d
 			y: 4.5d
 			description: ["需要多方塊結構才能運作"]

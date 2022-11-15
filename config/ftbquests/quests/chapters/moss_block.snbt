@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Azalea"
+			title: "杜鵑叢"
 			x: -1.0d
 			y: -1.5d
 			description: ["在苔蘚方塊上撒骨粉生成"]
@@ -43,7 +43,7 @@
 		{
 			x: 0.5d
 			y: -1.5d
-			description: ["杜鵑叢樹苗可撒骨粉催生成杜鵑叢樹。 推薦的空間大小為 5x5x7"]
+			description: ["杜鵑叢樹苗可撒骨粉催生成杜鵑木。 推薦的空間大小為 5x5x7"]
 			dependencies: [
 				"154E0B8171A0751E"
 				"378869F13DFEF5AB"
@@ -59,7 +59,7 @@
 		{
 			x: 0.5d
 			y: 0.0d
-			description: ["當杜鵑叢樹在苔蘚方塊上長大時，正下方的方塊會轉換成扎根土"]
+			description: ["當杜鵑木在苔蘚方塊上長大時，正下方的方塊會轉換成扎根土"]
 			dependencies: ["02FD17C4AAE8501D"]
 			id: "1CE877D8884AF1B7"
 			tasks: [{

@@ -185,13 +185,13 @@
 		{
 			x: 13.0d
 			y: 6.0d
-			description: ["在多伺沖壓機中放入史萊姆球製成乳膠"]
+			description: ["在多驅衝壓機中放入史萊姆球製成乳膠"]
 			dependencies: ["09746DF153CF6276"]
 			id: "5B05C6FC51D09632"
 			tasks: [{
 				id: "1E8F4E9FB9083FB9"
 				type: "checkmark"
-				title: "Latex"
+				title: "乳膠"
 			}]
 		}
 	]
