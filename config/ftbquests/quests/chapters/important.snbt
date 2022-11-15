@@ -51,12 +51,12 @@
 		{
 			x: 0.0d
 			y: -5.5d
-			description: ["感謝下載並歡迎來到 caveopolis 繁體中文任務翻譯 by 旺財"]
+			description: ["感謝下載並歡迎來到"不是只有石頭的世界"繁體中文任務翻譯由釘宮翻譯組製作"]
 			id: "6F4B14A1DDCF4EF4"
 			tasks: [{
 				id: "734B0A9CE4EB7907"
 				type: "checkmark"
-				title: "歡迎來到 Caveopolis"
+				title: "歡迎來到"不是只有石頭的世界""
 			}]
 		}
 		{
@@ -74,13 +74,13 @@
 		{
 			x: 0.0d
 			y: -3.5d
-			description: ["本模組包使用天空方塊生成器創建世界。 右鍵使用此物品會創造並選擇你的起始基地"]
+			description: ["本模組包使用 Skyblock Builder 創建世界。 右鍵使用此物品會創造並選擇你的起始基地"]
 			dependencies: ["6F4B14A1DDCF4EF4"]
 			id: "3235AF9664887416"
 			tasks: [{
 				id: "49B81B79859E3659"
 				type: "checkmark"
-				title: "天空方塊生成器"
+				title: "Skyblock Builder"
 			}]
 			rewards: [{
 				id: "69806493A1403EDB"
