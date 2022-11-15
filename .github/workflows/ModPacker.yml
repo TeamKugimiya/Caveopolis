@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "發布版本（如果未指定，將不會發布並會生成開發版）"
+        description: "發布版本，例如 v1.0（如果為空，將只會生成開發版）"
         required: false
         default: "開發版"
 
