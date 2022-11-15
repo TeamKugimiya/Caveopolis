@@ -1,0 +1,89 @@
+name: ModPacker
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "發布版本（如果未指定，將不會發布並會生成開發版）"
+        required: false
+        default: "開發版"
+
+env:
+  ModPackName: Caveopolis
+
+jobs:
+  ModPack:
+    name: 製作模組包覆蓋設定檔
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 查看專案
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: 執行製作補丁的腳本
+        env: 
+          VERSION: ${{ inputs.tag }}
+        run: bash .github/scripts/ModPacker.sh
+
+      - name: 上傳模組包補丁壓縮檔
+        uses: actions/upload-artifact@v3
+        with:
+          name: 模組包補丁壓縮檔
+          path: "*.zip"
+
+  ModsResourcePack:
+    name: 製作模組資源包
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 查看專案
+        uses: actions/checkout@v3
+        with:
+          ref: resoucepack
+          fetch-depth: 0
+      
+      - name: 自動更新版本
+        run: |
+          sed -i 's/$VERSION/'${{ github.event.inputs.tag }}'/1' pack.mcmeta
+
+      - name: 製作模組中文化資源包
+        uses: ComunidadAylas/PackSquash-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          never_store_squash_times: true
+          path: ./
+
+      - name: 下載壓縮檔
+        uses: actions/download-artifact@v2
+        with:
+          name: Optimized pack
+          path: ./
+
+      - name: 刪除 Artifact
+        uses: geekyeggo/delete-artifact@v1
+        with:
+          name: |
+            Optimized pack
+
+      - name: 重新命名壓縮檔
+        run: |
+          mv ./pack.zip ${{ env.ModPackName }}-模組中文化資源包-${{ github.event.inputs.tag }}.zip
+
+      - name: 上傳模組中文化資源包
+        uses: actions/upload-artifact@v3
+        with:
+          name: 模組中文化資源包
+          path: "*.zip"
+
+  ModPack-Release:
+    needs: [ ModPack, ModsResourcePack ]
+    if: "${{ github.event.inputs.tag != '開發版' }}"
+    name: 發布模組包補丁
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello World
+        run: |
+          echo "Hello World!"
