@@ -211,7 +211,7 @@
 					id: "26B0664F2FF2CF92"
 					type: "command"
 					auto: "enabled"
-					command: "/say @p can now break granite, andesite and diorite!"
+					command: "/say @p 可以破壞花崗岩、安山岩和閃長岩了！"
 					player_command: false
 				}
 			]

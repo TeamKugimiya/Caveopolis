@@ -176,7 +176,7 @@
 					id: "1876999384DA4523"
 					type: "command"
 					auto: "enabled"
-					command: "/say @p can now break basalt!"
+					command: "/say @p 可以破壞玄武岩了！"
 					player_command: false
 				}
 			]

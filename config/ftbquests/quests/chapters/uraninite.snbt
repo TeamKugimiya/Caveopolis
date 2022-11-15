@@ -289,7 +289,7 @@
 					id: "1E7EF0C787685395"
 					type: "command"
 					auto: "enabled"
-					command: "/say @p can now break toprock!"
+					command: "/say @p 可以破壞頂岩了！"
 					player_command: false
 				}
 			]

@@ -143,7 +143,7 @@
 					id: "0A511A7FC3600C93"
 					type: "command"
 					auto: "enabled"
-					command: "/say @p can now break prismarine!"
+					command: "/say @p 可以破壞海磷石了！"
 					player_command: false
 				}
 			]

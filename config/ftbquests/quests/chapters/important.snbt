@@ -43,7 +43,7 @@
 					id: "2935C96473724F94"
 					type: "command"
 					auto: "enabled"
-					command: "/say @p can now break stone!"
+					command: "/say @p 可以破壞石頭了！"
 					player_command: false
 				}
 			]

@@ -177,7 +177,7 @@
 					id: "551731939BD3A10D"
 					type: "command"
 					auto: "enabled"
-					command: "/say @p can now break deepslate!"
+					command: "/say @p 可以破壞深板岩了！"
 					player_command: false
 				}
 			]
