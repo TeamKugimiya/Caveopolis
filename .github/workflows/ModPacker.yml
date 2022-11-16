@@ -3,13 +3,21 @@ name: ModPacker
 on:
   workflow_dispatch:
     inputs:
+      modpack_name:
+        description: "模組包名稱"
+        required: false
+        default: "Caveopolis"
+      modpack_version:
+        description: "模組包版本"
+        required: false
+        default: "v1.0"
       tag:
         description: "發布版本，例如 v1.0（如果為空，將只會生成開發版）"
         required: false
         default: "開發版"
 
-env:
-  ModPackName: Caveopolis
+permissions:
+  contents: write
 
 jobs:
   ModPack:
@@ -24,7 +32,7 @@ jobs:
 
       - name: 執行製作補丁的腳本
         env: 
-          VERSION: ${{ inputs.tag }}
+          VERSION: ${{ github.event.inputs.tag }}
         run: bash .github/scripts/ModPacker.sh
 
       - name: 上傳模組包補丁壓縮檔
@@ -69,7 +77,7 @@ jobs:
 
       - name: 重新命名壓縮檔
         run: |
-          mv ./pack.zip ${{ env.ModPackName }}-模組中文化資源包-${{ github.event.inputs.tag }}.zip
+          mv ./pack.zip ${{ github.event.inputs.modpack_name}}-模組中文化資源包-${{ github.event.inputs.tag }}.zip
 
       - name: 上傳模組中文化資源包
         uses: actions/upload-artifact@v3
@@ -84,6 +92,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hello World
-        run: |
-          echo "Hello World!"
+      - name: 下載所有壓縮檔
+        uses: actions/download-artifact@v3
+
+      - name: 創建發布
+        uses: softprops/action-gh-release@v1
+        with:
+          name: 發布 ${{ github.event.inputs.modpack_name}} 中文化翻譯 ${{ github.event.inputs.tag }}
+          tag_name: ${{ github.event.inputs.tag }}
+          files: "*.zip"
+          body: |
+            # ${{ github.event.inputs.modpack_name}} 中文化翻譯 ${{ github.event.inputs.tag }}
+            > ${{ github.event.inputs.modpack_name}} 模組包版本 ${{ github.event.inputs.modpack_version }}
+
+            ## 下載安裝
+            請下載底下的``模組中文化資源包``與``模組包漢化補丁``
+
+            ### 模組漢化補丁
+            並將``模組包補丁``中的內容解壓縮到該模組包的``.minecraft``資料夾中覆蓋它們！
+
+            ### 模組中文化資源包
+            將其放入資源包資料夾中，並載入它即可。
+
