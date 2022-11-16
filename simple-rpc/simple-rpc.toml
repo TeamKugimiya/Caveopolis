@@ -1,0 +1,221 @@
+
+#General Config Section. See https://readme.firstdarkdev.xyz/simple-rpc/introduction/
+[general]
+	#The Application ID of the Discord App to use
+	applicationID = 1001504472876466337
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen. ONLY AVAILABLE WHEN CLOTH CONFIG IS INSTALLED!
+	configScreen = true
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 16
+
+#The Game Loading event
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "正在載入 Caveopolis"
+	#The second line of text under the app name
+	state = "正在啟動遊戲..."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft %mcver% 模組生存"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Caveoopolis"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Main Menu event
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 目前正在發呆"
+	#The seconds line of text under the app name
+	state = "準備好進入洞穴挖礦了"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft %mcver% 模組生存"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Caveopolis"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Server List event
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 正在尋覓 Caveopolis 的伺服器"
+	#The second line of text under the app name
+	state = "正在尋找朋友"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Caveopolis 伺服器清單"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Caveopolis"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Realms Screen event
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = false
+	#The first line of text under the app name
+	description = "%player% 正在尋覓 Realm"
+	#The second line of text under the app name
+	state = "正在瀏覽 Realms"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "It's Minecraft %mcver%, but modded"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "安裝了 %mods% 個模組"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Join Game Event
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 正在加入遊戲"
+	#The second line of text under the app name
+	state = "正在加入遊戲"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "正在加入與朋友的洞穴冒險"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Caveopolis"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "目前位在 %world%"
+	#The second line of text under the app name
+	state = "正在單獨遊玩 Caveopolis"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "正在單獨遊玩 Caveopolis"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "Caveopolis"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Multi Player Event
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = false
+	#The first line of text under the app name
+	description = "正在 %servername% 上與 %players% 名玩家遊玩"
+	#The second line of text under the app name
+	state = "正在遊玩線上模式"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft %mcver% 模組生存"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "安裝了 %mods% 個模組"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Realms Game Event
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = false
+	#The first line of text under the app name
+	description = "正在 %realmname% 上遊玩"
+	#The second line of text under the app name
+	state = "正在 Realm 上遊玩"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "mclogonew"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "Minecraft %mcver% 模組生存"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "mclogo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	#The buttons to display on Discord
+	buttons = []
+
+#Fallback event for disabled events
+[generic]
+	#The first line of text under the app name
+	description = "正在遊玩 Caveopolis"
+	#The second line of text under the app name
+	state = ""
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "logo"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = ""
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "logo"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = ""
+	#The buttons to display on Discord
+	buttons = []
+
+#Dimension Information Overrides
+[dimension_overrides]
+	#Allows you to override the displayed values for dimensions
+	enabled = false
+
+	#The Dimensions to override
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "%player% 位於主世界中"
+		state = ""
+		largeImageKey = "overworld"
+		largeImageText = "位於主世界"
+		smallImageKey = "mclogo"
+		smallImageText = "%mods% mods installed"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "%player% 位於地獄中"
+		state = ""
+		largeImageKey = "nether"
+		largeImageText = "位於地獄"
+		smallImageKey = "mclogo"
+		smallImageText = "安裝了 %mods% 個模組"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "%player% 位於終界中"
+		state = ""
+		largeImageKey = "end"
+		largeImageText = "位於終界"
+		smallImageKey = "mclogo"
+		smallImageText = "安裝了 %mods% 個模組"
+		buttons = []
+
