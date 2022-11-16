@@ -60,6 +60,8 @@ jobs:
         uses: ComunidadAylas/PackSquash-action@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          force_include_files: |
+            LICENSE
           never_store_squash_times: true
           path: ./
 
