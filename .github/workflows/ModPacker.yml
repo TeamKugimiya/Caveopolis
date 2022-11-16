@@ -119,3 +119,6 @@ jobs:
 
             ## 模組中文化資源包
             將 ``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip`` 放入模組包的 ``resourcepacks`` 資料夾，並在遊戲中選取並載入
+
+            ## 模組中文化補充
+            由於仍有部分模組翻譯尚未完成，故建議搭配[簡轉繁資源包](https://github.com/TeamKugimiya/MMLP-CN-to-ZW/releases/tag/latest)使用
