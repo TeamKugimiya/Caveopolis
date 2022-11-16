@@ -110,10 +110,10 @@ jobs:
             ## ${{ github.event.inputs.modpack_name}} 模組包版本 ${{ github.event.inputs.modpack_version }}
 
             ## 下載安裝
-            請下載下方的``${{ github.event.inputs.modpack_name}}-Patches.zip``與``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip``
+            請下載下方的 ``${{ github.event.inputs.modpack_name}}-Patches.zip`` 與 ``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip``
 
             ## 模組包中文化補丁
-            使用 7-Zip 等軟體開啟``${{ github.event.inputs.modpack_name}}-Patches.zip``壓縮檔，並將壓縮檔中的內容，解壓縮到模組包的``.minecraft``資料夾
+            使用 7-Zip 等軟體開啟 ``${{ github.event.inputs.modpack_name}}-Patches.zip`` 壓縮檔，並將壓縮檔中的內容，解壓縮到模組包的 ``.minecraft`` 資料夾
 
             ## 模組中文化資源包
-            將``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip``放入模組包的``resoucepacks``資料夾，並在遊戲中選取並載入
+            將 ``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip`` 放入模組包的 ``resoucepacks`` 資料夾，並在遊戲中選取並載入
