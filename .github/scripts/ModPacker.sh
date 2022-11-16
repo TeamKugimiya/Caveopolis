@@ -11,7 +11,7 @@
 ModPackName=Caveopolis
 
 ## 要建立進模組包漢化補丁中的陣列
-ConfigPath=(config kubejs patchouli_books LICENSE)
+ConfigPath=(config kubejs patchouli_books LICENSE simple-rpc options.txt)
 
 ### 腳本執行區 ###
 
