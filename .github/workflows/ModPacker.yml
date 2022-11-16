@@ -118,4 +118,4 @@ jobs:
             使用 7-Zip 等軟體開啟 ``${{ github.event.inputs.modpack_name}}-Patches.zip`` 壓縮檔，並將壓縮檔中的內容，解壓縮到模組包的 ``.minecraft`` 資料夾
 
             ## 模組中文化資源包
-            將 ``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip`` 放入模組包的 ``resoucepacks`` 資料夾，並在遊戲中選取並載入
+            將 ``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip`` 放入模組包的 ``resourcepacks`` 資料夾，並在遊戲中選取並載入
