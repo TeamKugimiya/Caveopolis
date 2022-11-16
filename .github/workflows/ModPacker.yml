@@ -77,7 +77,7 @@ jobs:
 
       - name: 重新命名壓縮檔
         run: |
-          mv ./pack.zip ${{ github.event.inputs.modpack_name}}-模組中文化資源包-${{ github.event.inputs.tag }}.zip
+          mv ./pack.zip ${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip
 
       - name: 上傳模組中文化資源包
         uses: actions/upload-artifact@v3
@@ -110,11 +110,10 @@ jobs:
             ## ${{ github.event.inputs.modpack_name}} 模組包版本 ${{ github.event.inputs.modpack_version }}
 
             ## 下載安裝
-            請下載底下的``模組中文化資源包``與``模組包漢化補丁``
+            請下載下方的``${{ github.event.inputs.modpack_name}}-Patches.zip``與``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip``
 
-            ### 模組漢化補丁
-            將``模組包補丁``中的內容解壓縮到該模組包的``.minecraft``資料夾中覆蓋它們！
+            ## 模組包中文化補丁
+            使用 7-Zip 等軟體開啟``${{ github.event.inputs.modpack_name}}-Patches.zip``壓縮檔，並將壓縮檔中的內容，解壓縮到模組包的``.minecraft``資料夾
 
-            ### 模組中文化資源包
-            將``模組中文化資源包``放入該模組包的資源包資料夾中，並載入它即可。
-
+            ## 模組中文化資源包
+            將``${{ github.event.inputs.modpack_name}}-Mods-Localization-${{ github.event.inputs.tag }}.zip``放入模組包的``resoucepacks``資料夾，並在遊戲中選取並載入

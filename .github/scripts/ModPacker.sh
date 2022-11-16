@@ -28,7 +28,7 @@ done
 
 # 壓縮並製作模組包漢化補丁
 cd workdir || exit
-zip -r ../$ModPackName-模組包漢化補丁-$VERSION.zip *
+zip -r ../$ModPackName-Patches-$VERSION.zip *
 
 # 清理工作流程
 cd ..
