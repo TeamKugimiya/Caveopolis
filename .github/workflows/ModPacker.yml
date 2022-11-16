@@ -95,15 +95,19 @@ jobs:
       - name: 下載所有壓縮檔
         uses: actions/download-artifact@v3
 
+      - name: 移動檔案到主工作資料夾
+        run: |
+          mv 模組包補丁壓縮檔/*.zip .
+          mv 模組中文化資源包/*.zip .
+
       - name: 創建發布
         uses: softprops/action-gh-release@v1
         with:
-          name: 發布 ${{ github.event.inputs.modpack_name}} 中文化翻譯 ${{ github.event.inputs.tag }}
+          name: ${{ github.event.inputs.modpack_name}} 中文化翻譯 ${{ github.event.inputs.tag }}
           tag_name: ${{ github.event.inputs.tag }}
           files: "*.zip"
           body: |
-            # ${{ github.event.inputs.modpack_name}} 中文化翻譯 ${{ github.event.inputs.tag }}
-            > ${{ github.event.inputs.modpack_name}} 模組包版本 ${{ github.event.inputs.modpack_version }}
+            ## ${{ github.event.inputs.modpack_name}} 模組包版本 ${{ github.event.inputs.modpack_version }}
 
             ## 下載安裝
             請下載底下的``模組中文化資源包``與``模組包漢化補丁``
