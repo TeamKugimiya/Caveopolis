@@ -27,5 +27,4 @@ for path in "${ConfigPath[@]}"; do
 done
 
 # 壓縮並製作模組包漢化補丁
-zip -jr $ModPackName-Patches-$VERSION.zip "$workdir"/*
-
+cd $workdir && zip -r "$OLDPWD/$ModPackName-Patches-$VERSION.zip" *
