@@ -19,17 +19,12 @@ ConfigPath=(config kubejs patchouli_books LICENSE simple-rpc options.txt)
 cd "$GITHUB_WORKSPACE" || exit
 
 # 製作一個臨時資料夾
-mkdir workdir
+workdir="$(mktemp -d)"
 
 # 複製內容到臨時資料夾
 for path in "${ConfigPath[@]}"; do
-  cp -r "$path" workdir/
+  cp -r "$path" "$workdir/"
 done
 
 # 壓縮並製作模組包漢化補丁
-cd workdir || exit
-zip -r ../$ModPackName-Patches-$VERSION.zip *
-
-# 清理工作流程
-cd ..
-rm -r workdir
+cd $workdir && zip -r "$OLDPWD/$ModPackName-Patches-$VERSION.zip" *
