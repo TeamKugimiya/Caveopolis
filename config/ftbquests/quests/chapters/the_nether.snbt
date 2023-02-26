@@ -11,7 +11,7 @@
 		{
 			x: 2.0d
 			y: 5.0d
-			description: ["地獄石在岩漿層下方"]
+			description: ["地獄石在熔岩層下方"]
 			dependencies: ["18619452787FEED0"]
 			id: "1D88368064364D55"
 			tasks: [{
@@ -72,7 +72,7 @@
 		{
 			x: 8.0d
 			y: 6.5d
-			description: ["讓礦物提取器能從岩漿製作烈焰粉"]
+			description: ["讓礦物提取器能將熔岩製作烈焰粉"]
 			dependencies: ["7EAE1E0442580431"]
 			id: "4C55874647BDF27C"
 			tasks: [{

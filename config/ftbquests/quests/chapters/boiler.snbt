@@ -107,7 +107,7 @@
 		{
 			x: 0.0d
 			y: -7.5d
-			description: ["冷凝機可用來將岩漿轉換成黑曜石"]
+			description: ["冷凝機可用來將熔岩轉換成黑曜石"]
 			dependencies: ["4CD875E6A85B11AA"]
 			id: "06FC99274642FE15"
 			tasks: [{

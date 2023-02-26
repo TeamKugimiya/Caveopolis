@@ -265,7 +265,7 @@
 			}]
 		}
 		{
-			title: "岩漿"
+			title: "熔岩"
 			icon: "minecraft:lava_bucket"
 			x: -3.0d
 			y: 14.5d

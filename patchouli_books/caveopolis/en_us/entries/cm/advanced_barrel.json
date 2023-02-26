@@ -8,7 +8,7 @@
             "type": "patchouli:spotlight",
             "item": "kubejs:db_advanced_barrel",
             "title": "高級木桶",
-            "text": "高級木桶可以用石頭製作岩漿。正下方需要特定熱源方塊才能運作：$(li)營火$(li)岩漿$(li)鈾塊$(li)導熱元件$(li)火焰$(br)可放入至多 3 個流體漏斗來升級。"
+            "text": "高級木桶可以用石頭製作熔岩。正下方需要特定熱源方塊才能運作：$(li)營火$(li)熔岩$(li)鈾塊$(li)導熱元件$(li)火焰$(br)可放入至多 3 個流體漏斗來升級。"
         },
         {
             "type": "patchouli:multiblock",

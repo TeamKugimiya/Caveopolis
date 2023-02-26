@@ -53,7 +53,7 @@
 		{
 			x: 19.0d
 			y: 4.5d
-			description: ["全套的防火套裝能讓你安全的進入岩漿中"]
+			description: ["全套的防火套裝能讓你安全的進入熔岩中"]
 			dependencies: ["2E594D8CC5DC6677"]
 			id: "033E7D6FFF9E913B"
 			tasks: [{
@@ -71,7 +71,7 @@
 		{
 			x: 19.0d
 			y: 5.5d
-			description: ["全套的防火套裝能讓你安全的進入岩漿中"]
+			description: ["全套的防火套裝能讓你安全的進入熔岩中"]
 			dependencies: ["2E594D8CC5DC6677"]
 			id: "6BAA6621D3E09849"
 			tasks: [{
@@ -89,7 +89,7 @@
 		{
 			x: 19.0d
 			y: 6.5d
-			description: ["全套的防火套裝能讓你安全的進入岩漿中"]
+			description: ["全套的防火套裝能讓你安全的進入熔岩中"]
 			dependencies: ["2E594D8CC5DC6677"]
 			id: "64D8350A4C6930A6"
 			tasks: [{
@@ -107,7 +107,7 @@
 		{
 			x: 19.0d
 			y: 7.5d
-			description: ["全套的防火套裝能讓你安全的進入岩漿中"]
+			description: ["全套的防火套裝能讓你安全的進入熔岩中"]
 			dependencies: ["2E594D8CC5DC6677"]
 			id: "06D292EFEA6100CB"
 			tasks: [{

@@ -1,7 +1,7 @@
 {
-	"name": "§7§lCaveopolis§r 指南書",
+	"name": "《§7§l洞穴奇航§r》指南手冊",
 	"show_progress": false,
-	"landing_text": "歡迎遊玩 Caveopolis ！ $(br2)這本書紀載著關於 Caveopolis 以及當中的一些機器的資訊",
+	"landing_text": "歡迎遊玩 Caveopolis！ $(br2)這本書紀載著關於 Caveopolis 以及當中的一些機器的資訊",
 	"version": "1",
 	"filler_texture": "caveopolis:textures/item/stone_pebble.png",
 	"model": "patchouli:book_gray",

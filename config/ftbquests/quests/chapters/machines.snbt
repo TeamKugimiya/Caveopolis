@@ -170,7 +170,7 @@
 			icon: "caveopolis:ore_forming_water_bucket"
 			x: -7.5d
 			y: -4.5d
-			description: ["在合金混合器中將岩漿、水和碎石混合製作礦物成型水"]
+			description: ["在合金混合器中將熔岩、水和碎石混合製作礦物成型水"]
 			dependencies: ["2ED57D368FC5025B"]
 			id: "7A440F16961FFD95"
 			tasks: [{
