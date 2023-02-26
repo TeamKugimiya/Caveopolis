@@ -17,6 +17,12 @@
 	
 	"item.quark.azalea_boat": "杜鵑木船",
 	"item.quark.blossom_boat": "繁花木船",
+
+	"item.thermal.hazmat_fabric": "防火布料",
+	"item.thermal.hazmat_helmet": "防火頭盔",
+	"item.thermal.hazmat_chestplate": "防火胸甲",
+	"item.thermal.hazmat_leggings": "防火護腿",
+	"item.thermal.hazmat_boots": "防火靴子",
 	
 	"block.kubejs.db_advanced_barrel": "高級木桶",
 	"block.kubejs.db_alloy_mixer": "合金混合器",
