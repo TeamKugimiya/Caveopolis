@@ -14,7 +14,7 @@
 	  "power": 1
 	},
 	{
-	  "capacity": 1000000,
+	  "capacity": 10000000,
       "type": "custommachinery:energy",
       "id": "energy",
 	  "maxOutput": 0
