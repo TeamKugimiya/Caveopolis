@@ -12,7 +12,6 @@ client-patch:
   - "kubejs"
   - "patchouli_books"
   - "resourcepacks"
-  - "simple-rpc"
   - "LICENSE"
   - "options.txt"
 
