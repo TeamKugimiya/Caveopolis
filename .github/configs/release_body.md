@@ -4,13 +4,13 @@
 
 ## 下載檔案
 
-單人 & 玩家端：下載下方的 ``$ModPack_Name_VAR-Patches.zip``
+單人 & 玩家端：下載下方的 ``$ModPack_Name_VAR-Patches-Client.zip``
 
 伺服器端：下載下方的 ``$ModPack_Name_VAR-Patches-Server.zip``
 
 ## 安裝中文化補丁（玩家）
 
-使用 7-Zip 等軟體開啟 ``$ModPack_Name_VAR-Patches.zip`` 壓縮檔，並將壓縮檔中的內容，解壓縮到模組包的 ``.minecraft`` 資料夾**內**
+使用 7-Zip 等軟體開啟 ``$ModPack_Name_VAR-Patches-Client.zip`` 壓縮檔，並將壓縮檔中的內容，解壓縮到模組包的 ``.minecraft`` 資料夾**內**
 
 ## 安裝模組翻譯包（玩家）
 

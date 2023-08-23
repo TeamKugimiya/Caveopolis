@@ -19,37 +19,26 @@ on:
         type: boolean
 
 jobs:
-  Environment-Setup:
-    name: 環境階段
-    uses: TeamKugimiya/reusable-workflows/.github/workflows/modpack-environment.yml@main
-
   Resourcepack-Maker:
     name: 資源包階段
-    needs: Environment-Setup
-    uses: TeamKugimiya/reusable-workflows/.github/workflows/modpack-resourcepack.yml@main
+    uses: TeamKugimiya/reusable-workflows/.github/workflows/Modpack-Resourcepack.yml@main
     with:
-      modpack-name: ${{ needs.Environment-Setup.outputs.modpack_name }}
-      resourcepack-generate: ${{ needs.Environment-Setup.outputs.resourcepack_patch_generate }}
       force_include_files: "LICENSE"
       version: ${{ github.event.inputs.tag }}
 
   Patch-Maker:
     name: 補丁階段
-    if: always()
-    needs: [ Environment-Setup, Resourcepack-Maker ]
-    uses: TeamKugimiya/reusable-workflows/.github/workflows/modpack-patch.yml@main
+    needs: [ Resourcepack-Maker ]
+    uses: TeamKugimiya/reusable-workflows/.github/workflows/Modpack-Patch-Maker.yml@main
     with:
-      modpack-name: ${{ needs.Environment-Setup.outputs.modpack_name }}
       modpack-version: ${{ github.event.inputs.tag }}
-      modpack-resourcepack: ${{ needs.Environment-Setup.outputs.resourcepack_patch_generate }}
+      modpack-patch_resourcepack_maker: ${{ needs.Resourcepack-Maker.outputs.modpack_patch_resourcepack_maker }}
 
   Release-It:
     name: 發布階段
-    if: always()
-    needs: [ Environment-Setup, Resourcepack-Maker, Patch-Maker ]
-    uses: TeamKugimiya/reusable-workflows/.github/workflows/modpack-release.yml@main
+    needs: [ Resourcepack-Maker, Patch-Maker ]
+    uses: TeamKugimiya/reusable-workflows/.github/workflows/Modpack-Release.yml@main
     with:
-      modpack-name: ${{ needs.Environment-Setup.outputs.modpack_name }}
       modpack-version: ${{ github.event.inputs.tag }}
       modpack-official-version: ${{ github.event.inputs.modpack_version }}
       modpack-per-release: ${{ github.event.inputs.per_release }}

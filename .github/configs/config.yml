@@ -1,0 +1,23 @@
+# 模組包名稱
+modpack-name: Caveopolis
+
+# 模組包專案設定（自動更新通知）
+# 如果 Project ID 為空將會停止檢查
+modpack-project-id:
+modpack-file-id:
+
+# 用戶端 - 複製陣列
+client-patch:
+  - "config"
+  - "kubejs"
+  - "patchouli_books"
+  - "resourcepacks"
+  - "simple-rpc"
+  - "LICENSE"
+  - "options.txt"
+
+# 伺服器 - 複製陣列（為空將會停止產生伺服器版）
+server-patch:
+  - "config"
+  - "kubejs"
+  - "LICENSE"
